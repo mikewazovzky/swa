@@ -9,7 +9,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	/**
 	 * @var array $actions - list of available actions 
     **/	
-	protected $actions = ['Index'];
+	protected $actions = ['Index', 'About'];
 	protected $data = [];
 	
 	public function __construct()
@@ -30,13 +30,28 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 			throw new NodataException('Запрошенo несуществующее действие в ' . static::class);
 		}
 	}
-
+	/**
+	 * Метод направляет на страницу "Главная"
+	 **/
 	protected function actionIndex()
 	{
 		// подготовить данные для шаблона
 		$this->data['title'] = 'ПУТЕВЫЕ ЗАМЕТКИ';
 		$this->data['css'] = 'empty.css';
 		$this->data['content'] = 'empty.twig.php';
+		
+		// вызвать шаблон и передать ему данные 
+		$this->view->display('index.twig.php', $this->data);
+	}
+	/**
+	 * Метод направляет на страницу "О сайте"
+	 **/
+	protected function actionAbout()
+	{
+		// подготовить данные для шаблона
+		$this->data['title'] = 'О САЙТЕ';
+		$this->data['css'] = 'about.css';
+		$this->data['content'] = 'about.twig.php';
 		
 		// вызвать шаблон и передать ему данные 
 		$this->view->display('index.twig.php', $this->data);

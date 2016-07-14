@@ -11,3 +11,4 @@ error^Запрошенo несуществующее действие в App\Con
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468489595#0#D:\Server\domains\swa\app\Controllers\Index.php#30
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468489602#0#D:\Server\domains\swa\app\Controllers\Index.php#30
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468489658#0#D:\Server\domains\swa\app\Controllers\Index.php#30
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468490528#0#D:\Server\domains\swa\app\Controllers\Index.php#30
