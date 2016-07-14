@@ -10,12 +10,14 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 * @var array $actions - list of available actions 
     **/	
 	protected $actions = ['Index', 'About'];
-	protected $data = [];
+	protected $menu = [];
+	protected $pages = [];
 	
 	public function __construct()
 	{
 		parent::__construct();
-		$this->data['menu'] = include(__DIR__ . '/../../data/menu.php');	// path to data hardcoded!!
+		$this->pages = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
+		$this->menu = include(__DIR__ . '/../../data/menu.php');	// path to data hardcoded!!
 	
 	}
 	/**
@@ -35,26 +37,26 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 **/
 	protected function actionIndex()
 	{
-		// подготовить данные для шаблона
-		$this->data['title'] = 'ПУТЕВЫЕ ЗАМЕТКИ';
-		$this->data['css'] = 'empty.css';
-		$this->data['content'] = 'empty.twig.php';
-		
-		// вызвать шаблон и передать ему данные 
-		$this->view->display('index.twig.php', $this->data);
+		$this->loadPage('empty');
 	}
 	/**
 	 * Метод направляет на страницу "О сайте"
 	 **/
 	protected function actionAbout()
 	{
+		$this->loadPage('about');
+	}
+	/**
+	 * Метод загружает выбранную страницу
+	 **/
+	protected function loadPage($page) 
+	{
 		// подготовить данные для шаблона
-		$this->data['title'] = 'О САЙТЕ';
-		$this->data['css'] = 'about.css';
-		$this->data['content'] = 'about.twig.php';
+		$data = $this->pages[$page];
+		$data['menu'] = $this->menu;
 		
 		// вызвать шаблон и передать ему данные 
-		$this->view->display('index.twig.php', $this->data);
+		$this->view->display('index.twig.php', $data);
 	}
 }	
 ?>

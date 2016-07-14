@@ -12,3 +12,6 @@ error^Запрошенo несуществующее действие в App\Con
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468489602#0#D:\Server\domains\swa\app\Controllers\Index.php#30
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468489658#0#D:\Server\domains\swa\app\Controllers\Index.php#30
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468490528#0#D:\Server\domains\swa\app\Controllers\Index.php#30
+error^Unable to find template "" (looked into: C:/OpenServer/domains/swa.dev/templates) in "index.twig.php" at line 31.^1468496725#0#C:\OpenServer\domains\swa.dev\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
+error^Unable to find template "" (looked into: C:/OpenServer/domains/swa.dev/templates) in "index.twig.php" at line 31.^1468496905#0#C:\OpenServer\domains\swa.dev\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468497149#0#C:\OpenServer\domains\swa.dev\app\Controllers\Index.php#32
