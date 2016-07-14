@@ -6,3 +6,8 @@ error^Unable to find template "header.twig.php" (looked into: D:/Server/domains/
 error^Unable to find template "header.twig.php" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 27.^1468479724#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
 error^Unable to find template "header.twig.php" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 27.^1468479724#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
 error^Unable to find template "" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 29.^1468479866#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468488300#0#D:\Server\domains\swa\app\Controllers\Index.php#30
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468489589#0#D:\Server\domains\swa\app\Controllers\Index.php#30
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468489595#0#D:\Server\domains\swa\app\Controllers\Index.php#30
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468489602#0#D:\Server\domains\swa\app\Controllers\Index.php#30
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468489658#0#D:\Server\domains\swa\app\Controllers\Index.php#30

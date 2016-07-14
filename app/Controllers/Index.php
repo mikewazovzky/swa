@@ -34,7 +34,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	protected function actionIndex()
 	{
 		// подготовить данные для шаблона
-		$this->data['title'] = 'Путевые заметки';
+		$this->data['title'] = 'ПУТЕВЫЕ ЗАМЕТКИ';
 		$this->data['css'] = 'empty.css';
 		$this->data['content'] = 'empty.twig.php';
 		
