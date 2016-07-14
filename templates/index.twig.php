@@ -18,6 +18,8 @@
 
      <!-- Custom styles for this template -->
 	 <link rel="stylesheet" type="text/css" href="templates/css/index.css">
+ 	 <link rel="stylesheet" type="text/css" href="templates/css/header.css">
+ 	 <link rel="stylesheet" type="text/css" href="templates/css/footer.css">
 	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
  </head>
 
