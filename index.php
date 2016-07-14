@@ -16,7 +16,7 @@ use \Mikewazovzky\Lib\Mailer;
 
 require __DIR__ . '/autoload.php';
 
-$l = new Logger;
+$logger = new Logger;
 
 // ROUTING: определение действий (выбор контроллера и экшен) на основании запроса пользователя
 // NB. Используем управляющие директивы (перенаправление) модуля Rewrite - работает только под сервером Apache!!!
@@ -29,7 +29,7 @@ $ctrl   = $_GET['ctrl']  ? : 'Index';   // Index(default) или Admin
 $action = $_GET['action']? : 'Index';    
 
 // DEBUG: выбранный контроллер и действие
-//echo ' ctrl = <strong>' . $ctrl . '</strong>; action = <strong>' . $action . '</strong>.' . '<br>';
+echo ' ctrl = <strong>' . $ctrl . '</strong>; action = <strong>' . $action . '</strong>.' . '<br>';
 
 // Выбор и вызов контроллера
 try {
@@ -47,13 +47,9 @@ try {
 			throw new NodataException('Запрошен несуществующий контроллер.');
 	}
 	$controller->action($action);
-	
-} catch(BaseException $e) {
-	
-	$e->handle();
-
+} catch(BaseException $be) {
+	$be->handle();
 } catch(\Exception $e) {
-	
 	$logger->toFile($e);
 	$eh = new Error;
 	$eh->action($e);

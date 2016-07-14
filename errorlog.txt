@@ -1,3 +1,8 @@
 error^Запрошен несуществующий контроллер.^1468476798#0#D:\Server\domains\swa\index.php#47
 error^Запрошен несуществующий контроллер.^1468476798#0#D:\Server\domains\swa\index.php#47
 error^Запрошен несуществующий контроллер.^1468476798#0#D:\Server\domains\swa\index.php#47
+error^Unable to find template "header.twig.php" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 27.^1468479583#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
+error^Unable to find template "header.twig.php" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 27.^1468479724#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
+error^Unable to find template "header.twig.php" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 27.^1468479724#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
+error^Unable to find template "header.twig.php" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 27.^1468479724#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215
+error^Unable to find template "" (looked into: D:/Server/domains/swa/templates) in "index.twig.php" at line 29.^1468479866#0#D:\Server\domains\swa\vendor\twig\twig\lib\Twig\Loader\Filesystem.php#215

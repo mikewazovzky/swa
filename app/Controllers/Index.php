@@ -10,6 +10,14 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 * @var array $actions - list of available actions 
     **/	
 	protected $actions = ['Index'];
+	protected $data = [];
+	
+	public function __construct()
+	{
+		parent::__construct();
+		$this->data['menu'] = include(__DIR__ . '/../../data/menu.php');	// path to data hardcoded!!
+	
+	}
 	/**
 	 * Метод вызываемый перед выполением действия, проверяет является ли действие допустимым  
 	 * @param  string $action запрошенное пользователем действие
@@ -25,9 +33,13 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 
 	protected function actionIndex()
 	{
-		$data['title'] = 'Index.Twig.pgp';
-		$this->view->display('default.twig.php', $data);
+		// подготовить данные для шаблона
+		$this->data['title'] = 'Путевые заметки';
+		$this->data['css'] = 'empty.css';
+		$this->data['content'] = 'empty.twig.php';
+		
+		// вызвать шаблон и передать ему данные 
+		$this->view->display('index.twig.php', $this->data);
 	}
-	
 }	
 ?>

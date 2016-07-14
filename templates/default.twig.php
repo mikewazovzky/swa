@@ -21,6 +21,7 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">DEFAULT</a>
     </div>
+	
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="?ctrl=Log&action=View" target="_blank">ViewLog</a></li>
@@ -29,6 +30,7 @@
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
+	
   </div>
 </nav>
 <!-- -->

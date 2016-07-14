@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 <h1>Error log</h1>
 
 <table class="table table-condensed">
