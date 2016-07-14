@@ -9,7 +9,7 @@
 		<p>	Парк Секвой (Sequoia National Park, CA) - расположенный в северной части Калифорнии парк гигантских деревьев. 
 			Секвойи - огромные деревья наблюдающие за развитием нашей цивилизации, возраст некоторых гигантов достигает 6000 лет ...
 		</p>
-		<a class="button" href="/?ctrl=Index&action=Location&Location=sequoia">Подробнее</a>
+		<a class="button" href="/?ctrl=Index&action=Location&location=sequoia">Подробнее</a>
 	</div>
 	
 	<div class="col-sm-4 block2">
@@ -18,7 +18,7 @@
 		<p>	Долина Огня (Valley of Fire State Park, NV) - своеобразный сад камней. Приезжать в парк нужно рано утром, желательно 
 			к рассвету, днем (после 10:00) здесь испепеляющая жара, бродить среди раскаленных камней небезопасно...
 		</p>
-		<a class="button" href="/?ctrl=Index&action=Location&Location=vofire">Подробнее</a>
+		<a class="button" href="/?ctrl=Index&action=Location&location=vofire">Подробнее</a>
 	</div>
     
 	<div class="col-sm-4 block3">
@@ -27,7 +27,7 @@
 		<p>	Гранд Каньон (Grand Canyon, AZ) самый большой каньон и одно из самых посещаемых туристами место. Вы можете не только 
 			полюбоваться потрясающими видами, но и совершить запоминающееся путешествие - спуск в каньон...
 		</p>
-		<a class="button" href="?ctrl=Index&action=Location&Location=gc">Подробнее</a>
+		<a class="button" href="?ctrl=Index&action=Location&location=gc">Подробнее</a>
 	</div>
 </div>
 
@@ -38,7 +38,7 @@
 		<p>	В окрестностях города Пэйдж (Page, AZ) расположено множество интересных мест. Потрясающий цвет озера Пауэлл (Powell), 
 			можно не только любоваться но и искупаться - ни с чем не сравнимое удоавольствие в 40 градусную жару! ...
 		</p>
-		<a class="button" href="?ctrl=Index&action=Location&Location=page">Подробнее</a>
+		<a class="button" href="?ctrl=Index&action=Location&location=page">Подробнее</a>
 	</div>
 	
 	<div class="col-sm-4 block5">
@@ -47,7 +47,7 @@
 		<p>	Каньон Антилопы  (Antelope Canyon, AZ) - глубокая промытая в скалах расщелина. Если Вы окажетесь в нем в полдень, 
 			сможете наблюдать причудливую игру отражений раскрашивающих стены каньона в самые неожиданные цвета ...
 		</p>
-		<a class="button" href="?ctrl=Index&action=Location&Location=antelope">Подробнее</a>
+		<a class="button" href="?ctrl=Index&action=Location&location=antelope">Подробнее</a>
 	</div>
     
 	<div class="col-sm-4 block6">
@@ -55,7 +55,7 @@
 		<img src="templates/media/monument.jpg" width="320px"/>
 		<p>	Долина Монументов (Monument Valley Navajo Tribal Park, AZ) - необычные каменные великаны хорошо известные любителям вестернов. 
 			Наиболее впечатлеюще они смотрятся в лучах закатного солнца ...</p>
-		<a class="button" href="?ctrl=Index&action=Location&Location=monument">Подробнее</a>
+		<a class="button" href="?ctrl=Index&action=Location&location=monument">Подробнее</a>
 	</div>
 </div>
 
@@ -66,7 +66,7 @@
 		<p>	Национальный парк Арки (Arches National Park). На относительно небольшой территории парка В найдете удивительную коллекцию 
 			необычных природных образований - арок ...
 		</p>
-		<a class="button" href="?ctrl=Index&action=Location&Location=arches">Подробнее</a>
+		<a class="button" href="?ctrl=Index&action=Location&location=arches">Подробнее</a>
 	</div>
 	
 	<div class="col-sm-4 block8">
@@ -75,14 +75,14 @@
 		<p>	Остров в небесах (Island in the Sky - Canyonlands National Park, UT) - совершенно невозможно не посетить место с таким названием. 
 			Потрясающее и не очень популярное у туристов, а потому пустынное место ...
 		</p>
-		<a class="button" href="?ctrl=Index&action=Location&Location=skyisle">Подробнее</a>
+		<a class="button" href="?ctrl=Index&action=Location&location=skyisle">Подробнее</a>
 	</div>
     
 	<div class="col-sm-4 block9">
 		<h2>Каньон Брайс</h2>
 		<img src="templates/media/bryce.jpg" width="320px"/>
 		<p>Каньон Брайс (Bryce Canyon) - территория каменных изваяний Худус. По легенде индейцев Навахо Худус - души умерших. Кто и зачем собирает армию мертвых в каньоне неизвестно ...</p>
-		<a class="button" href="?ctrl=Index&action=Location&Location=bryce">Подробнее</a>
+		<a class="button" href="?ctrl=Index&action=Location&location=bryce">Подробнее</a>
 	</div>
 
 </div>

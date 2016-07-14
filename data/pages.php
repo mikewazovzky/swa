@@ -19,5 +19,10 @@ return ['main'	=> [
 			'title' 	=> 'КОНТАКТЫ',
 			'css' 		=> 'contacts.css',
 			'content'	=> 'contacts.twig.php',
+		],
+		'location' 	=> [
+			'title' 	=> 'ПУТЕВЫЕ ЗАМЕТКИ',
+			'css' 		=> 'location.css',
+			'content'	=> 'location.twig.php',
 		]
 ]; 

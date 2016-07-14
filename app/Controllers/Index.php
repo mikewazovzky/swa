@@ -9,18 +9,23 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	/**
 	 * @var array $actions - list of available actions 
     **/	
-	protected $actions = ['Index', 'Feedback']; 				// list of available actions
-	protected $pages = ['main', 'news', 'about', 'contacts']; 	// list of available pages
+	protected $actions = ['Index', 'Location', 'Feedback']; 				// list of available actions
 	protected $menu = []; 										// список элементов меню
-	protected $data = [];										// информация о страницах сайта
+	
+	protected $pages = ['main', 'news', 'about', 'contacts']; 	// list of available pages
+	protected $pagesdata = [];										// информация о страницах сайта
+	
+	protected $locations = ['sequoia', 'vofire', 'gc', 'page', 'antelope', 'monument', 'arches', 'skyisle' , 'bryce'];									// list of available locations
+	protected $locationdata = [];		
+	
 	// !!! добавить в конструктор загрузку $actions and $pages на основании данных в /Data
 	
 	public function __construct()
 	{
 		parent::__construct();
-		$this->data = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
 		$this->menu = include(__DIR__ . '/../../data/menu.php');			// path to data hardcoded!!
-	
+		$this->pagesdata = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
+		$this->locationsdata  = include(__DIR__ . '/../../data/locations.php');       // 
 	}
 	/**
 	 * Метод вызываемый перед выполением действия, проверяет является ли действие допустимым  
@@ -46,14 +51,32 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 		$this->loadPage($page);
 	}
 	/**
+	 * Метод загружает отчет о поездке (Location)
+	 **/
+	protected function actionLocation()
+	{
+		$location = $_GET['location'] ?? 'empty';
+		if(!in_array($location, $this->locations)) {
+			throw new NodataException('Запрошен несуществующий отчет:  ' . $location . '.');
+		}
+		$this->loadPage('location', $location);
+	}
+
+	/**
 	 * Метод загружает указанную страницу
 	 **/
-	protected function loadPage($page) 
+	protected function loadPage($page, $location = '') 
 	{
 		// подготовить данные для шаблона
-		$data = $this->data[$page];
+		$data = $this->pagesdata[$page];
 		$data['menu'] = $this->menu;
 		
+		if($page == 'location') {
+			$data['title'] = $this->locationsdata[$location]['name'];
+			$data['img']   = $this->locationsdata[$location]['img'];
+			$data['location'] = 'locations/' . $location . '.twig.php';
+		}
+
 		// вызвать шаблон и передать ему данные 
 		$this->view->display('index.twig.php', $data);
 	}
