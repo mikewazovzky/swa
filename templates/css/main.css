@@ -1,0 +1,77 @@
+.main {
+	width: 960px;
+	margin: 0 auto;
+}
+.hmenu {
+  background-color: #303040;
+}
+body {
+	min-height: 1500px;	
+	background-image: url("../media/skyisle.jpg");
+	background-repeat: no-repeat;	
+	background-position: left top;
+	background-attachment: fixed;
+}
+/******************** Page Title *************************/
+#title {
+	font-size: 5em;
+	color: #fff;
+	line-height: 0.9em;
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+/******************** Page Subtitle *************************/
+#subtitle {
+	font-size: 2em;
+	color: #fff;
+	line-height: 1.2em;
+	text-align: center;
+	margin: 20px 0;
+}
+/******************* Block Element Style *******************/
+.col-sm-4 {
+	margin-bottom: 5px;	
+	padding: 0;
+	height: 460px;
+	width: 320px;
+	opacity: 0.8; 
+}
+h2 { 	
+	text-align: center; 
+}
+p   {	
+	text-align: justify;	
+	margin: 10px; 
+}	
+.button {
+	text-decoration: none;
+	text-align: center;
+	font-family: "Open Sans",sans-serif;
+	font-weight: bold;
+	color: black;
+	padding: 5px 10px;
+	border: 3px solid black;
+	width: 100px;
+	position: absolute;
+	bottom: 10px;
+	left: 100px;	
+}
+.button:hover {
+	background-color: #000;
+	color: white;
+	text-decoration: none;
+}
+
+.block1 { background: #ff6f00; }
+.block2 { background: #ff9500; }
+.block3 { background: #ffc108; }
+.block4 { background: #27a15e; }
+.block5 { background: #51de38; }
+.block6 { background: #c3d932; }
+.block7 { background: #7a79c6; }
+.block8 { background: #7d7bff; }
+.block9 { background: #6d6aff; }
+
+.footer {
+  background-color: #303040;
+}

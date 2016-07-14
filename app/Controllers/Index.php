@@ -10,7 +10,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 * @var array $actions - list of available actions 
     **/	
 	protected $actions = ['Index', 'Feedback']; 				// list of available actions
-	protected $pages = ['empty', 'about', 'contacts']; 	// list of available pages
+	protected $pages = ['main', 'news', 'about', 'contacts']; 	// list of available pages
 	protected $menu = []; 										// список элементов меню
 	protected $data = [];										// информация о страницах сайта
 	// !!! добавить в конструктор загрузку $actions and $pages на основании данных в /Data
