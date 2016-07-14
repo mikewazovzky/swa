@@ -1,8 +1,8 @@
 <?php
 return [
-			['link' => 'Главная', 'href' => '/?action=Index'],
-			['link' => 'Новости', 'href' => '/?action=News'],
-			['link' => 'О сайте', 'href' => '/?action=About'],
-			['link' => 'Контакты','href' => '/?action=Contacts']
+			['link' => 'Главная', 'href' => '/?action=Index&page=empty'],
+			['link' => 'Новости', 'href' => '/?action=Index&page=news'],
+			['link' => 'О сайте', 'href' => '/?action=Index&page=about'],
+			['link' => 'Контакты','href' => '/?action=Index&page=contacts']
 ];
 ?>

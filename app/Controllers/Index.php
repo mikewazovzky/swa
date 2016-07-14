@@ -9,15 +9,17 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	/**
 	 * @var array $actions - list of available actions 
     **/	
-	protected $actions = ['Index', 'About', 'Contacts'];
-	protected $menu = [];
-	protected $pages = [];
+	protected $actions = ['Index', 'Feedback']; 				// list of available actions
+	protected $pages = ['empty', 'about', 'contacts']; 	// list of available pages
+	protected $menu = []; 										// список элементов меню
+	protected $data = [];										// информация о страницах сайта
+	// !!! добавить в конструктор загрузку $actions and $pages на основании данных в /Data
 	
 	public function __construct()
 	{
 		parent::__construct();
-		$this->pages = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
-		$this->menu = include(__DIR__ . '/../../data/menu.php');	// path to data hardcoded!!
+		$this->data = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
+		$this->menu = include(__DIR__ . '/../../data/menu.php');			// path to data hardcoded!!
 	
 	}
 	/**
@@ -33,37 +35,42 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 		}
 	}
 	/**
-	 * Метод направляет на страницу "Главная"
+	 * Метод направляет на страницу запрошенную пользователем страницу
 	 **/
 	protected function actionIndex()
 	{
-		$this->loadPage('empty');
+		$page = $_GET['page'] ?? 'empty';
+		if(!in_array($page, $this->pages)) {
+			throw new NodataException('Запрошена несуществующая страница:  ' . $page . '.');
+		}
+		$this->loadPage($page);
 	}
 	/**
-	 * Метод направляет на страницу "О сайте"
-	 **/
-	protected function actionAbout()
-	{
-		$this->loadPage('about');
-	}
-	/**
-	 * Метод направляет на страницу "Контакты"
-	 **/
-	protected function actionContacts()
-	{
-		$this->loadPage('contacts');
-	}
-	/**
-	 * Метод загружает выбранную страницу
+	 * Метод загружает указанную страницу
 	 **/
 	protected function loadPage($page) 
 	{
 		// подготовить данные для шаблона
-		$data = $this->pages[$page];
+		$data = $this->data[$page];
 		$data['menu'] = $this->menu;
 		
 		// вызвать шаблон и передать ему данные 
 		$this->view->display('index.twig.php', $data);
 	}
+	/**
+	 * Метод отправляет администратору сообщение при нажатии на кнопку отправить на странице "Контакты"
+	 **/	
+	protected function actionFeedback()
+	{
+		$to = 'mike.wazovzky@gmail.com';
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subj = 'MESSAGE from SWA.dev: ' . $_POST['subj'];
+		$body = 'Send by ' . $name . ' : ' . $email . PHP_EOL . $_POST['body'];
+		
+		$mailer = new \Mikewazovzky\Lib\Mailer;
+		$mailer->send($to, $subj, $body);
+		$this->redirect('Contacts');
+	}	
 }	
 ?>
