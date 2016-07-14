@@ -9,5 +9,10 @@ return ['empty'	=> [
 			'title' 	=> 'О САЙТЕ',
 			'css' 		=> 'about.css',
 			'content'	=> 'about.twig.php',
+		],
+		'contacts'	=> [
+			'title' 	=> 'КОНТАКТЫ',
+			'css' 		=> 'contacts.css',
+			'content'	=> 'contacts.twig.php',
 		]
 ]; 

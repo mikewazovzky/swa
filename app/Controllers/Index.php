@@ -9,7 +9,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	/**
 	 * @var array $actions - list of available actions 
     **/	
-	protected $actions = ['Index', 'About'];
+	protected $actions = ['Index', 'About', 'Contacts'];
 	protected $menu = [];
 	protected $pages = [];
 	
@@ -45,6 +45,13 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	protected function actionAbout()
 	{
 		$this->loadPage('about');
+	}
+	/**
+	 * Метод направляет на страницу "Контакты"
+	 **/
+	protected function actionContacts()
+	{
+		$this->loadPage('contacts');
 	}
 	/**
 	 * Метод загружает выбранную страницу

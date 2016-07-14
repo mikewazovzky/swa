@@ -17,3 +17,5 @@ error^Unable to find template "" (looked into: C:/OpenServer/domains/swa.dev/tem
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468497149#0#C:\OpenServer\domains\swa.dev\app\Controllers\Index.php#32
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468505210#0#D:\Server\domains\swa\app\Controllers\Index.php#32
 error^Запрошенo несуществующее действие в App\Controllers\Index^1468505217#0#D:\Server\domains\swa\app\Controllers\Index.php#32
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468505898#0#D:\Server\domains\swa\app\Controllers\Index.php#32
+error^Запрошенo несуществующее действие в App\Controllers\Index^1468506532#0#D:\Server\domains\swa\app\Controllers\Index.php#32

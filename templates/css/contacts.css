@@ -1,0 +1,14 @@
+body { 
+	background-color: #ffd;
+}
+.contacts {
+	margin-top: 50px;
+}
+iframe {
+	margin: 0 auto;
+	display: block;
+}
+.center {
+	width: 500px;
+	margin: 0 auto;
+}
