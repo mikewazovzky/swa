@@ -73,16 +73,18 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 **/
 	protected function loadPage($page, $location = '') 
 	{
-		// подготовить данные для шаблона
+		// подготовить для шаблона данные для страницы: 
+		// 	заголовок('title'), 
+		// 	имя twig шаблона ('content') 
+		// 	имя css файла ('css')
 		$data = $this->pagesdata[$page];
 		$data['menu'] = $this->menu;
-		
+		// подготовить для шаблона дополнительные данные для location
 		if($page == 'location') {
 			$data['title'] = $this->locationsdata[$location]['name'];
 			$data['img']   = $this->locationsdata[$location]['img'];
 			$data['location'] = 'locations/' . $location . '.twig.php';
 		}
-
 		// вызвать шаблон и передать ему данные 
 		$this->view->display('index.twig.php', $data);
 	}

@@ -7,6 +7,13 @@ return ['main'	=> [
 			'css' 		=> 'main.css',
 			'content'	=> 'main.twig.php'
 		],
+		'main2'	=> [
+			'link'		=> 'НОВАЯ',
+			'href'		=> '/?action=Index&page=main2',
+			'title' 	=> 'НОВАЯ ГЛАВНАЯ СТРАНИЦА',
+			'css' 		=> 'main2.css',
+			'content'	=> 'main2.twig.php'
+		],
 		'news'	=> [
 			'link'		=> 'Новости',
 			'href'		=> '/?action=Index&page=news',
