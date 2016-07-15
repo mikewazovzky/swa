@@ -9,23 +9,29 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	/**
 	 * @var array $actions - list of available actions 
     **/	
-	protected $actions = ['Index', 'Location', 'Feedback']; 				// list of available actions
-	protected $menu = []; 										// список элементов меню
+	protected $actions = ['Index', 'Location', 'Feedback'];  // list of available actions
+	protected $menu = []; 									 // список элементов меню
 	
-	protected $pages = ['main', 'news', 'about', 'contacts']; 	// list of available pages
-	protected $pagesdata = [];										// информация о страницах сайта
+	protected $pages = []; 									// list of available pages
+	protected $pagesdata = [];								// информация о страницах сайта
 	
-	protected $locations = ['sequoia', 'vofire', 'gc', 'page', 'antelope', 'monument', 'arches', 'skyisle' , 'bryce'];									// list of available locations
-	protected $locationdata = [];		
-	
-	// !!! добавить в конструктор загрузку $actions and $pages на основании данных в /Data
+	protected $locations = [];								// list of available locations
+	protected $locationsdata = [];							// информация о locations
 	
 	public function __construct()
 	{
 		parent::__construct();
-		$this->menu = include(__DIR__ . '/../../data/menu.php');			// path to data hardcoded!!
+		// читаем из файла информацию о страницах файла -- вынести в отдельный метод INIT
 		$this->pagesdata = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
-		$this->locationsdata  = include(__DIR__ . '/../../data/locations.php');       // 
+		foreach($this->pagesdata as $page => $data) {
+			$this->pages[] = $page;
+			$this->menu[$page] = ['link' => $data['link'], 'href' => $data['href']];
+			
+		}
+		$this->locationsdata  = include(__DIR__ . '/../../data/locations.php');
+		foreach($this->locationsdata as $location => $data)	{
+			$this->locations[] = $location;
+		}
 	}
 	/**
 	 * Метод вызываемый перед выполением действия, проверяет является ли действие допустимым  
@@ -44,7 +50,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 **/
 	protected function actionIndex()
 	{
-		$page = $_GET['page'] ?? 'empty';
+		$page = $_GET['page'] ?? 'main';
 		if(!in_array($page, $this->pages)) {
 			throw new NodataException('Запрошена несуществующая страница:  ' . $page . '.');
 		}
@@ -55,7 +61,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 **/
 	protected function actionLocation()
 	{
-		$location = $_GET['location'] ?? 'empty';
+		$location = $_GET['location'] ?? '';
 		if(!in_array($location, $this->locations)) {
 			throw new NodataException('Запрошен несуществующий отчет:  ' . $location . '.');
 		}
