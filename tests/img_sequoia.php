@@ -1,0 +1,48 @@
+<?php 
+return [
+	'http://imgur.com/f6CctCt',
+	http://imgur.com/g6rTqk7
+	http://imgur.com/Srod9fw
+	http://imgur.com/YcAy2Zu
+	http://imgur.com/BHChhYu
+	http://imgur.com/3bRYHPG
+	http://imgur.com/cMoVPcu
+	http://imgur.com/SyhKAxO
+	http://imgur.com/UHuv5Hz
+	http://imgur.com/hi4oLfW
+	http://imgur.com/MsIFVvL
+	http://imgur.com/A9It6o8
+	http://imgur.com/dvZeLMI
+	http://imgur.com/f6cOdlo
+	http://imgur.com/eGRNfPD
+	http://imgur.com/kiixMnr
+	http://imgur.com/g6SfDnw
+	http://imgur.com/FXxgAsD
+	http://imgur.com/AQNTdAx
+	http://imgur.com/yJrXMC5
+	http://imgur.com/bfet0FH
+	http://imgur.com/1VN0lto
+	http://imgur.com/MJ2FMp5
+	http://imgur.com/oSipMau
+	http://imgur.com/GAAKkFu
+	http://imgur.com/C7fq8ke
+	http://imgur.com/3FZzsef
+	http://imgur.com/zqYpZK9
+	http://imgur.com/5KyxKN8
+	http://imgur.com/yewNQhA
+	http://imgur.com/MoNjRgk
+	http://imgur.com/04RLlbf
+	http://imgur.com/oUbPb5f
+	http://imgur.com/ah51Ybo
+	http://imgur.com/FrwkOFJ
+	http://imgur.com/x2bXFIG
+	http://imgur.com/WpjN9p4
+	http://imgur.com/PG0R06P
+	http://imgur.com/a0PSOva
+	http://imgur.com/aBQ77bF
+	http://imgur.com/NmfnOsa
+	http://imgur.com/8vRtjOg
+	http://imgur.com/3qFJSTo
+];
+
+?>

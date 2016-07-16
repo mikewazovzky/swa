@@ -28,7 +28,9 @@
 <!-- Begin page content -->
 {% include 'header.twig.php' %}
 
+<div class="container index">
 {% include content %}
+</div>
 
 {% include 'footer.twig.php' %}
 
