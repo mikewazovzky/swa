@@ -17,7 +17,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
      <!-- Custom styles for this template -->
-	 {% block css %}
+	 {% block head %}
 	 <link rel="stylesheet" type="text/css" href="templates/css/index.css">
  	 <link rel="stylesheet" type="text/css" href="templates/css/header.css">
  	 <link rel="stylesheet" type="text/css" href="templates/css/footer.css">

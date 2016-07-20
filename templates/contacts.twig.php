@@ -1,6 +1,6 @@
 {% extends 'index.twig.php' %}
 
-{% block css %}
+{% block head %}
 	{{ parent() }}
 	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
 {% endblock %}

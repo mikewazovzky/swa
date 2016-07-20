@@ -1,16 +1,32 @@
 {% extends 'index.twig.php' %}
 
-{% block css %}
+{% block head %}
 	{{ parent() }}
 	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
+	 <script>
+	window.addEventListener('resize', function(event){
+			press();
+	});
+	
+	function press() {
+		var width = $(window).width();
+			document.getElementById("data").innerHTML = "Window width: " + width;
+			var container = width - 50;
+			//alert(container + "px");
+			document.getElementById("tmp").style.width = container + "px";
+			document.getElementById("container").innerHTML = "Window width: " + document.getElementById("tmp").style.width;
+	}
+	 </script>
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid main">
+<div class="main" id="tmp">
+
 	<h1 id="title">НОВАЯ ГЛАВНАЯ СТРАНИЦА</h1>
 	<h2 id="subtitle">Невада. Юта. Аризона. Калифорния.<br>Национальные парки.</h2>
-  
-
+	<h2 id="data" style="color: white;">Window width: </h2>
+	<h2 id="container" style="color: white;">Container width: </h2>
+	
 	<div class="block block1">
 		<h2>Парк Секвой</h2>
 		<img src="templates/media/sequoia.jpg" width="320px"/>
