@@ -21,13 +21,14 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	public function __construct()
 	{
 		parent::__construct();
-		// читаем из файла информацию о страницах файла -- вынести в отдельный метод INIT
+		// читаем из файла информацию о страницах файла - вынести в отдельный метод INIT
 		$this->pagesdata = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
 		foreach($this->pagesdata as $page => $data) {
 			$this->pages[] = $page;
 			$this->menu[$page] = ['link' => $data['link'], 'href' => $data['href']];
 			
 		}
+		// читаем из файла информацию о локациях 
 		$this->locationsdata  = include(__DIR__ . '/../../data/locations.php');
 		foreach($this->locationsdata as $location => $data)	{
 			$this->locations[] = $location;
@@ -73,12 +74,14 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	 **/
 	protected function loadPage($page, $location = '') 
 	{
+		
 		// подготовить для шаблона данные для страницы: 
 		// 	заголовок('title'), 
-		// 	имя twig шаблона ('content') 
+		// 	имя twig шаблона ('page') 
 		// 	имя css файла ('css')
 		$data = $this->pagesdata[$page];
 		$data['menu'] = $this->menu;
+		
 		// подготовить для шаблона дополнительные данные для location
 		if($page == 'location') {
 			$data['title'] = $this->locationsdata[$location]['name'];
@@ -86,7 +89,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 			$data['location'] = 'locations/' . $location . '.twig.php';
 		}
 		// вызвать шаблон и передать ему данные 
-		$this->view->display('index.twig.php', $data);
+		$this->view->display($data['page'], $data);
 	}
 	/**
 	 * Метод отправляет администратору сообщение при нажатии на кнопку отправить на странице "Контакты"

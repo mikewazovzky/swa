@@ -1,3 +1,11 @@
+{% extends 'index.twig.php' %}
+
+{% block css %}
+	{{ parent() }}
+	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
+{% endblock %}
+
+{% block content %}
 <div class="container contacts">
 
 	<iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgQtiNeBKtUYR2tvvcHt7ZE4&key=AIzaSyCk1tk4ulh8FQpW91l9vCn7c2ze5isgOd0" allowfullscreen></iframe>
@@ -53,3 +61,4 @@
 </div>
 
 </div>
+{% endblock %}

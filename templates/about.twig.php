@@ -1,3 +1,11 @@
+{% extends 'index.twig.php' %}
+
+{% block css %}
+	{{ parent() }}
+	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
+{% endblock %}
+
+{% block content %}
 <div class="container about">
 
 	<img src="templates/media/messa.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>
@@ -38,3 +46,4 @@
 		<li><del>База данных: MySQL/SQLite</del></li>
 	</ul>		
 </div>
+{% endblock %}

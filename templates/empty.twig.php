@@ -1,3 +1,11 @@
+{% extends 'index.twig.php' %}
+
+{% block css %}
+	{{ parent() }}
+	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
+{% endblock %}
+
+{% block content %}
 <div class="container empty">
 	<h1>Empty page</h1>
 	<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -106,3 +114,4 @@
 		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</p>		
 </div>
+{% endblock %}
