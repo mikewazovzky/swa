@@ -5,41 +5,41 @@ return ['main'	=> [
 			'href'		=> '/?action=Index&page=main',
 			'title' 	=> 'ПУТЕВЫЕ ЗАМЕТКИ',
 			'css' 		=> 'main.css',
-			'content'	=> 'main.twig.php'
+			'page'		=> 'main.twig.php'
 		],
 		'main2'	=> [
 			'link'		=> 'НОВАЯ',
 			'href'		=> '/?action=Index&page=main2',
 			'title' 	=> 'НОВАЯ ГЛАВНАЯ СТРАНИЦА',
 			'css' 		=> 'main2.css',
-			'content'	=> 'main2.twig.php'
+			'page'		=> 'main2.twig.php'
 		],
 		'news'	=> [
 			'link'		=> 'Новости',
 			'href'		=> '/?action=Index&page=news',
 			'title' 	=> 'НОВОСТИ',
 			'css' 		=> 'empty.css',
-			'content'	=> 'empty.twig.php'
+			'page'		=> 'empty.twig.php'
 		],
 		'about'	=> [
 			'link'		=> 'О сайте',
 			'href'		=> '/?action=Index&page=about',
 			'title' 	=> 'О САЙТЕ',
 			'css' 		=> 'about.css',
-			'content'	=> 'about.twig.php'
+			'page'		=> 'about.twig.php'
 		],
 		'contacts'	=> [
 			'link'		=> 'Контакты',
 			'href'		=> '/?action=Index&page=contacts',
 			'title' 	=> 'КОНТАКТЫ',
 			'css' 		=> 'contacts.css',
-			'content'	=> 'contacts.twig.php'
+			'page'		=> 'contacts.twig.php'
 		],
 		'location' 	=> [
 			'link'		=> '',
 			'href'		=> '',
 			'title' 	=> '',
 			'css' 		=> 'location.css',
-			'content'	=> 'location.twig.php'
+			'page'		=> 'location.twig.php'
 		]
 ]; 

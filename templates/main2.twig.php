@@ -1,8 +1,32 @@
-<div class="container-fluid main">
+{% extends 'index.twig.php' %}
+
+{% block head %}
+	{{ parent() }}
+	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
+	 <script>
+	window.addEventListener('resize', function(event){
+			press();
+	});
+	
+	function press() {
+		var width = $(window).width();
+			document.getElementById("data").innerHTML = "Window width: " + width;
+			var container = width - 50;
+			//alert(container + "px");
+			document.getElementById("tmp").style.width = container + "px";
+			document.getElementById("container").innerHTML = "Window width: " + document.getElementById("tmp").style.width;
+	}
+	 </script>
+{% endblock %}
+
+{% block content %}
+<div class="main" id="tmp">
+
 	<h1 id="title">НОВАЯ ГЛАВНАЯ СТРАНИЦА</h1>
 	<h2 id="subtitle">Невада. Юта. Аризона. Калифорния.<br>Национальные парки.</h2>
-  
-
+	<h2 id="data" style="color: white;">Window width: </h2>
+	<h2 id="container" style="color: white;">Container width: </h2>
+	
 	<div class="block block1">
 		<h2>Парк Секвой</h2>
 		<img src="templates/media/sequoia.jpg" width="320px"/>
@@ -30,6 +54,16 @@
 		<a class="button" href="?ctrl=Index&action=Location&location=gc">Подробнее</a>
 	</div>
 
+	<div class="block block4">
+		<h2>Озеро Пауэлл</h2>
+		<img src="templates/media/horseshoe.jpg" width="320px"/>
+		<p>	В окрестностях города Пэйдж (Page, AZ) расположено множество интересных мест. Потрясающий цвет озера Пауэлл (Powell), 
+			можно не только любоваться но и искупаться - ни с чем не сравнимое удоавольствие в 40 градусную жару! ...
+		</p>
+		<a class="button" href="?ctrl=Index&action=Location&location=page">Подробнее</a>
+	</div>
+
+	
 	<div class="block block4">
 		<h2>Озеро Пауэлл</h2>
 		<img src="templates/media/page.jpg" width="320px"/>
@@ -81,8 +115,6 @@
 		<p>Каньон Брайс (Bryce Canyon) - территория каменных изваяний Худус. По легенде индейцев Навахо Худус - души умерших. Кто и зачем собирает армию мертвых в каньоне неизвестно ...</p>
 		<a class="button" href="?ctrl=Index&action=Location&location=bryce">Подробнее</a>
 	</div>
-
-
 </div>
-	
+{% endblock %}	
 

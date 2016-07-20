@@ -1,3 +1,11 @@
+{% extends 'index.twig.php' %}
+
+{% block head %}
+	{{ parent() }}
+	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
+{% endblock %}
+
+{% block content %}
 <div class="container main">
 	<h1 id="title">Путеводитель<br>по юго-западу США</h1>
 	<h2 id="subtitle">Невада. Юта. Аризона. Калифорния.<br>Национальные парки.</h2>
@@ -87,5 +95,6 @@
 
 </div>
 </div>
+{% endblock %}
 	
 
