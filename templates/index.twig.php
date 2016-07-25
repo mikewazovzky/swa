@@ -29,10 +29,9 @@
 <!-- Begin page content -->
 {% include 'header.twig.php' %}
 
-<div class="container index">
-	{% block content %}
-	{% endblock %}
-</div>
+{% block content %}
+{% endblock %}
+
 
 {% include 'footer.twig.php' %}
 

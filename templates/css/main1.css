@@ -1,12 +1,12 @@
 .main {
-	width: 990px;
+	width: 960px;
 	margin: 0 auto;
 }
 .hmenu {
-  background-color: #667292;
+  background-color: #303040;
 }
 body {
-	min-height: 1800px;	
+	min-height: 1500px;	
 	background-image: url("../media/skyisle.jpg");
 	background-repeat: no-repeat;	
 	background-position: left top;
@@ -18,7 +18,7 @@ body {
 	color: #fff;
 	line-height: 0.9em;
 	text-align: center;
-	margin: 90px 0 0 0;
+	margin: 50px 0 0 0;
 }
 /******************** Page Subtitle *************************/
 #subtitle {
@@ -29,14 +29,12 @@ body {
 	margin: 20px 0 30px 0;
 }
 /******************* Block Element Style *******************/
-.block {
-	margin-bottom: 0 auto 5px auto;	
+.col-sm-4 {
+	margin-bottom: 5px;	
 	padding: 0;
 	height: 460px;
 	width: 320px;
 	opacity: 0.8; 
-	float: left;
-	position: relative;
 }
 h2 { 	
 	text-align: center; 
@@ -54,10 +52,10 @@ p   {
 	padding: 5px 10px;
 	border: 3px solid black;
 	width: 100px;
- 	position: absolute;
+	position: absolute;
 	bottom: 10px;
-	left: 100px; 	
-} 
+	left: 100px;	
+}
 .button:hover {
 	background-color: #000;
 	color: white;
