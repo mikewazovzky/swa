@@ -1,5 +1,4 @@
 .main {
-	width: 990px;
 	margin: 0 auto;
 }
 .hmenu {
@@ -30,7 +29,7 @@ body {
 }
 /******************* Block Element Style *******************/
 .block {
-	margin-bottom: 0 auto 5px auto;	
+	margin: 0 auto 5px auto;	
 	padding: 0;
 	height: 460px;
 	width: 320px;

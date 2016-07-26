@@ -81,13 +81,14 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 		// 	имя css файла ('css')
 		$data = $this->pagesdata[$page];
 		$data['menu'] = $this->menu;
+		$data['locations'] = $this->locationsdata;
 		
 		// подготовить для шаблона дополнительные данные для location
-		if($page == 'location') {
-			$data['title'] = $this->locationsdata[$location]['name'];
-			$data['img']   = $this->locationsdata[$location]['img'];
-			$data['location'] = 'locations/' . $location . '.twig.php';
-		}
+		//if($page == 'location') {
+		//	$data['title'] = $this->locationsdata[$location]['name'];
+		//	$data['img']   = $this->locationsdata[$location]['img'];
+		//	$data['location'] = 'locations/' . $location . '.twig.php';
+		//}
 		// вызвать шаблон и передать ему данные 
 		$this->view->display($data['page'], $data);
 	}
