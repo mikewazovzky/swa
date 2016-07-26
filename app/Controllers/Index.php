@@ -9,20 +9,19 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	/**
 	 * @var array $actions - list of available actions 
     **/	
-	protected $actions = ['Index', 'Location', 'Feedback'];  // list of available actions
-	protected $menu = []; 									 // список элементов меню
-	
+	protected $actions = ['Index', 'Location', 'Feedback']; // list of available actions
+	protected $menu = []; 									// список элементов меню
 	protected $pages = []; 									// list of available pages
 	protected $pagesdata = [];								// информация о страницах сайта
-	
 	protected $locations = [];								// list of available locations
 	protected $locationsdata = [];							// информация о locations
 	
 	public function __construct()
 	{
 		parent::__construct();
-		// читаем из файла информацию о страницах файла - вынести в отдельный метод INIT
-		$this->pagesdata = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded!!
+		// читаем из файла информацию о страницах файла (вынести в отдельный метод init() ?)
+		$this->pagesdata = include(__DIR__ . '/../../data/pages.php');	        // path to pages hardcoded
+		// формируем меню и список доступных страниц 
 		foreach($this->pagesdata as $page => $data) {
 			$this->pages[] = $page;
 			$this->menu[$page] = ['link' => $data['link'], 'href' => $data['href']];
@@ -30,6 +29,7 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 		}
 		// читаем из файла информацию о локациях 
 		$this->locationsdata  = include(__DIR__ . '/../../data/locations.php');
+		// формируем список доступных locations
 		foreach($this->locationsdata as $location => $data)	{
 			$this->locations[] = $location;
 		}
@@ -52,9 +52,11 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	protected function actionIndex()
 	{
 		$page = $_GET['page'] ?? 'main';
+		
 		if(!in_array($page, $this->pages)) {
 			throw new NodataException('Запрошена несуществующая страница:  ' . $page . '.');
 		}
+		
 		$this->loadPage($page);
 	}
 	/**
@@ -63,9 +65,11 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	protected function actionLocation()
 	{
 		$location = $_GET['location'] ?? '';
+		
 		if(!in_array($location, $this->locations)) {
 			throw new NodataException('Запрошен несуществующий отчет:  ' . $location . '.');
 		}
+		
 		$this->loadPage('location', $location);
 	}
 
@@ -76,19 +80,17 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 	{
 		
 		// подготовить для шаблона данные для страницы: 
-		// 	заголовок('title'), 
 		// 	имя twig шаблона ('page') 
 		// 	имя css файла ('css')
 		$data = $this->pagesdata[$page];
 		$data['menu'] = $this->menu;
 		$data['locations'] = $this->locationsdata;
 		
-		// подготовить для шаблона дополнительные данные для location
-		//if($page == 'location') {
-		//	$data['title'] = $this->locationsdata[$location]['name'];
-		//	$data['img']   = $this->locationsdata[$location]['img'];
-		//	$data['location'] = 'locations/' . $location . '.twig.php';
-		//}
+		// подготовить для шаблона 'location.twig.php' дополнительные данные (title и content) для отчета (location)
+		if($page == 'location') {
+			$data['title'] = $this->locationsdata[$location]['title'];
+			$data['content'] = $this->locationsdata[$location]['content'];;
+		}
 		// вызвать шаблон и передать ему данные 
 		$this->view->display($data['page'], $data);
 	}

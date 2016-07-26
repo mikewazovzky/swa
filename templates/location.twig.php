@@ -2,11 +2,11 @@
 
 {% block head %}
 	{{ parent() }}
-	 <link rel="stylesheet" type="text/css" href="templates/css/{{css}}">
+	 <link rel="stylesheet" type="text/css" href="templates/css/location.css">
 {% endblock %}
 
 {% block content %}
 <div class="container location">
-	{% include location %}
+	{% include content %}
 </div>
 {% endblock %}

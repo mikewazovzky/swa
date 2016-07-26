@@ -7,14 +7,7 @@ return ['main'	=> [
 			'css' 		=> 'main.css',
 			'page'		=> 'main.twig.php'
 		],
-/* 		'main2'	=> [
-			'link'		=> 'НОВАЯ',
-			'href'		=> '/?action=Index&page=main2',
-			'title' 	=> 'НОВАЯ ГЛАВНАЯ СТРАНИЦА',
-			'css' 		=> 'main2.css',
-			'page'		=> 'main2.twig.php'
-		],
- */		'news'	=> [
+		'news'	=> [
 			'link'		=> 'Новости',
 			'href'		=> '/?action=Index&page=news',
 			'title' 	=> 'НОВОСТИ',
