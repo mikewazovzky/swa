@@ -86,10 +86,14 @@ class Index extends \Mikewazovzky\Lib\MVC\Controller
 		$data['menu'] = $this->menu;
 		$data['locations'] = $this->locationsdata;
 		
-		// подготовить для шаблона 'location.twig.php' дополнительные данные (title и content) для отчета (location)
+		// подготовить для шаблона 'location.twig.php' дополнительные данные: title, content, imgs(массив ссылок на фото) для отчета (location)
 		if($page == 'location') {
 			$data['title'] = $this->locationsdata[$location]['title'];
-			$data['content'] = $this->locationsdata[$location]['content'];;
+			$data['content'] = $this->locationsdata[$location]['content'];
+			
+			$imgs  = include(__DIR__ . '/../../data/imgs.php');
+			$data[imgs] = $imgs[$location];
+
 		}
 		// вызвать шаблон и передать ему данные 
 		$this->view->display($data['page'], $data);
