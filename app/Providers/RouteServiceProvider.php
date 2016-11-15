@@ -26,6 +26,10 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
+		
+		Route::model('news', 'App\Article');
+		
+		
     }
 
     /**
