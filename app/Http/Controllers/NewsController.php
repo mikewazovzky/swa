@@ -55,4 +55,12 @@ class NewsController extends Controller
 		
 		return redirect('news');
 	}
+		
+	public function destroy(Article $article)
+	{
+		$article->delete();
+		
+		return redirect('news');
+	}
+	
 }

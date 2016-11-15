@@ -17,7 +17,9 @@ class MustBeAdministrator
     {
         $user = $request->user();
 		
-		if ($user and $user->isAdmin()) {
+		
+		
+		if ($user && $user->isAdmin()) {
 			return $next($request);
 		}
 		
