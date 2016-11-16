@@ -36,10 +36,9 @@
 	<h2 id="data" style="color: white;">Window width: </h2>
 	<h2 id="container" style="color: white;">Container width: </h2>
 
-
-	<div class="block" style="background: red;">
-		<h2>Location block</h2>
-	</div>
+	@foreach($locations as $location)
+		@include('pages.locationshort')
+	@endforeach	
 
 
 </div>
