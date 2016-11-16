@@ -31,9 +31,8 @@ class PagesController extends Controller
 	
 	public function location($location)
 	{
-		//return view('pages.locations.' . $location);
-		
 		return view('pages.locations.' . $location, compact('location'));
+		//return $location;
 		
 	}
 }

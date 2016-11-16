@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@section('head')
+	<!-- Styles -->
+    <link href="/css/contact.css" rel="stylesheet">
+@stop
+
 @section('content')
 <div class="container contacts">
 

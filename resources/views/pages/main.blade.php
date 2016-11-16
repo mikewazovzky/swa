@@ -22,19 +22,25 @@
 			var container = width - width % 320;
 			//alert(container + "px");
 			document.getElementById("tmp").style.width = container + "px";
-			document.getElementById("container").innerHTML = "Window width: " + document.getElementById("tmp").style.width;
+			document.getElementById("container").innerHTML = "Container width: " + document.getElementById("tmp").style.width;
 	}
 	 </script>
 @stop
 
 
 @section('content')
+	
+<span id="data" style="color: white;"></span>
+/
+<span id="container" style="color: white;"></span>
+
 <div class="main" id="tmp">
 
-	<h1 id="title">НОВАЯ ГЛАВНАЯ СТРАНИЦА</h1>
+
+	
+	<h1 id="title">Путеводитель<br>по юго-западу США</h1>
 	<h2 id="subtitle">Невада. Юта. Аризона. Калифорния.<br>Национальные парки.</h2>
-	<h2 id="data" style="color: white;">Window width: </h2>
-	<h2 id="container" style="color: white;">Container width: </h2>
+
 
 	@foreach($locations as $location)
 		@include('pages.locationshort')

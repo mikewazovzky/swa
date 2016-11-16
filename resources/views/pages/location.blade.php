@@ -7,7 +7,7 @@
 @section('content')
 	
 	<div class="container location">
-		<h1> {{ $location }} </h1>
+	<h1> {{ $location }}</h1>
 		@yield('location')
 	</div>
 @stop

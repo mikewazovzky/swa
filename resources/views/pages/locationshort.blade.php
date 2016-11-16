@@ -6,6 +6,6 @@
 
 	<p>	{{ $location->description }}</p>
 
-	<a class="button" href="/?ctrl=Index&action=Location&location={{ $location->id }}">Подробнее</a>
+	<a class="button" href="{{ action('PagesController@location', $location->id) }}">Подробнее</a>
 
 </div>		

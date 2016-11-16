@@ -1,9 +1,15 @@
 @extends('layouts.app')
 
+@section('head')
+	<!-- Styles -->
+    <link href="/css/about.css" rel="stylesheet">
+@stop
+
+
 @section('content')
 <div class="container about">
 
-	<img src="templates/media/messa.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>
+	<img src="media/messa.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>
 
 	<p>	Этот сайт создан в качестве учебного упражнения по использованию инструментов web разработки. Раздумывая над содержанием 
 		сайта я решил, что обучение будет более эффективным, если наполнить его информацией, которая мне самому интересна и может быть 
