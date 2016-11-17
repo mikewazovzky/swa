@@ -7,6 +7,7 @@
 	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 	
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -23,24 +24,19 @@
         ]); ?>
     </script>
 	
-    <!-- Custom styles for this template -->
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
- 	<link rel="stylesheet" type="text/css" href="/css/header.css">
- 	<link rel="stylesheet" type="text/css" href="/css/footer.css">
-	
 	@yield('head')
 	
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-fixed-top" >
+        <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
-                <div class="navbar-header" >
+                <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar">Whar's that?</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
@@ -91,11 +87,8 @@
                 </div>
             </div>
         </nav>
-		
-		<div class="content">
-			@yield('content')
-		</div>
-		
+
+        @yield('content')
     </div>
 
     <!-- Scripts -->

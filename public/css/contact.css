@@ -1,14 +1,16 @@
 body { 
 	background-color: #bbc7e7;
 }
-.contacts {
-	margin-top: 50px;
-}
+
 iframe {
 	margin: 0 auto;
 	display: block;
 }
-.center {
-	width: 500px;
+.contacts p {
+	
+}
+.contacts {
+	text-align: center;
+	width: 800px;
 	margin: 0 auto;
 }

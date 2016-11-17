@@ -24,6 +24,7 @@ Route::get('/main', 'PagesController@main');
 Route::get('/about', 'PagesController@about');
 
 Route::get('/contact', 'PagesController@contact');
+Route::post('/contact', 'PagesController@handleMessage');
 
 Route::get('/location/{location}', 'PagesController@location');
 

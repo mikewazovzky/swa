@@ -1,24 +1,6 @@
-.hmenu {
-	background: #667292;	
-	font: bold 16px "Open Sans",sans-serif;
-	text-decoration: none;
-}
-#myBrand a {
-	font-weight: normal;
-	color: #fff;	
-}
-#myNavbar a {
-	color: #b0b0d0;	
-}
-#myNavbar a:hover {
-	color: #fff;
-}
-#myNavbar a.active
-{
-	color: #fcc500;
+#myNavbar { 
+	background-color: green;
 }
 
-.disabled {
-	pointer-events: none;
-	cursor: default;
-}
+
+

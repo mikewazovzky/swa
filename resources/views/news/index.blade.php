@@ -12,15 +12,14 @@
 				<h3>
 					<a href="{{ url('/news', $article->id) }}">{{ $article->title }}</a> published at [{{ $article->published_at}}] by {{ $article->user->name }} 
 				</h3>	
-<!------------------------------------------------->					
-{!! Form::model($article, ['method' => 'DELETE', 'route' => ['news.destroy', $article->id]]) !!}
-	
-	<div class="form-group">
-		{!! Form::submit('delete', ['class' => 'btn btn-primary btn-xs']) !!}
-	</div>
 
-{!! Form::close() !!}			
-<!--------------------------------------------------->	
+				<!-- delete button -->					
+				{!! Form::model($article, ['method' => 'DELETE', 'route' => ['news.destroy', $article->id]]) !!}
+					<div class="form-group">
+						{!! Form::submit('delete', ['class' => 'btn btn-primary btn-xs']) !!}
+					</div>
+				{!! Form::close() !!}			
+				<!-------------------->	
 			
 				<div class="body">
 					{{ $article->body }}
