@@ -33,7 +33,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-fixed-top" >
+        <nav class="navbar navbar-default navbar-fixed-top navbar-custom" >
             <div class="container">
                 <div class="navbar-header" >
 
@@ -66,7 +66,10 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
-                            <li><a href="#">Personal Data</a></li>
+							@if (!Auth::guest() && Auth::user()->isAdmin())						
+								<li><a href="/users">Users</a></li>
+							@endif                        
+							<li><a href="{{ url('/users/' . Auth::user()->id . '/edit') }}">Personal Data</a></li>
 							<li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

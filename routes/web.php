@@ -12,20 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('main');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');
 
 Route::get('/main', 'PagesController@main');
-
 Route::get('/about', 'PagesController@about');
-
 Route::get('/contact', 'PagesController@contact');
 Route::post('/contact', 'PagesController@handleMessage');
-
 Route::get('/location/{location}', 'PagesController@location');
 
 Route::resource('/news', 'NewsController');
+
+Route::resource('/users', 'UsersController');

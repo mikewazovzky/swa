@@ -23,5 +23,6 @@ return ['main'	=> [
 			'href'		=> '/contact',
 			'title' 	=> 'КОНТАКТЫ',
 			'css' 		=> 'contacts.css'
-		]
+		],
+
 ]; 

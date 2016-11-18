@@ -75,12 +75,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    SWA
+                    South West Adventures
                 </div>
-
+			
                 <div class="links">
-                    <a href="/main">Main</a>
-                    <a href="/about">About</a>
+					<a href="/main">Main</a>
+				    <a href="/about">About</a>
                     <a href="/contact">Contact</a>
                     <a href="/news">News</a>
                     <a href="/users">Users</a>

@@ -23,7 +23,7 @@ class MustBeAdministrator
 			return $next($request);
 		}
 		
-		return redirect('news');
+		return redirect('main');
 		
     }
 }
