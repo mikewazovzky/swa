@@ -1,6 +1,7 @@
 @extends('pages.location')
 
 @section('location')
+
 <!-------------------------- Content Area ---------------------------------------------->	
 <h1>Парк гигантских деревьев – Sequoia National Park</h1>
 
@@ -50,7 +51,7 @@
 
 <p>	Карта парка из официального буклета</p>
 
-<img class="hlarge" alt="../media/sequoia_trail_map.jpg" style="border: none;" src="../media/sequoia_trail_map.jpg"/>
+<img class="hlarge img-responsive" alt="/media/sequoia_trail_map.jpg" src="/media/sequoia_trail_map.jpg"/>
 
 <p>	По территории парка курсируют шаттлы, но я не понял прелести перемещения на них, т.к. несмотря на пик туристического сезона 
 	народу и автомобилей в парке было не много, на всех парковках было достаточно свободных мест. </p>
@@ -75,65 +76,65 @@
 	<strong>Moro Rock trail</strong> длиной туда и обратно 0.6 мили (1 километр) с набором высоты 300 футов (90 метров) и 
 	открывается вид на окрестности парка.</p>
 
-<? $imgs->imgsSingle('sequoia-101'); ?>
+<img class="hlarge img-responsive" alt="sequoia-101" src="http://i.imgur.com/rvq5XFa.jpg"/>	
 
 <div class="small">
-	<? $imgs->imgsSet('sequoia-103', 2); ?>
-	<? $imgs->imgsSet('sequoia-104', 2); ?>
-	<? $imgs->imgsSet('sequoia-105', 2); ?>	
+	<a href=""><img class="img img200" alt="sequoia-103" src="http://i.imgur.com/IAVh07d.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-104" src="http://i.imgur.com/5vauMiz.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-105" src="http://i.imgur.com/nMLYlRi.jpg?1"/></a>	
 </div>
 
-<? $imgs->imgsSingle('sequoia-102'); ?>
+<img class="hlarge img-responsive" alt="sequoia-102" src="http://i.imgur.com/CL1e0mG.jpg"/>
 
 <p>Совсем недалеко от скалы находится туннель в дереве – <strong>Tunnel Log</strong>.</p>
 
-<? $imgs->imgsSingle('sequoia-106'); ?>
+<img class="hlarge img-responsive" alt="sequoia-106" src="http://i.imgur.com/dahaToI.jpg"/>
 
 <p>	Здесь уже довольно много секвой, выбираю себе местечко для парковки, чтобы прогулятся и рассмотреть их как следует.</p>
 
-<div class="small_300">
-	<? $imgs->imgsSet('sequoia-110', 3); ?>
-	<? $imgs->imgsSet('sequoia-111', 3); ?>
-	<? $imgs->imgsSet('sequoia-112', 3); ?>	
+<div class="small">
+	<a href=""><img class="img img400" alt="sequoia-110" src="http://i.imgur.com/E6vibeY.jpg"/></a>	
+	<a href=""><img class="img img400" alt="sequoia-111" src="http://i.imgur.com/z8Y93Co.jpg"/></a>	
+	<a href=""><img class="img img400" alt="sequoia-112" src="http://i.imgur.com/UssmMEG.jpg"/></a>
 </div>
 
 <p>	Следующая остановка – Музей Гигантских Деревьев (<strong>Giant Forest  Museum</strong>). Тропа ведущая вокруг лужайки 
 	окруженной секвойями называется <strong>Big Tree Trail</strong> и делает петлю длиной 1.6 мили (2.6 километра). Чем дальше в 
 	лес, тем более впечатляющие попадаются экземпляры деревьев, здесь они становятся действительно огромными.</p>
 
-<? $imgs->imgsSingle('sequoia-163'); ?>
+	<img class="hlarge img-responsive" alt="sequoia-163" src="http://i.imgur.com/HB1obAJ.jpg?1"/>
 
 <div class="small">
-	<? $imgs->imgsSet('sequoia-114', 4); ?>
-	<? $imgs->imgsSet('sequoia-119', 4); ?>
-	<? $imgs->imgsSet('sequoia-121', 4); ?>	
+	<a href=""><img class="img img200" alt="sequoia-114" src="http://i.imgur.com/4RDiYze.jpg?1"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-119" src="http://i.imgur.com/UWcELn0.jpg?1"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-121" src="http://i.imgur.com/TQCThrg.jpg?1"/></a>
 </div>
 
 <p>Для масштаба – люди на фоне деревьев.</p>
 
-<? $imgs->imgsSingle('sequoia-120'); ?>
+<img class="hlarge img-responsive" alt="sequoia-120" src="http://i.imgur.com/PHaaamq.jpg"/>
 
 <div class="small">
-	<? $imgs->imgsSet('sequoia-136', 5); ?>
-	<? $imgs->imgsSet('sequoia-137', 5); ?>	
+	<a href=""><img class="img img300" alt="sequoia-136" src="http://i.imgur.com/TsSxTA3.jpg"/></a>	
+	<a href=""><img class="img img300" alt="sequoia-137" src="http://i.imgur.com/KfkU7xF.jpg?1"/></a>	
 </div>
 
 <p>Ствол каждого дерева уникален, они узнаваемы, наиболее старые и уважаемые имеют собственные имена.</p>
 
 <div class="small">
-	<? $imgs->imgsSet('sequoia-156', 6); ?>
-	<? $imgs->imgsSet('sequoia-169', 6); ?>
-	<? $imgs->imgsSet('sequoia-186', 6); ?>	
+	<a href=""><img class="img img200" alt="sequoia-156" src="http://i.imgur.com/H2HaFim.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-169" src="http://i.imgur.com/q0cDAib.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-186" src="http://i.imgur.com/XX6tkRp.jpg"/></a>		
 </div>
 
 <p>	Во время прогулка вокруг полянки замечаю на дереве какое-то станное существо, напоминающее сильно переевшую белку. 
 	Как подсказали позже местные жители - мармот.</p>
 
-<? $imgs->imgsSingle('sequoia-129'); ?>
+<img class="hlarge img-responsive" alt="sequoia-129" src="http://i.imgur.com/WqSc8WU.jpg"/>
 
-<div class="small_400">
-	<? $imgs->imgsSet('sequoia-128', 7); ?>
-	<? $imgs->imgsSet('sequoia-131', 7); ?>
+<div class="small">
+	<a href=""><img class="img img400" alt="sequoia-128" src="http://i.imgur.com/5ct1jxQ.jpg"/></a>	
+	<a href=""><img class="img img400" alt="sequoia-131" src="http://i.imgur.com/fXXMEcN.jpg?2"/></a>		
 </div>
 
 <p>	На меня сильное впечатление произвел возраст деревьев, по оценке ученых он составляет от 1.5 до 6 тысяч лет.  Представляю, 
@@ -142,12 +143,12 @@
 <p>	Следующая остановка – Генерал Шерман (<strong>General Sherman Tree</strong>) – главная официальная достопримечательность 
 	парка. В этой его части больше всего туристов.</p>
 
-<? $imgs->imgsSingle('sequoia-176', 'vlarge'); ?>
+<img class="vlarge" alt="sequoia-176" src="http://i.imgur.com/GCHqZeC.jpg"/>
 
 <div class="small">
-	<? $imgs->imgsSet('sequoia-177', 8); ?>
-	<? $imgs->imgsSet('sequoia-179', 8); ?>
-	<? $imgs->imgsSet('sequoia-181', 8); ?>
+	<a href=""><img class="img img200" alt="sequoia-177" src="http://i.imgur.com/AyFfWKQ.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-179" src="http://i.imgur.com/jbM4Wtx.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-181" src="http://i.imgur.com/aBhtY6u.jpg"/></a>	
 </div>
 
 <p>	Секвойи являются самыми большими деревьями в мире. Критерием на основании которого их сравнивают между собой, как ни странно,
@@ -160,34 +161,34 @@
 	что такое возможно. Статьи и фотографии в газетах были объявлены фальшивкой.  Несколько деревьев были распилены на пеньки и 
 	привезены в Нью Йорк для демонстрации.</p>
 
-<?$imgs->imgsSingle('sequoia-185', 'vlarge'); ?>
+<img class="vlarge" alt="sequoia-185" src="http://i.imgur.com/2rWi0YZ.jpg"/>
 
 <p>	В газетах регулярно появляются сообщения о лесных лесных пожарах в Калифорнии,  после посещения парка они воспринимаются 
 	совсем по другому, горящие уникальные древние деревья, являющиеся достоянием человечества, очень жаль. Пораженных огнем 
 	деревьев в парке достаточно много. По мнению ученых большого ущерба деревьям пожары нанести не могут и иногда бывают даже 
 	полезны для поддержания баланса в парке.</p>
 
-<?$imgs->imgsSingle('sequoia-166', 'vlarge'); ?>
+<img class="vlarge" alt="sequoia-166" src="http://i.imgur.com/bKRoRrw.jpg"/>
 
 <p>	Деревья периодически падают. У них не очень развита корневая система и при определенных условиях она не может удержать 
 	гиганта.  Домик первого смотрителя парка был разрушен упавшим на него деревом,  в парке есть стенд с фотографиями "было - 
 	стало".</p>
 
 <div class="small">
-	<? $imgs->imgsSet('sequoia-159', 9); ?>
-	<? $imgs->imgsSet('sequoia-146', 9); ?>
-	<? $imgs->imgsSet('sequoia-160', 9); ?>
+	<a href=""><img class="img img200" alt="sequoia-159" src="http://i.imgur.com/0iTAteo.jpg?1"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-146" src="http://i.imgur.com/AiVHmBh.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-160" src="http://i.imgur.com/AejCPUS.jpg"/></a>	
 </div>
 
 <p>	Следующая цель – Информационный Центр Лоджпул (<strong>Lodgepole Visitor Center</strong>).  Здесь расположен большой кэмпинг,
 	от которого в разные стороны расходятся туристические тропы. Я направляюсь вдоль реки к водопадам Токопах (<strong>Tokopah 
 	Fall</strong>). Длина тропы туда и обратно 3.4 мили (5.5 километров) с набором высоты 600 футов (180 метров).</p>
 
-<? $imgs->imgsSingle('sequoia-141'); ?>
+<img class="hlarge img-responsive" alt="sequoia-141" src="http://i.imgur.com/rAfOhGP.jpg"/>
 
 <p>Водопады (самые высокие в парке)  меня не очень впечатлили, но от прогулки вполне можно получить удовольствие.</p>
 
-<? $imgs->imgsSingle('sequoia-189', 'vlarge'); ?>
+<img class="vlarge" alt="sequoia-189" src="http://i.imgur.com/uDuKp3v.jpg"/>
 
 <p>	Идущий на встречу парень предупреждает: “ярдов через двести смотри вверх на склон, там медведь”. Пока я задрав голову 
 	соображаю,  много ли это в понятных мне величинах, а заодно думаю стоит ли идти дальше или разворачиваться и бежать обратно,  
@@ -198,12 +199,11 @@
 
 <p>Здесь должны были быть медведи.</p>
 
-<? $imgs->imgsSingle('sequoia-191', 'vlarge'); ?>
+<img class="vlarge" alt="sequoia-191" src="http://i.imgur.com/G6r6Woc.jpg"/>
 
 <p>	Медведи это одна из местных достопримечательностей, их часто видят в парке, они регулярно воруют еду у кемперов.  
 	В лагере висит знак, сообщающий о случаях нападениях медведей.  “На этой неделе медведи вторгались в лагерь 3 раза.” </p>
 
-<? $imgs->imgsSingle('sequoia-144', 'hlarge_60'); ?>
 
 <p>	Все мусорки в парке закрытого типа со специальными задвижками, чтобы у медведей не было соблазна воровать из них отходы.</p>
 
@@ -211,7 +211,7 @@
 	вскрыть машину и добыть еду медведь справляется. Есть плакаты: Не приближаться к медведям!  – <strong>Do NOT approach 
 	bears!</strong></p>
 
-<? $imgs->imgsSingle('sequoia-115', 'hlarge_60'); ?>
+<img class="hlarge img-responsive img400" alt="sequoia-115" src="http://i.imgur.com/FHiwFpB.jpg"/>
 
 <p>	На волновавший меня вопрос  “Что делать если “bear approachs you?” (медведь приближается к тебе),  я нашел ответ на 
 	информационном стенде возле палаточного лагеря – “нужно собраться в кучу, громко кричать и стучать кастрюлями”.  
@@ -225,7 +225,7 @@
 	
 <p>Вот гигантская шишка. Справа.</p>
 
-<? $imgs->imgsSingle('sequoia-193', 'vlarge'); ?>
+<img class="vlarge" alt="sequoia-193" src="http://i.imgur.com/N7wO0W7.jpg"/>
 
 <p>	С вершины открываются панорамные виды на соседние склоны.</p>
 
@@ -236,16 +236,16 @@
 	прогулка (уже начинает смеркаться) в роще гигантских деревьев среди которых расположен Генерал Грант (<strong>General 
 	Grant</strong>) – второе по размеру (по объему) дерево в мире.</p>
 	
-<? $imgs->imgsSingle('sequoia-151', 'vlarge'); ?>
+<img class="vlarge" alt="sequoia-151" src="http://i.imgur.com/dgUyxu3.jpg"/>
 
 <p>	Помимо медведей и мармотов я встретил огромное количество бурундуков (во всех частях парка) и белок.  
 	В <strong>Lоdgepole</strong> меня предупреждали, что впереди  на тропе есть олень, но или он услышал меня и убежал, или я 
 	не внимательно смотрел. </p>
 
 <div class="small">
-	<? $imgs->imgsSet('sequoia-143', 10); ?>
-	<? $imgs->imgsSet('sequoia-116', 10); ?>
-	<? $imgs->imgsSet('sequoia-118', 10); ?>
+	<a href=""><img class="img img200" alt="sequoia-143" src="http://i.imgur.com/VGR44tP.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-116" src="http://i.imgur.com/td9aufm.jpg"/></a>	
+	<a href=""><img class="img img200" alt="sequoia-118" src="http://i.imgur.com/lBNIjoS.jpg"/></a>	
 </div>
 
 <p>	На этом мой день в парке закончился, в северной части парка на дороге ведущей в <strong>Cedar Grove</strong> я не был. 

@@ -11,16 +11,18 @@ body {
 .vlarge { 	display: block;	margin: 5px auto; 	border: 3px solid black; height: 800px;	}
 
 .small {
-	margin: 0 auto;
 	text-align: center; 
 }
-.small img {
-	height: 180px; 
-	margin: 3px;
-	border: 3px solid black; 
+.img {
+	margin: 2px;
+	border: 2px solid black; 
 }
 
+.v200  	{ margin-left: 10px; margin-right: 10px;	width: 250px;	border: 5px solid black; float: right;} 
 
+.img200  { height: 200px; }
+.img300  { height: 300px; }
+.img400  { height: 400px; }
 
 
 .viewpoint th, td {border: 1px solid black; padding: 0 10px 0 10px;}

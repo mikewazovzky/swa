@@ -173,9 +173,9 @@
 	протяженностью 10 километров.</p>
 
 <div class="small">
-	<a href="http://i.imgur.com/RVD4pLK.jpg"><img alt="330" title="grandcanyon-330" src="http://i.imgur.com/RVD4pLK.jpg"/></a>
-	<a href="http://i.imgur.com/8dgNhlz.jpg"><img alt="331" title="grandcanyon-331" src="http://i.imgur.com/8dgNhlz.jpg"/></a>
-	<a href="http://i.imgur.com/FWF902J.jpg"><img alt="349" title="grandcanyon-349" src="http://i.imgur.com/FWF902J.jpg"/></a>
+	<a href="http://i.imgur.com/RVD4pLK.jpg"><img class="img img200" alt="330" title="grandcanyon-330" src="http://i.imgur.com/RVD4pLK.jpg"/></a>
+	<a href="http://i.imgur.com/8dgNhlz.jpg"><img class="img img200" alt="331" title="grandcanyon-331" src="http://i.imgur.com/8dgNhlz.jpg"/></a>
+	<a href="http://i.imgur.com/FWF902J.jpg"><img class="img img200" alt="349" title="grandcanyon-349" src="http://i.imgur.com/FWF902J.jpg"/></a>
 </div>
 
 <p>	Звуки в ущелье разносятся далеко и я периодически слышу топот копыт и позвякивание колокольчиков, чуть позже увидел внизу 
@@ -215,9 +215,9 @@
 <p>	Каньон оказался многослойным, по мере спуска вниз пейзаж вокруг существенно меняется постепенно открывая новые уровни.</p>
 
 <div class="small">
-	<a href="http://i.imgur.com/eC7u5sC.jpg"><img alt="342" title="grandcanyon-342" src="http://i.imgur.com/eC7u5sC.jpg"/></a>	
-	<a href="http://i.imgur.com/JYWiAzG.jpg"><img alt="352" title="grandcanyon-352" src="http://i.imgur.com/JYWiAzG.jpg"/></a>
-	<a href="http://i.imgur.com/SKiEElb.jpg"><img alt="341" title="grandcanyon-341" src="http://i.imgur.com/SKiEElb.jpg"/></a>
+	<a href="http://i.imgur.com/eC7u5sC.jpg"><img class="img img200" alt="342" title="grandcanyon-342" src="http://i.imgur.com/eC7u5sC.jpg"/></a>	
+	<a href="http://i.imgur.com/JYWiAzG.jpg"><img class="img img200" alt="352" title="grandcanyon-352" src="http://i.imgur.com/JYWiAzG.jpg"/></a>
+	<a href="http://i.imgur.com/SKiEElb.jpg"><img class="img img200" alt="341" title="grandcanyon-341" src="http://i.imgur.com/SKiEElb.jpg"/></a>
 </div>
 
 
@@ -262,7 +262,6 @@
 
 <img class="hlarge img-responsive" alt="347" title="grandcanyon-347" src="http://i.imgur.com/digLf9D.jpg"/>
 
-
 <img class="hlarge img-responsive" alt="353" title="grandcanyon-353" src="http://i.imgur.com/9oaI7Vv.jpg"/>
 
 <img class="hlarge img-responsive" alt="369" title="grandcanyon-369" src="http://i.imgur.com/VZDlOsg.jpg"/>
@@ -270,14 +269,12 @@
 <p>	Через реку можно перейти по навесному мосту.</p>
 
 <div class="small">
-
-
-	<a class="example-link" href="http://i.imgur.com/ux4FiEn.jpg" data-lightbox="example-set-3" data-title="Grand Canyon">
-		<img alt="356" title="grandcanyon-356" src="http://i.imgur.com/ux4FiEn.jpg"/></a>	
-	<a class="example-link" href="http://i.imgur.com/DMojwww.jpg" data-lightbox="example-set-3" data-title="Grand Canyon">
-		<img alt="362" title="grandcanyon-362" src="http://i.imgur.com/DMojwww.jpg"/></a>
-	<a class="example-link" href="http://i.imgur.com/dAOlnDg.jpg" data-lightbox="example-set-3" data-title="Grand Canyon">
-		<img alt="357" title="grandcanyon-357" src="http://i.imgur.com/dAOlnDg.jpg"/></a>
+	<a href="http://i.imgur.com/ux4FiEn.jpg">
+		<img class="img img200" alt="356" title="grandcanyon-356" src="http://i.imgur.com/ux4FiEn.jpg"/></a>	
+	<a href="http://i.imgur.com/DMojwww.jpg">
+		<img class="img img200" alt="362" title="grandcanyon-362" src="http://i.imgur.com/DMojwww.jpg"/></a>
+	<a href="http://i.imgur.com/dAOlnDg.jpg">
+		<img class="img img200" alt="357" title="grandcanyon-357" src="http://i.imgur.com/dAOlnDg.jpg"/></a>
 </div>
 
 <p>	Почти в самом низу мне встретилась группа ковбоев на мулах, выглядят колоритно</p>
@@ -339,15 +336,9 @@
 <br>
 
 <div class="small">
-
-
-	<a class="example-link" href="http://i.imgur.com/D9ZfUzr.jpg" data-lightbox="example-set-4" data-title="Grand Canyon">
-		<img alt="379" title="grandcanyon-379" src="http://i.imgur.com/D9ZfUzr.jpg"/></a>	
-	<a class="example-link" href="http://i.imgur.com/sJGAs6Y.jpg" data-lightbox="example-set-4" data-title="Grand Canyon">
-		<img alt="376" title="grandcanyon-376" src="http://i.imgur.com/sJGAs6Y.jpg"/></a>
-	<a class="example-link" href="http://i.imgur.com/vlOK8cU.jpg" data-lightbox="example-set-4" data-title="Grand Canyon">
-		<img alt="385" title="grandcanyon-385" src="http://i.imgur.com/vlOK8cU.jpg"/></a>
-
+	<a href="http://i.imgur.com/D9ZfUzr.jpg"><img class="img img200" alt="379" title="grandcanyon-379" src="http://i.imgur.com/D9ZfUzr.jpg"/></a>	
+	<a href="http://i.imgur.com/sJGAs6Y.jpg"><img class="img img200" alt="376" title="grandcanyon-376" src="http://i.imgur.com/sJGAs6Y.jpg"/></a>
+	<a href="http://i.imgur.com/vlOK8cU.jpg"><img class="img img200" alt="385" title="grandcanyon-385" src="http://i.imgur.com/vlOK8cU.jpg"/></a>
 </div>
 
 <p>	Люди встречаются все чаще и постепенно их поток становится постоянным. Жарко, идти вверх гораздо труднее, по-немногу 
@@ -368,17 +359,10 @@
 	откровенным грабежом</p>
 
 <div class="small">
-
-
-	<a class="example-link" href="http://i.imgur.com/us052Mt.jpg" data-lightbox="example-set-5" data-title="Grand Canyon">
-		<img alt="378" title="grandcanyon-378" src="http://i.imgur.com/us052Mt.jpg"/></a>	
-	<a class="example-link" href="http://i.imgur.com/vkZA6GW.jpg" data-lightbox="example-set-5" data-title="Grand Canyon">
-		<img alt="377" title="grandcanyon-377" src="http://i.imgur.com/vkZA6GW.jpg"/></a>
-	<a class="example-link" href="http://i.imgur.com/nUXR2A3.jpg" data-lightbox="example-set-5" data-title="Grand Canyon">
-		<img alt="357" title="grandcanyon-357" src="http://i.imgur.com/nUXR2A3.jpg"/></a>
-	<a class="example-link" href="http://i.imgur.com/mzUFoFK.jpg" data-lightbox="example-set-5" data-title="Grand Canyon">
-		<img alt="384" title="grandcanyon-384" src="http://i.imgur.com/mzUFoFK.jpg"/></a>
-
+	<a href="http://i.imgur.com/us052Mt.jpg"><img class="img img200" alt="378" title="grandcanyon-378" src="http://i.imgur.com/us052Mt.jpg"/></a>	
+	<a href="http://i.imgur.com/vkZA6GW.jpg"><img class="img img200" alt="377" title="grandcanyon-377" src="http://i.imgur.com/vkZA6GW.jpg"/></a>
+	<a href="http://i.imgur.com/nUXR2A3.jpg"><img class="img img200" alt="357" title="grandcanyon-357" src="http://i.imgur.com/nUXR2A3.jpg"/></a>
+	<a href="http://i.imgur.com/mzUFoFK.jpg"><img class="img img200" alt="384" title="grandcanyon-384" src="http://i.imgur.com/mzUFoFK.jpg"/></a>
 </div>
 
 <p>	Некоторые просто любуются окружающим пейзажами.</p>
