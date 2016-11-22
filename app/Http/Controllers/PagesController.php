@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Location;
 use App\LocationCollection;
+use App\ImageCollection;
 use App\Mailer;
 
 class PagesController extends Controller
@@ -41,8 +41,8 @@ class PagesController extends Controller
 	
 	public function location($location)
 	{
-		return view('pages.locations.' . $location, compact('location'));
-		//return $location;
-		
+		$collection = new ImageCollection();
+		$images = $collection->get($location);
+		return view('pages.locations.' . $location, compact('location', 'images'));		
 	}
 }

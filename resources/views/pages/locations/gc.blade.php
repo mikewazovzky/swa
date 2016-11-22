@@ -446,4 +446,11 @@
 
 <p>	<a href="http://forum.awd.ru/viewtopic.php?p=4430261#p4430261">Подборка отчетов</a><strong style="color:blue;">
 	seaagal</strong> на форуме Винского, подсказавшая идею пешего похода в Каньон.</p>
+	
+<div class="small">
+	@foreach($images as $image)
+	{!! $image !!}
+	@endforeach
+</div>
+
 @stop

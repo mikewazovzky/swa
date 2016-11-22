@@ -271,4 +271,11 @@
 <p><a href = 'http://www.nps.gov/seki/index.htm'>Сайт</a> национального парка. </p>
 
 <p><a href = 'http://www.nps.gov/seki/planyourvisit/brochures.htm'>Карты</a> парка. </p>
+
+<div class="small">
+	@foreach($images as $image)
+	{!! $image !!}
+	@endforeach
+</div>
+
 @stop
