@@ -64,16 +64,43 @@ p   {
 	text-decoration: none;
 }
 
-.block1 { background: #ff6f00; }
-.block2 { background: #ff9500; }
-.block3 { background: #ffc108; }
-.block4 { background: #27a15e; }
-.block5 { background: #51de38; }
-.block6 { background: #c3d932; }
-.block7 { background: #7a79c6; }
-.block8 { background: #7d7bff; }
-.block9 { background: #6d6aff; }
-
 .footer {
   background-color: #303040;
 }
+
+/*********************** NAVIGATION *********************/
+/* navbar */
+.navbar-default {
+    background-color: #667292;
+	border-color: #667292;
+
+	font: bold 16px "Open Sans",sans-serif;
+	text-decoration: none;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #b0b0d0;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #667292;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #667292;
+}
+	
+
+
+
+
