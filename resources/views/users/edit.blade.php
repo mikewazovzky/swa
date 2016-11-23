@@ -5,7 +5,7 @@
 @section('content')	
 
 	<div class="container location">
-		<h1> Update an User</h1>
+		<h1> Update User Data</h1>
 		
 		{!! Form::model($user, ['method' => 'PATCH', 'action' => ['UsersController@update', $user->id]]) !!}
 			
