@@ -4,8 +4,9 @@
 <img src="/media/monument.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>
 
 <p>	Долина монументов - полное название парка <strong>Monument Valley Navajo Tribal Park</strong>, находится по пути из города 
-	Пэйдж (Page AZ) в Моаб (Moab, UT) - ближайший к знаменитым Аркам (<strong>Arches National Park</strong>) город. 
-	Вся информация о долине есть на 
+	Пэйдж (Page AZ) в Моаб (Moab, UT) - ближайший к знаменитым Аркам (
+	<button type="button" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#about">Arches National Park</button>
+	) город. Вся информация о долине есть на 
 	<a href="http://navajonationparks.org/htm/monumentvalleyhours.htm">официальном сайте парка</a>.</p>
 
 <p>	Несмотря на первоначальный план провести в парке вторую половину дня, обнаружив множество интересных мест в 
@@ -67,13 +68,39 @@
 		Carousel is not visible (hiddend) under xs break point.</p>
 </div>
 
+<div class="modal" id="about">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span>&times</span>
+				</button>
+				<h3 class="modal-title">Arches National Park</h3>
+			</div> <!-- Modal Header -->
+			
+			<div class="modal-body">
+				<img class="img-responsive" src="/media/arches.jpg" style="padding-bottom: 10px; "/>
+				<p>	На относительно небольшой территории парка Вы найдете замечательную 
+					коллекцию необычных природных образований - каменных арок ...
+				</p>
+			</div> <!-- Modal Body -->
+			
+			<div class="modal-footer">
+				<a href="{{ action('PagesController@location', 'arches') }}">Go to Arches National Park Page</a>
+			</div> <!-- Modal Footer -->			
+			
+		</div> <!-- Modal Content -->
+	</div> <!-- Modal Dialog -->
+</div> <!-- Modal -->
+
 @stop
 
 @section('foot')
 <script>
 	$(function() {
 		$('.carousel').carousel({
-			interval: 2000,         // sliding intervals
+			interval: 3000,         // sliding intervals
 			wrap: false,			// continue sliding after reaching last (or first) image
 			keyboard: false
 		});

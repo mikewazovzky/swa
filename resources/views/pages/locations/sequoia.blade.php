@@ -9,7 +9,7 @@
 
 <p>	(пропустить и перейти к <a href="#report">отчету</a>)</p>
 
-<img class="v200" alt="sequoia-100" title="sequoia-100" src="http://i.imgur.com/WVBzO0y.jpg"/>
+<img class="img-responsive" style="margin-left: 10px; float: right; max-height: 400px; " src="{{ $images['001']['src'] }}">
 
 <p>	Реликтовые леса гигантских деревьев – секвой покрывают склоны гор в северной части Калифорнии. Посмотреть на них можно в 
 	парке Секвой (<strong>Sequoia National Park</strong>) или расположенных севернее Секвойя Нешенал Форест (<strong>Sequoia 
@@ -51,7 +51,7 @@
 
 <p>	Карта парка из официального буклета</p>
 
-<img class="hlarge img-responsive" alt="/media/sequoia_trail_map.jpg" src="/media/sequoia_trail_map.jpg"/>
+<img class="img-responsive img-center" src="{{ $images['002']['src'] }}"/>
 
 <p>	По территории парка курсируют шаттлы, но я не понял прелести перемещения на них, т.к. несмотря на пик туристического сезона 
 	народу и автомобилей в парке было не много, на всех парковках было достаточно свободных мест. </p>
@@ -76,65 +76,68 @@
 	<strong>Moro Rock trail</strong> длиной туда и обратно 0.6 мили (1 километр) с набором высоты 300 футов (90 метров) и 
 	открывается вид на окрестности парка.</p>
 
-<img class="hlarge img-responsive" alt="sequoia-101" src="http://i.imgur.com/rvq5XFa.jpg"/>	
+<img class="img-responsive" src="{{ $images['003']['src'] }}">
 
-<div class="small">
-	<a href=""><img class="img img200" alt="sequoia-103" src="http://i.imgur.com/IAVh07d.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-104" src="http://i.imgur.com/5vauMiz.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-105" src="http://i.imgur.com/nMLYlRi.jpg?1"/></a>	
+<div class="row">
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['004']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['005']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['006']['src'] }}"></div>	
 </div>
 
-<img class="hlarge img-responsive" alt="sequoia-102" src="http://i.imgur.com/CL1e0mG.jpg"/>
+<img class="img-responsive  img-center" src="{{ $images['007']['src'] }}">
 
 <p>Совсем недалеко от скалы находится туннель в дереве – <strong>Tunnel Log</strong>.</p>
 
-<img class="hlarge img-responsive" alt="sequoia-106" src="http://i.imgur.com/dahaToI.jpg"/>
+<img class="img-responsive  img-center" src="{{ $images['008']['src'] }}">
 
 <p>	Здесь уже довольно много секвой, выбираю себе местечко для парковки, чтобы прогулятся и рассмотреть их как следует.</p>
 
-<div class="small">
-	<a href=""><img class="img img400" alt="sequoia-110" src="http://i.imgur.com/E6vibeY.jpg"/></a>	
-	<a href=""><img class="img img400" alt="sequoia-111" src="http://i.imgur.com/z8Y93Co.jpg"/></a>	
-	<a href=""><img class="img img400" alt="sequoia-112" src="http://i.imgur.com/UssmMEG.jpg"/></a>
+<div class="row">
+	<div class="col-xs-4"><img class="img-responsive" src="{{ $images['009']['src'] }}"></div>
+	<div class="col-xs-4"><img class="img-responsive" src="{{ $images['010']['src'] }}"></div>
+	<div class="col-xs-4"><img class="img-responsive" src="{{ $images['011']['src'] }}"></div>
 </div>
 
 <p>	Следующая остановка – Музей Гигантских Деревьев (<strong>Giant Forest  Museum</strong>). Тропа ведущая вокруг лужайки 
 	окруженной секвойями называется <strong>Big Tree Trail</strong> и делает петлю длиной 1.6 мили (2.6 километра). Чем дальше в 
 	лес, тем более впечатляющие попадаются экземпляры деревьев, здесь они становятся действительно огромными.</p>
 
-	<img class="hlarge img-responsive" alt="sequoia-163" src="http://i.imgur.com/HB1obAJ.jpg?1"/>
+<img class="img-responsive" src="{{ $images['012']['src'] }}">	
 
-<div class="small">
-	<a href=""><img class="img img200" alt="sequoia-114" src="http://i.imgur.com/4RDiYze.jpg?1"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-119" src="http://i.imgur.com/UWcELn0.jpg?1"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-121" src="http://i.imgur.com/TQCThrg.jpg?1"/></a>
+
+<div class="row">
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['013']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['014']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['015']['src'] }}"></div>
 </div>
 
 <p>Для масштаба – люди на фоне деревьев.</p>
 
-<img class="hlarge img-responsive" alt="sequoia-120" src="http://i.imgur.com/PHaaamq.jpg"/>
+<img class="img-responsive" src="{{ $images['016']['src'] }}">	
 
-<div class="small">
-	<a href=""><img class="img img300" alt="sequoia-136" src="http://i.imgur.com/TsSxTA3.jpg"/></a>	
-	<a href=""><img class="img img300" alt="sequoia-137" src="http://i.imgur.com/KfkU7xF.jpg?1"/></a>	
+<div class="row">
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['017']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['018']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['019']['src'] }}"></div>	
 </div>
+
 
 <p>Ствол каждого дерева уникален, они узнаваемы, наиболее старые и уважаемые имеют собственные имена.</p>
 
-<div class="small">
-	<a href=""><img class="img img200" alt="sequoia-156" src="http://i.imgur.com/H2HaFim.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-169" src="http://i.imgur.com/q0cDAib.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-186" src="http://i.imgur.com/XX6tkRp.jpg"/></a>		
+<div class="row">
+	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['020']['src'] }}"></div>
+	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['021']['src'] }}"></div>
 </div>
+
 
 <p>	Во время прогулка вокруг полянки замечаю на дереве какое-то станное существо, напоминающее сильно переевшую белку. 
 	Как подсказали позже местные жители - мармот.</p>
 
-<img class="hlarge img-responsive" alt="sequoia-129" src="http://i.imgur.com/WqSc8WU.jpg"/>
+<img class="img-responsive" src="{{ $images['022']['src'] }}">	
 
-<div class="small">
-	<a href=""><img class="img img400" alt="sequoia-128" src="http://i.imgur.com/5ct1jxQ.jpg"/></a>	
-	<a href=""><img class="img img400" alt="sequoia-131" src="http://i.imgur.com/fXXMEcN.jpg?2"/></a>		
+<div class="row">
+	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['023']['src'] }}"></div>
+	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['024']['src'] }}"></div>
 </div>
 
 <p>	На меня сильное впечатление произвел возраст деревьев, по оценке ученых он составляет от 1.5 до 6 тысяч лет.  Представляю, 
@@ -143,12 +146,12 @@
 <p>	Следующая остановка – Генерал Шерман (<strong>General Sherman Tree</strong>) – главная официальная достопримечательность 
 	парка. В этой его части больше всего туристов.</p>
 
-<img class="vlarge" alt="sequoia-176" src="http://i.imgur.com/GCHqZeC.jpg"/>
+<img class="img-responsive" src="{{ $images['025']['src'] }}">	
 
-<div class="small">
-	<a href=""><img class="img img200" alt="sequoia-177" src="http://i.imgur.com/AyFfWKQ.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-179" src="http://i.imgur.com/jbM4Wtx.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-181" src="http://i.imgur.com/aBhtY6u.jpg"/></a>	
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-1"><img class="img-responsive" src="{{ $images['026']['src'] }}"></div>
+	<div class="col-sm-2"><img class="img-responsive" src="{{ $images['028']['src'] }}"></div>
+	<div class="col-sm-4"><img class="img-responsive" src="{{ $images['027']['src'] }}"></div>	
 </div>
 
 <p>	Секвойи являются самыми большими деревьями в мире. Критерием на основании которого их сравнивают между собой, как ни странно,
@@ -161,34 +164,34 @@
 	что такое возможно. Статьи и фотографии в газетах были объявлены фальшивкой.  Несколько деревьев были распилены на пеньки и 
 	привезены в Нью Йорк для демонстрации.</p>
 
-<img class="vlarge" alt="sequoia-185" src="http://i.imgur.com/2rWi0YZ.jpg"/>
+<img class="img-responsive" src="{{ $images['029']['src'] }}">
 
 <p>	В газетах регулярно появляются сообщения о лесных лесных пожарах в Калифорнии,  после посещения парка они воспринимаются 
 	совсем по другому, горящие уникальные древние деревья, являющиеся достоянием человечества, очень жаль. Пораженных огнем 
 	деревьев в парке достаточно много. По мнению ученых большого ущерба деревьям пожары нанести не могут и иногда бывают даже 
 	полезны для поддержания баланса в парке.</p>
 
-<img class="vlarge" alt="sequoia-166" src="http://i.imgur.com/bKRoRrw.jpg"/>
+<img class="img-responsive" src="{{ $images['030']['src'] }}">	
 
 <p>	Деревья периодически падают. У них не очень развита корневая система и при определенных условиях она не может удержать 
 	гиганта.  Домик первого смотрителя парка был разрушен упавшим на него деревом,  в парке есть стенд с фотографиями "было - 
 	стало".</p>
 
-<div class="small">
-	<a href=""><img class="img img200" alt="sequoia-159" src="http://i.imgur.com/0iTAteo.jpg?1"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-146" src="http://i.imgur.com/AiVHmBh.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-160" src="http://i.imgur.com/AejCPUS.jpg"/></a>	
+<div class="row">
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['031']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['032']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['033']['src'] }}"></div>
 </div>
 
 <p>	Следующая цель – Информационный Центр Лоджпул (<strong>Lodgepole Visitor Center</strong>).  Здесь расположен большой кэмпинг,
 	от которого в разные стороны расходятся туристические тропы. Я направляюсь вдоль реки к водопадам Токопах (<strong>Tokopah 
 	Fall</strong>). Длина тропы туда и обратно 3.4 мили (5.5 километров) с набором высоты 600 футов (180 метров).</p>
 
-<img class="hlarge img-responsive" alt="sequoia-141" src="http://i.imgur.com/rAfOhGP.jpg"/>
+<img class="img-responsive" src="{{ $images['034']['src'] }}">
 
 <p>Водопады (самые высокие в парке)  меня не очень впечатлили, но от прогулки вполне можно получить удовольствие.</p>
 
-<img class="vlarge" alt="sequoia-189" src="http://i.imgur.com/uDuKp3v.jpg"/>
+<img class="img-responsive" src="{{ $images['035']['src'] }}">
 
 <p>	Идущий на встречу парень предупреждает: “ярдов через двести смотри вверх на склон, там медведь”. Пока я задрав голову 
 	соображаю,  много ли это в понятных мне величинах, а заодно думаю стоит ли идти дальше или разворачиваться и бежать обратно,  
@@ -199,11 +202,12 @@
 
 <p>Здесь должны были быть медведи.</p>
 
-<img class="vlarge" alt="sequoia-191" src="http://i.imgur.com/G6r6Woc.jpg"/>
+<img class="img-responsive" src="{{ $images['036']['src'] }}">
 
 <p>	Медведи это одна из местных достопримечательностей, их часто видят в парке, они регулярно воруют еду у кемперов.  
 	В лагере висит знак, сообщающий о случаях нападениях медведей.  “На этой неделе медведи вторгались в лагерь 3 раза.” </p>
 
+<img class="img-responsive" src="{{ $images['037']['src'] }}">
 
 <p>	Все мусорки в парке закрытого типа со специальными задвижками, чтобы у медведей не было соблазна воровать из них отходы.</p>
 
@@ -211,7 +215,8 @@
 	вскрыть машину и добыть еду медведь справляется. Есть плакаты: Не приближаться к медведям!  – <strong>Do NOT approach 
 	bears!</strong></p>
 
-<img class="hlarge img-responsive img400" alt="sequoia-115" src="http://i.imgur.com/FHiwFpB.jpg"/>
+
+<img class="img-responsive" src="{{ $images['038']['src'] }}">
 
 <p>	На волновавший меня вопрос  “Что делать если “bear approachs you?” (медведь приближается к тебе),  я нашел ответ на 
 	информационном стенде возле палаточного лагеря – “нужно собраться в кучу, громко кричать и стучать кастрюлями”.  
@@ -225,7 +230,7 @@
 	
 <p>Вот гигантская шишка. Справа.</p>
 
-<img class="vlarge" alt="sequoia-193" src="http://i.imgur.com/N7wO0W7.jpg"/>
+<img class="img-responsive" src="{{ $images['039']['src'] }}">
 
 <p>	С вершины открываются панорамные виды на соседние склоны.</p>
 
@@ -235,17 +240,17 @@
 <p>	Последняя остановка возле информационного центра Кингс Каньон (<strong>Kings Canyon Visitor Center</strong>). Вечерняя 
 	прогулка (уже начинает смеркаться) в роще гигантских деревьев среди которых расположен Генерал Грант (<strong>General 
 	Grant</strong>) – второе по размеру (по объему) дерево в мире.</p>
-	
-<img class="vlarge" alt="sequoia-151" src="http://i.imgur.com/dgUyxu3.jpg"/>
+
+<img class="img-responsive" src="{{ $images['040']['src'] }}">	
 
 <p>	Помимо медведей и мармотов я встретил огромное количество бурундуков (во всех частях парка) и белок.  
 	В <strong>Lоdgepole</strong> меня предупреждали, что впереди  на тропе есть олень, но или он услышал меня и убежал, или я 
 	не внимательно смотрел. </p>
 
-<div class="small">
-	<a href=""><img class="img img200" alt="sequoia-143" src="http://i.imgur.com/VGR44tP.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-116" src="http://i.imgur.com/td9aufm.jpg"/></a>	
-	<a href=""><img class="img img200" alt="sequoia-118" src="http://i.imgur.com/lBNIjoS.jpg"/></a>	
+<div class="row">
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['041']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['042']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['043']['src'] }}"></div>
 </div>
 
 <p>	На этом мой день в парке закончился, в северной части парка на дороге ведущей в <strong>Cedar Grove</strong> я не был. 
@@ -271,11 +276,5 @@
 <p><a href = 'http://www.nps.gov/seki/index.htm'>Сайт</a> национального парка. </p>
 
 <p><a href = 'http://www.nps.gov/seki/planyourvisit/brochures.htm'>Карты</a> парка. </p>
-
-<div class="small">
-	@foreach($images as $image)
-	{!! $image !!}
-	@endforeach
-</div>
 
 @stop

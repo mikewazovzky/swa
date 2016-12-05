@@ -1,0 +1,16 @@
+/** Размер кнопок **/
+.custom {
+    width: 80px !important;
+}
+/** Карточка пользователя/User Card **/
+.photo {	
+	text-align: center;
+	border-left: 1px solid #dfdfe0; 
+}
+#userImg {
+	width: 230px;
+}
+
+
+
+

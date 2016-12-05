@@ -9,7 +9,7 @@
 
 <p>(пропустить и перейти к <a href="#report">отчету</a>)</p>
 
-<img class="first" src="/media/gc.jpg" align="right" style="margin: 0 0 0 10px; width: 300px;">
+<img class="img-responsive" style="margin-left: 10px; float: right; max-height: 250px; " src="{{ $images['001']['src'] }}">
 
 <p> Расположенный в Аризоне Большой или Великий Каньон (<strong>Grand Canyon</strong>) – гигантское ущелье, промытое за миллионы 
 	лет в скальных породах рекой Колорадо. Он является одной из самых знаменитых и популярных у туристов достопримечательностей 
@@ -129,12 +129,16 @@
 	рядом, но я старался не смотреть в его сторону. На <strong>Mohave Point</strong> (дальше автобус ехать отказался) я 
 	неспеша достал фотоаппарат, штатив и направился в сторону каньона … </p>
 	
-<img class="hlarge img-responsive" alt="293" title="grandcanyon-293" src="http://i.imgur.com/WEhei0u.jpg"/>
+<img class="img-responsive" src="{{ $images['002']['src'] }}"/>
+
+
+
 
 <p>	На центральной площадке было довольно много народу, но отойдя немного в сторону я устроился усевшись на выступе на самом 
 	краю пропасти (барьеров и ограждений нет) с потрясающим видом.</p>  
 	
-<img class="hlarge img-responsive" alt="303" title="grandcanyon-303" src="http://i.imgur.com/iAuaCRG.jpg"/>
+<img class="img-responsive" src="{{ $images['003']['src'] }}"/>
+
 
 <p>	Так состоялось мое знакомство с Великим Каньоном.</p>
 
@@ -166,22 +170,23 @@
 	для наблюдения за восходом и фотографирования каньона утром. Восход примерно в 5:30, но сегодня его не видно, пасмурно, 
 	солнце начало проглядывать сквозь облака ближе часам к семи.</p>
 	
-<img class="hlarge img-responsive" alt="320" title="grandcanyon-320" src="http://i.imgur.com/KanJ2cj.jpg"/>
-<img class="hlarge img-responsive" alt="322" title="grandcanyon-322" src="http://i.imgur.com/jrKTbc1.jpg"/>
+<img class="img-responsive" src="{{ $images['004']['src'] }}"/>
+<img class="img-responsive" src="{{ $images['005']['src'] }}"/>
+
 
 <p>	Тропа находится в отличном состоянии и представляет собой фактически лестницу с не очень крутыми ступеньками 
 	протяженностью 10 километров.</p>
 
-<div class="small">
-	<a href="http://i.imgur.com/RVD4pLK.jpg"><img class="img img200" alt="330" title="grandcanyon-330" src="http://i.imgur.com/RVD4pLK.jpg"/></a>
-	<a href="http://i.imgur.com/8dgNhlz.jpg"><img class="img img200" alt="331" title="grandcanyon-331" src="http://i.imgur.com/8dgNhlz.jpg"/></a>
-	<a href="http://i.imgur.com/FWF902J.jpg"><img class="img img200" alt="349" title="grandcanyon-349" src="http://i.imgur.com/FWF902J.jpg"/></a>
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-1"><img class="img-responsive" src="{{ $images['007']['src'] }}"></div>
+	<div class="col-sm-2"><img class="img-responsive" src="{{ $images['006']['src'] }}"></div>
+	<div class="col-sm-4"><img class="img-responsive" src="{{ $images['008']['src'] }}"></div>	
 </div>
 
 <p>	Звуки в ущелье разносятся далеко и я периодически слышу топот копыт и позвякивание колокольчиков, чуть позже увидел внизу 
 	вереницу мулов.</p> 
-
-<img class="vlarge" alt="327" title="grandcanyon-327" src="http://i.imgur.com/dW8iluX.jpg"/>
+	
+<img class="img-responsive" src="{{ $images['009']['src'] }}"/>	
 
 <p>	Думал, что скоро их догоню, но оказалось это не так просто. </p>
 
@@ -210,19 +215,18 @@
 
 <p>Все промежуточные остановки отмечены столбиками. </p>
 
-<img class="vlarge" alt="325" title="grandcanyon-325" src="http://i.imgur.com/Qe8u1FE.jpg"/>
+<img class="img-responsive" src="{{ $images['010']['src'] }}"/>
 
 <p>	Каньон оказался многослойным, по мере спуска вниз пейзаж вокруг существенно меняется постепенно открывая новые уровни.</p>
 
-<div class="small">
-	<a href="http://i.imgur.com/eC7u5sC.jpg"><img class="img img200" alt="342" title="grandcanyon-342" src="http://i.imgur.com/eC7u5sC.jpg"/></a>	
-	<a href="http://i.imgur.com/JYWiAzG.jpg"><img class="img img200" alt="352" title="grandcanyon-352" src="http://i.imgur.com/JYWiAzG.jpg"/></a>
-	<a href="http://i.imgur.com/SKiEElb.jpg"><img class="img img200" alt="341" title="grandcanyon-341" src="http://i.imgur.com/SKiEElb.jpg"/></a>
+<div class="row">
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['011']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['012']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['013']['src'] }}"></div>	
 </div>
 
 
-
-<img class="hlarge img-responsive" alt="345" title="grandcanyon-345" src="http://i.imgur.com/3QQQrom.jpg"/>
+<img class="img-responsive" src="{{ $images['014']['src'] }}"/>
 
 <p>	Добравшись до <strong>Tip Off</strong> пришлось задуматься над вариантами дальнейшего маршрута.</p>
 
@@ -237,8 +241,7 @@
 	Garden</strong> – одной из станций  примерно в середине <strong>Bright Angel Trail</strong> без спуска на дно каньона.</p>
 
 <p>	Схема трэйлов из официального буклета парка.</p>
-
-<img class="hlarge img-responsive" alt="../media/gk_trail_map.jpg" style="border: none;" src="../media/gk_trail_map.jpg"/>
+<img class="img-responsive" src="{{ $images['000']['src'] }}"/>
 
 <p>	Прочитав в буклете и на сайте предупреждение “не надо ходить к реке”</p>
 
@@ -260,60 +263,59 @@
 	
 <p>	В скором времени открылись виды на реку, которая все ближе.</p>
 
-<img class="hlarge img-responsive" alt="347" title="grandcanyon-347" src="http://i.imgur.com/digLf9D.jpg"/>
+<img class="img-responsive" src="{{ $images['015']['src'] }}"/>
 
-<img class="hlarge img-responsive" alt="353" title="grandcanyon-353" src="http://i.imgur.com/9oaI7Vv.jpg"/>
+<img class="img-responsive" src="{{ $images['016']['src'] }}"/>
 
-<img class="hlarge img-responsive" alt="369" title="grandcanyon-369" src="http://i.imgur.com/VZDlOsg.jpg"/>
+<img class="img-responsive" src="{{ $images['017']['src'] }}"/>
+
 
 <p>	Через реку можно перейти по навесному мосту.</p>
 
-<div class="small">
-	<a href="http://i.imgur.com/ux4FiEn.jpg">
-		<img class="img img200" alt="356" title="grandcanyon-356" src="http://i.imgur.com/ux4FiEn.jpg"/></a>	
-	<a href="http://i.imgur.com/DMojwww.jpg">
-		<img class="img img200" alt="362" title="grandcanyon-362" src="http://i.imgur.com/DMojwww.jpg"/></a>
-	<a href="http://i.imgur.com/dAOlnDg.jpg">
-		<img class="img img200" alt="357" title="grandcanyon-357" src="http://i.imgur.com/dAOlnDg.jpg"/></a>
+<div class="row">
+	<div class="col-sm-2 col-sm-offset-1"><img class="img-responsive" src="{{ $images['018']['src'] }}"></div>
+	<div class="col-sm-4"><img class="img-responsive" src="{{ $images['019']['src'] }}"></div>
+	<div class="col-sm-4"><img class="img-responsive" src="{{ $images['020']['src'] }}"></div>	
 </div>
 
 <p>	Почти в самом низу мне встретилась группа ковбоев на мулах, выглядят колоритно</p>
 
-<img class="hlarge img-responsive" alt="359" title="grandcanyon-359" src="http://i.imgur.com/uDWLR0A.jpg"/>
+<img class="img-responsive" src="{{ $images['021']['src'] }}"/>
 
 <p>	И вот, наконец, я внизу. Спуск занял примерно два с половиной часа.</p> 
 
-<img class="hlarge img-responsive" alt="358" title="grandcanyon-358" src="http://i.imgur.com/IYhTX6x.jpg"/>
+<img class="img-responsive" src="{{ $images['022']['src'] }}"/>
 
 <p>	Выглянуло солнце разогнав остатки облаков и осветив весь каньон, стало достаточно жарко. Пляж реки Колорадо оказался 
 	отличным местом, чтобы умыться и отдохнуть. Купаться не рекомендуют.</p>
 
 <div class="warning">
-	<p><strong>Warning!</strong><br> The Colorado River is fast, wide, and a cold 46°F (8°C) year-round. Do not swim in the river — you will perish!</p>
+	<h3>Warning!</h3>
+	<p> The Colorado River is fast, wide, and a cold 46°F (8°C) year-round. Do not swim in the river — you will perish!</p>
 </div>
 
 <p>	Когда смотришь на каньон снизу, виден только нижний уровень (“слой”)  скал, выглядят они как самые обычные горы, такого 
 	грандиозного впечатления, как сверху каньон не производит.</p>
 
-<img class="hlarge img-responsive" alt="370" title="grandcanyon-370" src="http://i.imgur.com/SxNaG7b.jpg"/>
+<img class="img-responsive" src="{{ $images['023']['src'] }}"/>
 
 <p>	Индейцы жили здесь, есть следы древних поселений.</p>
 
-<img class="hlarge img-responsive" alt="363" title="grandcanyon-363" src="http://i.imgur.com/QvXQMAm.jpg"/>
+<img class="img-responsive" src="{{ $images['024']['src'] }}"/>
 
 <p>	Немного вверх по реке есть еще один мост. От него начинается тропа <strong>Bright Angel Trail</strong>.</p>
 
-<img class="hlarge img-responsive" alt="367" title="grandcanyon-367" src="http://i.imgur.com/ptU8lE0.jpg"/>
+<img class="img-responsive" src="{{ $images['025']['src'] }}"/>
 
 <p>	Перекресток, тропа <strong>North Kaibab Trail</strong> ведет к Северному Риму каньона.</p>
 
-<img class="vlarge" alt="364" title="grandcanyon-364" src="http://i.imgur.com/Qsd5bPA.jpg"/>
+<img class="img-responsive" src="{{ $images['026']['src'] }}"/>
 
 <p>	Отдохнув и погуляв немного (примерно час) внизу неспешно отправляюсь в обратный путь по <strong>Bright Angel 
 	Trail</strong>. Тропа идет вдоль ручья, присутствует растительность, в любой момент можно ополоснуться прохладной водой 
 	и отдохнуть в тени.</p>
 
-<img class="vlarge" alt="364" title="grandcanyon-364" src="http://i.imgur.com/tpbOoiG.jpg?2"/>
+<img class="img-responsive" src="{{ $images['027']['src'] }}"/>
 
 <p>	По тропе прямо на меня выскакивает пара оленей, пугаются и прячутся в растущих в ручье кустах. 
 	Близко к себе не подпускают.</p>
@@ -331,14 +333,14 @@
 <p>	После <strong>Indian Garden</strong> растительность сходит на нет, виды на каньон становятся похожими на вид с верхних 
 	смотровых площадок.</p>
 
-<img class="hlarge img-responsive" alt="375" title="grandcanyon-375" src="http://i.imgur.com/0CUF6rp.jpg"/>
+<img class="img-responsive" src="{{ $images['028']['src'] }}"/>
 
 <br>
 
-<div class="small">
-	<a href="http://i.imgur.com/D9ZfUzr.jpg"><img class="img img200" alt="379" title="grandcanyon-379" src="http://i.imgur.com/D9ZfUzr.jpg"/></a>	
-	<a href="http://i.imgur.com/sJGAs6Y.jpg"><img class="img img200" alt="376" title="grandcanyon-376" src="http://i.imgur.com/sJGAs6Y.jpg"/></a>
-	<a href="http://i.imgur.com/vlOK8cU.jpg"><img class="img img200" alt="385" title="grandcanyon-385" src="http://i.imgur.com/vlOK8cU.jpg"/></a>
+<div class="row">
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['029']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['030']['src'] }}"></div>
+	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['031']['src'] }}"></div>	
 </div>
 
 <p>	Люди встречаются все чаще и постепенно их поток становится постоянным. Жарко, идти вверх гораздо труднее, по-немногу 
@@ -358,17 +360,16 @@
 <p>	На верхних остановках я, наконец, встретил легендарных белок. Они довольно настойчиво вымогают еду, некоторые заняты 
 	откровенным грабежом</p>
 
-<div class="small">
-	<a href="http://i.imgur.com/us052Mt.jpg"><img class="img img200" alt="378" title="grandcanyon-378" src="http://i.imgur.com/us052Mt.jpg"/></a>	
-	<a href="http://i.imgur.com/vkZA6GW.jpg"><img class="img img200" alt="377" title="grandcanyon-377" src="http://i.imgur.com/vkZA6GW.jpg"/></a>
-	<a href="http://i.imgur.com/nUXR2A3.jpg"><img class="img img200" alt="357" title="grandcanyon-357" src="http://i.imgur.com/nUXR2A3.jpg"/></a>
-	<a href="http://i.imgur.com/mzUFoFK.jpg"><img class="img img200" alt="384" title="grandcanyon-384" src="http://i.imgur.com/mzUFoFK.jpg"/></a>
+<div class="row">
+	<div class="col-sm-8 col-md-4"><img class="img-responsive" src="{{ $images['032']['src'] }}"></div>
+	<div class="col-sm-4 col-md-2"><img class="img-responsive" src="{{ $images['033']['src'] }}"></div>
+	<div class="col-sm-8 col-md-4"><img class="img-responsive" src="{{ $images['034']['src'] }}"></div>	
+	<div class="col-sm-4 col-md-2"><img class="img-responsive" src="{{ $images['035']['src'] }}"></div>		
 </div>
 
 <p>	Некоторые просто любуются окружающим пейзажами.</p>
 
-
-<img class="hlarge img-responsive" alt="381" title="grandcanyon-381" src="http://i.imgur.com/8inhyVH.jpg"/>
+<img class="img-responsive" src="{{ $images['036']['src'] }}"/>
 
 <p>	Наконец я наверху – <strong>Bright Angel Trailhead</strong>.Подъем занял у меня более 5 часов, на часах около двух. 
 Последние сотни метров дались с трудом.</p>
@@ -382,29 +383,23 @@
 <p>	По пути встречается крупный олень с шикарными рогами. Все проезжающие мимо бросают машины прямо на дороге, бегут смотреть 
 	и фотографировать красавца. Он совершенно не боится, позволяет подойти к себе совсем близко.</p>
 
-
-<img class="vlarge" alt="388" title="grandcanyon-388" src="http://i.imgur.com/UbXGVOX.jpg"/>
+<img class="img-responsive" src="{{ $images['037']['src'] }}"/>
 
 <p>	Дальняя восточная смотровая площадка – <strong>Desert View Point</strong>.</p>
 
-
-
-<img class="hlarge img-responsive" alt="308" title="grandcanyon-308" src="http://i.imgur.com/DHH4ocy.jpg"/>
+<img class="img-responsive" src="{{ $images['039']['src'] }}"/>
 
 <br>
 
-
-<img class="hlarge img-responsive" alt="311" title="grandcanyon-311" src="http://i.imgur.com/CNtytUq.jpg"/>
+<img class="img-responsive" src="{{ $images['040']['src'] }}"/>
 
 <p>	Башня с видом на каньон – <strong>Desert View Tower</strong>.</p>
 
-
-<img class="vlarge" alt="313" title="grandcanyon-313" src="http://i.imgur.com/0ec0TFD.jpg"/>
+<img class="img-responsive" src="{{ $images['041']['src'] }}"/>
 
 <p>Вечер. С закатом опять не очень повезло.</p>
 
-
-<img class="hlarge img-responsive" alt="315" title="grandcanyon-315" src="http://i.imgur.com/37v81qs.jpg"/>
+<img class="img-responsive" src="{{ $images['042']['src'] }}"/>
 
 <p>	Прощальный взгляд на Каньон и направляюсь в город Пэйдж (<strong>Page AZ</strong>).</p>
 
@@ -446,11 +441,5 @@
 
 <p>	<a href="http://forum.awd.ru/viewtopic.php?p=4430261#p4430261">Подборка отчетов</a><strong style="color:blue;">
 	seaagal</strong> на форуме Винского, подсказавшая идею пешего похода в Каньон.</p>
-	
-<div class="small">
-	@foreach($images as $image)
-	{!! $image !!}
-	@endforeach
-</div>
 
 @stop

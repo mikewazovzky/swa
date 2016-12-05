@@ -54,6 +54,12 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
+		
+		//upload User Image
+		if(isset($input['avatar'])) {
+			$input['avatar'] = $this->uploadUserPhoto($request->file('avatar'), $input['email']);
+		}
+		
 		$input['password'] = bcrypt($input['password']);
 		$user = new User($input);
 		
@@ -83,6 +89,12 @@ class UsersController extends Controller
     public function update(Request $request, User $user)
 	{
 		$input = $request->all();
+		
+		//upload User Image
+		if(isset($input['avatar'])) {
+			$input['avatar'] = $this->uploadUserPhoto($request->file('avatar'), $input['email']);
+		}
+		
 		$input['password'] = bcrypt($input['password']);
 		$user->update($input);
 		
@@ -101,4 +113,29 @@ class UsersController extends Controller
 		
 		return redirect('users');
     }
+	
+	/**
+     * Upload User Image
+     *
+     * @param Object $file - Laravel object with uploaded file data
+	 * @param string $fileName - name for uploaded file
+     * @return uploaded file name with extention if success, null if errors
+     */		
+	private function uploadUserPhoto($file, $nameBase) 
+	{
+		$nameLength = 10;
+		$imageName = substr(bcrypt($nameBase), 0, $nameLength) . '.' . $file->getClientOriginalExtension();
+		$imagePath = base_path() . '/public/media/avatar/';
+		//$imageName = $userId . '.' . $file->getClientOriginalExtension();
+		$fileName = $imagePath . $imageName;		
+	
+		if (file_exists($fileName)) {
+			unlink($fileName);
+		}
+		if ($file->move($imagePath, $imageName)) {
+			return $imageName;
+		} else {
+			return null;
+		}		
+	}
 }

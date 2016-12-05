@@ -1,31 +1,34 @@
 body { 
 	background-color: #bbc7e7;
 }
-
 .location {
 	text-align: justify;
 }
-
-/**** Стили для фотографий ****/
-.hlarge {	display: block;	margin: 5px auto;	border: 3px solid black;	}
-.vlarge { 	display: block;	margin: 5px auto; 	border: 3px solid black; height: 800px;	}
-
-.small {
-	text-align: center; 
-}
-
-.small img {
-	margin: 2px;
+img {
 	border: 2px solid black;
-	height: 200px;
+}
+.img-responsive {
+	margin: 5px auto;
 }
 
-.v200  	{ margin-left: 10px; margin-right: 10px;	width: 250px;	border: 5px solid black; float: right;} 
-
-.img200  { height: 200px; }
-.img300  { height: 300px; }
-.img400  { height: 400px; }
 
 
-.viewpoint th, td {border: 1px solid black; padding: 0 10px 0 10px;}
-.viewpoint {border: 1px solid black; border-collapse: collapse; margin: auto;}
+
+/**  Таблицы со списком Viwpoints и расстояний до них **/
+.viewpoint { 
+	border: 1px solid black; 
+	border-collapse: collapse; 
+	margin: 5px auto;
+	}
+.viewpoint th, td {
+	border: 1px solid black; 
+	padding: 0 10px 0 10px;
+	}
+/**  Warning! sign  **/
+.warning {
+	margin: auto;
+	width: 50%;
+	background-color: red;
+	color: #fff;
+	padding: 2px 15px;
+}

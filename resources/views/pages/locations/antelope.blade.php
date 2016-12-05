@@ -20,10 +20,11 @@
 	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
-<div class="small">
+<div class="">
 	@foreach($images as $image)
-	{!! $image !!}
+		<img class="img-responsive" src="{{ $image['src'] }}">
 	@endforeach
 </div>
+
 @stop
 

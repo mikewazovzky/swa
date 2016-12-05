@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('head')
-	<link rel="stylesheet" type="text/css" href="/css/users.css">
+	<link rel="stylesheet" href="/css/user.css">
 @stop
 
 @section('content')
