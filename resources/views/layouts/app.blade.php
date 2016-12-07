@@ -23,10 +23,6 @@
     </script>
 	
     <!-- Custom styles for this template -->
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
- 	<link rel="stylesheet" type="text/css" href="/css/header.css">
- 	<link rel="stylesheet" type="text/css" href="/css/footer.css">
-	
 	@yield('head')
 	
 </head>

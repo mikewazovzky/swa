@@ -68,38 +68,26 @@ p   {
   background-color: #303040;
 }
 
-/*********************** NAVIGATION *********************/
-/* navbar */
-.navbar-default {
-    background-color: #667292;
-	border-color: #667292;
+/** Navbar **/
 
+.navbar-default {
 	font: bold 16px "Open Sans",sans-serif;
-	text-decoration: none;
-}
-/* title */
+	background-color: transparent;
+	border: none;
+} 
 .navbar-default .navbar-brand {
     color: #fff;
 }
-
-/* link */
-.navbar-default .navbar-nav > li > a {
-    color: #b0b0d0;
+.navbar-default .navbar-brand:hover {
+    color: #EEC856;
+}
+.navbar-default .navbar-nav li a {
+    color: #fff;
+}
+.navbar-default .navbar-nav li a:hover {
+    color: #EEC856;
 }
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #667292;
-}
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #667292;
-}
-	
 
 
 
