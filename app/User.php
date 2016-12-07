@@ -32,6 +32,11 @@ class User extends Authenticatable
 		return $this->hasMany('App\Article');
 	}
 	
+	public function locations()
+	{
+		return $this->hasMany('App\Location');
+	}	
+	
 	public function isAdmin() 
 	{
 		return ($this->id == 1);

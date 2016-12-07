@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Article;
 use App\Http\Requests\ArticleRequest;
 use Illuminate\Http\Request;
@@ -35,7 +36,8 @@ class NewsController extends Controller
 	//public function store(Request $request)
 	public function store(ArticleRequest $request)
 	{
-		//$this->validate($request, ['title' => 'required|min:20', 'body' => 'required']);
+		// Validation. Alternatively define ArticleRequest 
+		// $this->validate($request, ['title' => 'required|min:20', 'body' => 'required']);
 		
 		$article = new Article($request->all());
 		

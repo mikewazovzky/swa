@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('head')
+@section('header')
 	<link rel="stylesheet" type="text/css" href="/css/news.css">
 	<style>
 		.panel {
@@ -136,7 +136,7 @@
 </div>		
 @stop	
 
-@section('foot')
+@section('footer')
 <script>
 // click checkbox to show/hide mail list section
 //document.getElementById("checkbox").onclick = function() {

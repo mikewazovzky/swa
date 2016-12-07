@@ -28,3 +28,5 @@ Route::get('/location/{location}', 'PagesController@location');
 Route::resource('/news', 'NewsController');
 
 Route::resource('/users', 'UsersController');
+
+Route::resource('/locations', 'LocationsController');

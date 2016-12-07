@@ -12,6 +12,12 @@ return ['main'	=> [
 			'title' 	=> 'НОВОСТИ',
 			'css' 		=> 'empty.css'
 		],
+		'locations'	=> [
+			'link'		=> 'Отчеты',
+			'href'		=> '/locations',
+			'title' 	=> 'XXX',
+			'css' 		=> 'xxx.css'
+		],				
 		'about'	=> [
 			'link'		=> 'О сайте',
 			'href'		=> '/about',

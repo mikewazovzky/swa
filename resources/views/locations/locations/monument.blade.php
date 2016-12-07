@@ -1,6 +1,6 @@
-@extends('pages.location')
-
+@extends('locations.location')
 @section('location')
+
 <img src="/media/monument.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>
 
 <p>	Долина монументов - полное название парка <strong>Monument Valley Navajo Tribal Park</strong>, находится по пути из города 
@@ -87,7 +87,7 @@
 			</div> <!-- Modal Body -->
 			
 			<div class="modal-footer">
-				<a href="{{ action('PagesController@location', 'arches') }}">Go to Arches National Park Page</a>
+				<a href="{{ action('LocationsController@show', 6) }}">Go to Arches National Park Page</a>
 			</div> <!-- Modal Footer -->			
 			
 		</div> <!-- Modal Content -->

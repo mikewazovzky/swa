@@ -1,5 +1,4 @@
-@extends('pages.location')
-
+@extends('locations.location')
 @section('location')
 
 <img src="/media/page.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>

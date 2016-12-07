@@ -1,5 +1,4 @@
-@extends('pages.location')
-
+@extends('locations.location')
 @section('location')
 
 <h2>Небольшая прогулка по Большому Каньону или Гранд Каньон для Чайников.</h2>

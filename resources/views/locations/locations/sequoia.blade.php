@@ -1,5 +1,4 @@
-@extends('pages.location')
-
+@extends('locations.location')
 @section('location')
 
 <!-------------------------- Content Area ---------------------------------------------->	

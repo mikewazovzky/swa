@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('head')
+@section('header')
 	<!-- Styles -->
     <link href="/css/contact.css" rel="stylesheet">
 @stop

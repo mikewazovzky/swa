@@ -11,7 +11,6 @@ class Article extends Model
 		'title',
 		'body',
 		'published_at',
-
 	];
 	
 	protected $dates = ['published_at'];

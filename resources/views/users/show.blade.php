@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('head')
+@section('header')
 	<link rel="stylesheet" type="text/css" href="/css/users.css">
 @stop
 

@@ -1,6 +1,6 @@
-@extends('pages.location')
-
+@extends('locations.location')
 @section('location')
+
 <img src="/media/page.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>
 
 <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

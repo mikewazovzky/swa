@@ -1,5 +1,4 @@
-@extends('pages.location')
-
+@extends('locations.location')
 @section('location')
 
 <img class="img-responsive" style="float: left; max-height: 200px; margin-right: 10px;" src="{{ $images['018']['src'] }}">
