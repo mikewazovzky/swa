@@ -7,8 +7,8 @@
 @section('content')
 
 <div class="main" id="tmp">	
-	<h1 id="title">Путеводитель<br>по юго-западу США</h1>
-	<h2 id="subtitle">Невада. Юта. Аризона. Калифорния.<br>Национальные парки.</h2>
+	<h1 id="title">Путешествие<br>по юго-западу США</h1>
+	<h2 id="subtitle">Калифорния. Невада. Аризона. Юта.<br>Национальные парки.</h2>
 
 	@foreach($locations as $location)
 		@include('pages.brief')

@@ -8,7 +8,7 @@
 
 	<div class="container">
 
-		<h1>List of Locations</h1>
+		<h1>Опубликованные отчеты</h1>
 		<hr/>
 
 		@foreach($locations as $location)
