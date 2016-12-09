@@ -10,9 +10,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Bootstrap Styles -->
+    <!-- Bootstrap Styles --
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-	<!-- Custome Styles -->
+	!-- Custome Styles -->
+    <link rel="stylesheet" href="/css/app.css">    
 	<link rel="stylesheet" href="/css/styles.css">
     <!-- Custom page specific styles  -->
 	@yield('header')		
