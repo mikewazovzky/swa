@@ -1,9 +1,5 @@
 @extends('layouts.app')
 
-@section('header')
-	<link rel="stylesheet" type="text/css" href="/css/users.css">
-@stop
-
 @section('content')
 
 	<div class="container users">

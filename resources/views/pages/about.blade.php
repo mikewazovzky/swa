@@ -1,11 +1,5 @@
 @extends('layouts.app')
 
-@section('header')
-	<!-- Styles -->
-    <link rel="stylesheet" href="/css/about.css">
-@stop
-
-
 @section('content')
 <div class="container about">
 

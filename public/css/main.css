@@ -1,69 +1,76 @@
+/* New Main File*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
-
 .main {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 body {
-	min-height: 1800px;	
-	background-image: url("../media/skyisle.jpg");
-	background-repeat: no-repeat;	
-	background-position: left top;
-	background-attachment: fixed;
+  min-height: 1800px;
+  background-image: url("../media/skyisle.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
 }
+
 /******************** Page Title *************************/
 #title {
-	font-size: 5em;
-	color: #fff;
-	line-height: 0.9em;
-	text-align: center;
-	margin: 100px 0 0 0;
+  font-size: 5em;
+  color: #fff;
+  line-height: 0.9em;
+  text-align: center;
+  margin: 100px 0 0 0;
 }
+
 /******************** Page Subtitle *************************/
 #subtitle {
-	font-size: 2em;
-	color: #fff;
-	line-height: 1.2em;
-	text-align: center;
-	margin: 30px 0 30px 0;
+  font-size: 2em;
+  color: #fff;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 30px 0 30px 0;
 }
+
 /******************* Block Element Style *******************/
 .block {
-	margin: 0 auto 5px auto;	
-	padding: 0;
-	height: 460px;
-	width: 320px;
-	opacity: 0.8; 
-	float: left;
-	position: relative;
+  margin: 0 auto 5px auto;
+  padding: 0;
+  height: 460px;
+  width: 320px;
+  opacity: 0.8;
+  float: left;
+  position: relative;
 }
-h2 { 	
-	text-align: center; 
-	color: black;
+
+h2 {
+  text-align: center;
+  color: black;
 }
-p   {	
-	text-align: justify;	
-	margin: 10px; 
-	line-height: 1.4;
-	color: black;
-}	
+
+p {
+  text-align: justify;
+  margin: 10px;
+  line-height: 1.4;
+  color: black;
+}
+
 .button {
-	text-decoration: none;
-	text-align: center;
-	font-family: "Open Sans",sans-serif;
-	font-weight: bold;
-	color: black;
-	padding: 5px 10px;
-	border: 3px solid black;
-	width: 100px;
- 	position: absolute;
-	bottom: 10px;
-	left: 100px; 	
-} 
+  text-decoration: none;
+  text-align: center;
+  font-family: "Open Sans",sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 5px 10px;
+  border: 3px solid black;
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+}
+
 .button:hover {
-	background-color: #000;
-	color: white;
-	text-decoration: none;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
 }
 
 .footer {
@@ -71,26 +78,26 @@ p   {
 }
 
 /** Navbar **/
-
 .navbar-default {
-	font: bold 14px "Open Sans",sans-serif;
-	background-color: transparent;
-	border: none;
-} 
+  font: bold 14px "Open Sans",sans-serif;
+  background-color: transparent;
+  border: none;
+}
+
 .navbar-default .navbar-brand {
-    color: #fff;
+  color: #fff;
 }
+
 .navbar-default .navbar-brand:hover {
-    color: #EEC856;
+  color: #EEC856;
 }
+
 .navbar-default .navbar-nav li a {
-    color: #fff;
+  color: #fff;
 }
+
 .navbar-default .navbar-nav li a:hover {
-    color: #EEC856;
+  color: #EEC856;
 }
 
-
-
-
-
+/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 @extends('layouts.app')
+
 @section('header')	 
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-
 @stop
 
 @section('content')

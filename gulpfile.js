@@ -14,6 +14,14 @@ require('laravel-elixir-vue-2');
  */
 
 elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+    mix
+		.sass('app.scss')
+		.sass('main.scss')
+		.webpack('app.js');
+});
+
+elixir(function(mix) {
+    mix.browserSync({
+        proxy: 'travelblog'
+    });
 });

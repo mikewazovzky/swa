@@ -1,0 +1,33 @@
+// Styling Location Pages
+
+.location {
+	text-align: justify;
+	
+	img {
+		border: 2px solid black;
+	}
+
+	.img-responsive {
+		margin: 5px auto;
+	}
+	
+	//  Таблицы со списком Viwpoints и расстояний до них 
+	.viewpoint { 
+		border: 1px solid black; 
+		border-collapse: collapse; 
+		margin: 5px auto;
+		}
+	.viewpoint th, td {
+		border: 1px solid black; 
+		padding: 0 10px 0 10px;
+		}
+		
+	//  Warning! sign  
+	.warning {
+		margin: auto;
+		width: 50%;
+		background-color: red;
+		color: #fff;
+		padding: 2px 15px;
+	}
+}

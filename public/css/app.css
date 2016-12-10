@@ -1381,7 +1381,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #636b6f;
-  background-color: #f5f8fa;
+  background-color: #fff;
 }
 
 input,
@@ -1429,7 +1429,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.6;
-  background-color: #f5f8fa;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2737,7 +2737,7 @@ th {
 }
 
 .table .table {
-  background-color: #f5f8fa;
+  background-color: #fff;
 }
 
 .table-condensed > thead > tr > th,
@@ -4653,7 +4653,7 @@ tbody.collapse.in {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #f5f8fa;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4736,7 +4736,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f5f8fa;
+    border-bottom-color: #fff;
   }
 }
 
@@ -5716,7 +5716,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 22px;
   line-height: 1.6;
-  background-color: #f5f8fa;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -7686,6 +7686,81 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+#app {
+  margin-top: 60px;
+}
+
+.news .panel {
+  margin-bottom: 3px;
+}
+
+.news .well {
+  font-size: 0.9em;
+}
+
+.news .now {
+  font-size: 0.8em;
+  text-align: right;
+  font-weight: bold;
+}
+
+.location {
+  text-align: justify;
+}
+
+.location img {
+  border: 2px solid black;
+}
+
+.location .img-responsive {
+  margin: 5px auto;
+}
+
+.location .viewpoint {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 5px auto;
+}
+
+.location .viewpoint th, .location td {
+  border: 1px solid black;
+  padding: 0 10px 0 10px;
+}
+
+.location .warning {
+  margin: auto;
+  width: 50%;
+  background-color: red;
+  color: #fff;
+  padding: 2px 15px;
+}
+
+.about {
+  text-align: justify;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.btn-custom {
+  width: 80px !important;
+}
+
+.userPhoto {
+  text-align: center;
+  border-left: 1px solid #dfdfe0;
+}
+
+#userImg {
+  width: 230px;
 }
 
 /*# sourceMappingURL=app.css.map */

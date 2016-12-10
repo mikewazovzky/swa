@@ -1,38 +1,8 @@
 @extends('layouts.app')
 
-@section('header')
-	<link rel="stylesheet" type="text/css" href="/css/news.css">
-	<style>
-		.panel {
-			margin-bottom: 5px;
-
-		}
-		.article {
-			padding: 3px;
-		}
-		.article .panel-body {
-			text-align: justify;
-		}		
-		
-		#now {
-			text-align: right;
-			font-weight: bold;
-		}
-		#title {
-			font-size: 0.8em;
-			text-align: right;
-			font-weight: bold;
-		}
-
-		.well {
-			font-size: 0.9em;
-		}	
-	</style>
-@stop
-
 @section('content')
 
-<div class="container location">
+<div class="container news">
     <div class="row">
         <div class="left hidden-xs col-sm-4 col-md-3"><!-- Left Sidebar -->
 			<h1>Новости</h1>
@@ -83,7 +53,7 @@
 
 		<div class="center col-sm-8 col-md-9 col-lg-6">
 			<h1>Последние записи</h1>
-			<p id="now">[now: {{ Carbon\Carbon::now() }}] </p>
+			<p class="now">{{ Carbon\Carbon::now() }} </p>
 
 			@foreach($articles as $article)		
 				<div class="article">
@@ -92,7 +62,7 @@
 							<h3 class="panel-title"><a href="{{ url('/news', $article->id) }}">{{ $article->title }}</a></h3>
 						</div>
 						<div class="panel-body">
-							<p id="title">published at [{{ $article->published_at}}] by {{ $article->user->name }}</p>
+							<p class="now">published at {{ $article->published_at}} by {{ $article->user->name }}</p>
 							<p>{{ substr($article->body, 0 , 250) . '...' }}</p>
 						</div><!-- panel-body -->	
 					</div>

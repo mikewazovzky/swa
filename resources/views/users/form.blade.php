@@ -7,7 +7,7 @@
 				
         <div class="panel-body">
             <div class="row">
-                <div class="col-xs-12 col-sm-8 separator form"> 
+                <div class="col-xs-12 col-sm-8"> 
 				
 					<div class="form-horizontal">
 
@@ -64,7 +64,7 @@
 
 				</div>
 				
-				<div class="col-xs-12 col-sm-4 photo">
+				<div class="col-xs-12 col-sm-4 userPhoto">
 					<img id="userImg" src="/media/avatar/{{ $imageSrc }}">
 					<p id="info"></p>
 				</div>	
