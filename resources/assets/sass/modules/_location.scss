@@ -1,26 +1,31 @@
 // Styling Location Pages
 
 .location {
-	text-align: justify;
 	
+	text-align: justify;
+
+	// Images grid
 	img {
 		border: 2px solid black;
 	}
-
-	.img-responsive {
-		margin: 5px auto;
+	.image-item {
+		padding: 5px;
 	}
+	.image-solo {
+		margin: 0 -15px;
+		padding: 5px;
+	}	
 	
 	//  Таблицы со списком Viwpoints и расстояний до них 
 	.viewpoint { 
 		border: 1px solid black; 
 		border-collapse: collapse; 
 		margin: 5px auto;
-		}
+	}
 	.viewpoint th, td {
 		border: 1px solid black; 
 		padding: 0 10px 0 10px;
-		}
+	}
 		
 	//  Warning! sign  
 	.warning {

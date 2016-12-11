@@ -7714,8 +7714,13 @@ button.close {
   border: 2px solid black;
 }
 
-.location .img-responsive {
-  margin: 5px auto;
+.location .image-item {
+  padding: 5px;
+}
+
+.location .image-solo {
+  margin: 0 -15px;
+  padding: 5px;
 }
 
 .location .viewpoint {
