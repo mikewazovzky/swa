@@ -205,7 +205,7 @@ return [
 		'023' => ['href' => 'http://imgur.com/VRS0iJ6', 'src' => 'http://i.imgur.com/VRS0iJ6l.jpg', 'title' => 'source: imgur.com'],
 		
 		// Horseshoebend 
-		'101' => ['href' => 'http://imgur.com/1i3tk1Q', 'src' => 'http://i.imgur.com/1i3tk1Qh.jpg', 'title' => 'source: imgur.com'],
+		'101' => ['href' => 'http://imgur.com/1i3tk1Q', 'src' => 'http://i.imgur.com/1i3tk1Q.jpg', 'title' => 'source: imgur.com'],
 		'102' => ['href' => 'http://imgur.com/NgMnjQl', 'src' => 'http://i.imgur.com/NgMnjQlh.jpg', 'title' => 'source: imgur.com'],
 		'103' => ['href' => 'http://imgur.com/azC2dk7', 'src' => 'http://i.imgur.com/azC2dk7l.jpg', 'title' => 'source: imgur.com'],
 		'104' => ['href' => 'http://imgur.com/97cfQHY', 'src' => 'http://i.imgur.com/97cfQHYl.jpg', 'title' => 'source: imgur.com'],

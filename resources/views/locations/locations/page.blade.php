@@ -41,33 +41,33 @@
 			<a href="https://www.nps.gov/glca/index.htm">Glen Canyon National Recreation Area</a>.</p>
 		
 		<div class="row">
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['005']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['008']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['010']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['005']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['008']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['010']['src'] }}"></div>
 		</div>
+		
 		<div class="row">	<!-----  Large Image --------->
-			<div class="col-sm-12"><img class="img-responsive" src="{{ $images['022']['src'] }}"></div>			
+			<div class="image-item col-sm-12"><img class="img-responsive center-block" src="{{ $images['022']['src'] }}"></div>			
 		</div>
 		<div class="row">				
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['018']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['019']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['011']['src'] }}"></div>			
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['020']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['018']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['019']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['020']['src'] }}"></div>
 		</div>	
 		<hr>	
 		<p>	Зайчики скачут по берегу.</p>
 		<div class="row"> <!----- Зайчик  -------->	
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['015']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['017']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['014']['src'] }}"></div>			
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['015']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['017']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['014']['src'] }}"></div>			
 		</div>	
 		<hr>
 		<p>	Для любителей промышленного дизайна имеется такое сооружение - Glen Canyon Dam. Прочитал в интернете,
 			что здесь жевет семья огромных грифов. Сегодня их не было.</p>
 		<div class="row"> <!----- Glen Canyon Dam -------->			
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['001']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['002']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['004']['src'] }}"></div>			
+			<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['001']['src'] }}"></div>
+			<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['002']['src'] }}"></div>
+			<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['004']['src'] }}"></div>			
 		</div>
 		
 	</div>
@@ -78,31 +78,30 @@
 			Возле дороги есть указатель (Horseshoebend) и парковка. 
 			Тропинка ведущая от парковки к Подкове.</p>
 
-		<div class="row">
-			<div class="col-sm-12"><img class="img-responsive" src="{{ $images['101']['src'] }}"></div>
-		</div>
+		<div class="image-solo"><img class="img-responsive center-block" src="{{ $images['101']['src'] }}"></div>
+		
 		<div class="row">	
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['103']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['105']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['104']['src'] }}"></div>				
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['103']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['105']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['104']['src'] }}"></div>				
 		</div>
-		<div class="row row-center">				
-			<div class="col-sm-12"><img class="img-responsive" src="{{ $images['102']['src'] }}"></div>		
-		</div>
+			
+		<div class="image-solo"><img class="img-responsive center-block" src="{{ $images['102']['src'] }}"></div>		
+
 		<p>	Местный житель фотографируется с удовольствием.</p>				
-		<div class="row">	
-			<div class="col-sm-12"><img class="img-responsive" src="{{ $images['106']['src'] }}"></div>
-		</div>
+
+		<div class="image-solo"><img class="img-responsive center-block" src="{{ $images['106']['src'] }}"></div>
+
 		<p>	Площадки на отвесных стенах - любимое место фотографов. Выглядят не надежно.</p>
 		<div class="row">				
-			<div class="col-sm-6"><img class="img-responsive" src="{{ $images['107']['src'] }}"></div>			
-			<div class="col-sm-6"><img class="img-responsive" src="{{ $images['108']['src'] }}"></div>	
+			<div class="image-item col-xs-6"><img class="img-responsive center-block" src="{{ $images['107']['src'] }}"></div>			
+			<div class="image-item col-xs-6"><img class="img-responsive center-block" src="{{ $images['108']['src'] }}"></div>	
 		</div>
 		<p>	Гхм...</p>		
-		<div class="row">		
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['109']['src'] }}"></div>				
-		</div>		
-	</div>
+
+		<div class="image-solo"><img class="img-responsive center-block" src="{{ $images['109']['src'] }}"></div>				
+
+		</div>
 	
 	<div class="tab-pane" id="antelopecanyon">
 		<h1>Каньон Антилопы</h1>
@@ -114,34 +113,34 @@
 			(Upper Antelope Canyon, AZ).</p>			
 		<p>	Вход в каньон.</p>
 		<div class="row"> <!---   Вход в Каньон --->
-			<div class="col-sm-6"><img class="img-responsive" src="{{ $images['201']['src'] }}"></div>
-			<div class="col-sm-6"><img class="img-responsive" src="{{ $images['202']['src'] }}"></div>
+			<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['201']['src'] }}"></div>
+			<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['202']['src'] }}"></div>
 		</div>
 		
 		<p>	Фотографии из каньона очень необычные, но немного однообразные.</p>
 		<div class="row">		
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['204']['src'] }}"></div>				
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['211']['src'] }}"></div>			
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['212']['src'] }}"></div>	
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['213']['src'] }}"></div>
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['214']['src'] }}"></div>			
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['215']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['204']['src'] }}"></div>				
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['211']['src'] }}"></div>			
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['212']['src'] }}"></div>	
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['213']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['214']['src'] }}"></div>			
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['215']['src'] }}"></div>
 		</div>	
 		<div class="row"> <!---   Horizontal Images --->		
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['208']['src'] }}"></div>				
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['216']['src'] }}"></div>			
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['221']['src'] }}"></div>	
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['208']['src'] }}"></div>				
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['216']['src'] }}"></div>			
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['221']['src'] }}"></div>	
 		</div>	
 		<div class="row"> <!--- Images --->	
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['217']['src'] }}"></div>			
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['218']['src'] }}"></div>	
-			<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['219']['src'] }}"></div>
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['217']['src'] }}"></div>			
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['218']['src'] }}"></div>	
+			<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['219']['src'] }}"></div>
 		</div>
 		
 		<p>	Выход из каньона.</p>
 		<div class="row">	<!---   Выход из Каньона --->	
-			<div class="col-sm-6"><img class="img-responsive" src="{{ $images['222']['src'] }}"></div>			
-			<div class="col-sm-6"><img class="img-responsive" src="{{ $images['223']['src'] }}"></div>			
+			<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['222']['src'] }}"></div>			
+			<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['223']['src'] }}"></div>			
 		</div>				
 	</div>
 	
