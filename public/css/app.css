@@ -7723,6 +7723,10 @@ button.close {
   padding: 5px;
 }
 
+.location .vertical {
+  height: 100vh;
+}
+
 .location .viewpoint {
   border: 1px solid black;
   border-collapse: collapse;

@@ -125,7 +125,7 @@
 </div>
 
 <div class="image-solo">
-	<img class="img-responsive center-block" src="{{ $images['065']['src'] }}">
+	<img class="img-responsive center-block vertical" src="{{ $images['065']['src'] }}">
 </div>
 
 <p>Бурундуки</p>
@@ -147,7 +147,7 @@
 </div>
 
 <div class="image-solo">
-	<img class="img-responsive center-block" src="{{ $images['075']['src'] }}">
+	<img class="img-responsive center-block vertical" src="{{ $images['075']['src'] }}">
 </div>
 
 <div class="row">	
