@@ -63,9 +63,9 @@
 </div>
 
 <br>
-<div class="well well-sm">
-	<p>	<strong>Tecnical comment:</strong><br>Testing bootstrap carousel. Move coursor over the image to stop sliding images.<br>
-		Carousel is not visible (hiddend) under xs break point.</p>
+<div class="well well-sm visible-xs-block">
+	<p>	<strong>Tecnical comment [Carousel]:</strong><br>You need to make your screen wider to see images Carousel, not visible under xs break point [hidden-xs].<br> 
+		Move coursor over the image to stop sliding.</p>
 </div>
 
 <div class="modal" id="about">
