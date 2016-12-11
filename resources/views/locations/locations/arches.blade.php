@@ -20,129 +20,125 @@
 </p>
 
 <p>	Карта с официального <a href="https://www.nps.gov/arch/index.htm">сайта парка</a>.</p>
-<img class="img-responsive" src="{{ $images['000']['src'] }}">	
-
-<h3>Рассвет в Арках</h3> 
-<img class="img-responsive" src="{{ $images['004']['src'] }}">	
-
-<div class="row">
-
-	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['003']['src'] }}"></div>				
-	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['006']['src'] }}"></div>		
-					
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['000']['src'] }}">	
 </div>
 
-<img class="img-responsive" src="{{ $images['005']['src'] }}">
+<h3>Рассвет в Арках</h3> 
+
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['004']['src'] }}">	
+</div>
+
+<div class="row">
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['003']['src'] }}"></div>				
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['006']['src'] }}"></div>					
+</div>
+
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['005']['src'] }}">
+</div>
 
 <h3>Devils Garden</h3>
 <p>Дальняя (от входа) часть парка называется Devils Garden</p>
 <div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['010']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['011']['src'] }}"></div>	
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['010']['src'] }}"></div>
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['011']['src'] }}"></div>	
 </div>
 <p>Landscape Arch</p>
 <div class="row">		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['008']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['009']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['013']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['014']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['015']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['009']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['013']['src'] }}"></div>			
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['014']['src'] }}"></div>	
+</div>
+
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['015']['src'] }}">
 </div>
 
 <p>На нее можно залезть и пройтись по ней сверху.</p>
-<div class="row">		
-	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['016']['src'] }}"></div>	
-	<div class="col-sm-6"><img class="img-responsive" src="{{ $images['012']['src'] }}"></div>	
+<div class="image-solo">		
+	<img class="img-responsive center-block" src="{{ $images['012']['src'] }}">
 </div>
+
 <hr>
+
 <div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['017']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['018']['src'] }}"></div>	
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['017']['src'] }}"></div>	
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['018']['src'] }}"></div>	
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['028']['src'] }}"></div>	
+
 </div>
+
 <p>Тропинка обозначена камнями. Есть места где можно запросто сбиться с тропы ...</p>
-<div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['019']['src'] }}"></div>
+
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['019']['src'] }}">
 </div>
 
 <p>Double O Arch</p>
-<div class="row">		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['020']['src'] }}"></div>		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['021']['src'] }}"></div>
+<div class="image-solo">
+	<img class="img-responsive center-block vertical" src="{{ $images['021']['src'] }}">
 </div>
 
 <p>Еще какие-то Арки затерявшиея в глубине Devils Garden, здесь туристов уже нет )</p>
 <div class="row">		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['022']['src'] }}"></div>				
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['023']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['025']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['027']['src'] }}"></div>			
-
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['028']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['029']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['030']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['031']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['032']['src'] }}"></div>				
-
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['033']['src'] }}"></div>
-
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['022']['src'] }}"></div>				
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['025']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['027']['src'] }}"></div>			
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['029']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['031']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['033']['src'] }}"></div>
 </div>
 
 <p>Skyline Arche</p>
-<div class="row">		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['034']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['035']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['036']['src'] }}"></div>	
+<div class="image-solo">	
+	<img class="img-responsive center-block" src="{{ $images['036']['src'] }}">
 </div>
 
 <p>Sand Dune Arche</p>
-<img class="img-responsive" src="{{ $images['037']['src'] }}">
+<div class="image-solo">	
+	<img class="img-responsive center-block vertical" src="{{ $images['037']['src'] }}">
+</div>
 
 <p>Park Avenue</p>
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['041']['src'] }}">
+</div>
+
 <div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['041']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['042']['src'] }}"></div>				
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['043']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['042']['src'] }}"></div>				
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['043']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['048']['src'] }}"></div>	
 </div>
 
 <p>Balancing Rock</p>
 <div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['045']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['046']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['047']['src'] }}"></div>		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['048']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['049']['src'] }}"></div>
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['045']['src'] }}"></div>
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['047']['src'] }}"></div>		
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" center-block src="{{ $images['049']['src'] }}"></div>
 </div>
 
 <p>Windows Again</p>
 <div class="row">		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['050']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['051']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['052']['src'] }}"></div>				
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['053']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['054']['src'] }}"></div>	
-	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['055']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['056']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['057']['src'] }}"></div>		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['058']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['059']['src'] }}"></div>
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['050']['src'] }}"></div>			
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['054']['src'] }}"></div>	
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['056']['src'] }}"></div>	
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['057']['src'] }}"></div>		
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['058']['src'] }}"></div>	
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['059']['src'] }}"></div>
 </div>
 
 <p>Окрестности Windows Area</p>
 <div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['063']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['064']['src'] }}"></div>	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['065']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['066']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['067']['src'] }}"></div>		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['068']['src'] }}"></div>	
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['066']['src'] }}"></div>			
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['067']['src'] }}"></div>		
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['068']['src'] }}"></div>	
 </div>
 
 <p>Double Arch</p>
-<div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['060']['src'] }}"></div>		
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['061']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['062']['src'] }}"></div>	
+<div class="image-solo">	
+	<img class="img-responsive center-block" src="{{ $images['060']['src'] }}">	
 </div>
 
 <h2>Delicate Arch</h2> 
@@ -155,15 +151,15 @@
 	a fitness level too high for what you are commonly used to. The view of the National Park from the 
 	top of the Delicate Arch is known as one of the most amazing in the area.</p>
 
-<img class="img-responsive" src="{{ $images['069']['src'] }}">
-
+<div class="image-solo">	
+	<img class="img-responsive center-block" src="{{ $images['069']['src'] }}">
+</div>
+	
 <div class="row">	
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['073']['src'] }}"></div>			
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['075']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['076']['src'] }}"></div>			
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['073']['src'] }}"></div>			
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['075']['src'] }}"></div>
+	<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['076']['src'] }}"></div>			
 </div>	
-
-<img class="img-responsive" src="{{ $images['077']['src'] }}">	
 
 @stop
 
