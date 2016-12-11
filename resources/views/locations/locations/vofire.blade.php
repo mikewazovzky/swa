@@ -3,28 +3,29 @@
 
 <img class="img-responsive center-block" style="float: left; max-height: 200px; margin-right: 10px;" src="{{ $images['001']['src'] }}"/>
 
-<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-	dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
-<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-	dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
-<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-	dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<h1>Долина огня</h1>
+<p>	- парк штата Невада (Valley of Fire State Park, Nevada) расположен в пустыне недалеко (полчаса езды на машине) от Лас Вегаса.
+    Летом здесь очень жарко, поэтому рекомендуется посещать парк в ранние утренние часы, с 05-06 до 09-10 часов утра,
+    пока солнце не раскалило камни и раскрашивает окрестности в удивительно яркие цвета. </p>
 
+<p> В это время (до 09:00) будка рейнджера на въезде в парк еще закрыта и необходимо самостоятельно оплатить его посещение, 
+    запихнув в специально установленный ящик конвертик с 10 долларами (за один автомобиль), корешок от конверта нужно 
+    положить под лобовое стекло. Пропуск-абонемент в Национальные парки не действует, т.к. парк принадлежит штату.</p>
+	
+<p>	Поскольку время посещения парка ограниченр несколькими утреними часами, имеет смысл немного подготовиться и предварительно 
+    решить, что именно вы собираетесь увидеть. В парке много интересного, на <a href="http://www.valley-of-fire.com/">официальном сайте</a> 
+    есть схема с указанием основных троп и достопримечательностей, но есть целые сообщества изучающие все интересные образования и 
+    публикующие их каталоги, с фотографиями и точными координатами.</p>
 
+<p> Как показал мой опыт, даже имея координыты и подробное описание, что и где искать некоторые объекты найти не просто.  
+    Из-за пересечного рельефа можно довольно долго блуждать вокруг какой0нибудь арки и не заметить ее. При этом некоторые 
+    из них оказываются совершенно миниатюрными.</p>
+	
 <p>Карта парка</p>
 <div class="image-solo">
 	<img class="img-responsive center-block" src="{{ $images['000']['src'] }}"/>
 </div>
-<p>Первые впечатления. Rainbow Vista Area</p>
+<p>В качестве первой точки для знакомства с парком я выбрал Rainbow Vista Area</p>
 <div class="row">
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['003']['src'] }}"></div>				
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['004']['src'] }}"></div>			
@@ -34,7 +35,7 @@
 	<img class="img-responsive center-block" src="{{ $images['002']['src'] }}">
 </div>
 
-<p>The Wave</p>
+<p>От автомобильноя стоянки можно дойти до волны. The Wave</p>
 <div class="row">
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['006']['src'] }}"></div>				
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['007']['src'] }}"></div>			
@@ -45,10 +46,10 @@
 	<img class="img-responsive center-block" src="{{ $images['008']['src'] }}">
 </div>
 
-<p>Pink Canyon</p>
+<p> Дальше официальной тропы нет, но можно пройти по розовому каньону (Pink Canyon). Каньон местами очень узкий, 
+    пробираясь по нему можно увидеть каменные породы всех оттенков красного-фиолетового.</p>
 <div class="row">	
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['018']['src'] }}"></div>	
-
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['013']['src'] }}"></div>			
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['014']['src'] }}"></div>	
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['015']['src'] }}"></div>
@@ -66,7 +67,8 @@
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['023']['src'] }}"></div>			
 </div>
 
-<p>Crazy Hill</p>
+<p> По каньону можно вернуться к дороге и перейдя через нее оказаться недалеко от Безумного Холма (Crazy Hill). 
+    Действительно выглядит так, как-будто кто-то расскрасил его кисточной.</p>
 <div class="row">	
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['028']['src'] }}"></div>	
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['029']['src'] }}"></div>
@@ -78,7 +80,7 @@
 </div>
 
 
-<p>Arches</p>
+<p>Недалеко от Crazy Hill я надолго застрял рассматривая всевозможные скальные образования.</p>
 <div class="row">
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['034']['src'] }}"></div>	
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['037']['src'] }}"></div>		
@@ -102,17 +104,17 @@
 </div>
 
 <div class="row">
-	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['051']['src'] }}"></div>
-	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['056']['src'] }}"></div>			
+	<div class="image-item col-sm-6"><img class="img-responsive center-block tmp" src="{{ $images['051']['src'] }}"></div>
+	<div class="image-item col-sm-6"><img class="img-responsive center-block tmp" src="{{ $images['056']['src'] }}"></div>			
 </div>
-<p>Fire Canyon</p>
+<p>Огненный Каньон (Fire Canyon). Представляю, как загорается в лучах рассвета и заката.</p>
 <div class="row">	
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['057']['src'] }}"></div>		
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['058']['src'] }}"></div>	
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['060']['src'] }}"></div>			
 </div>
 
-<p>Atlatl rock  и древнеиндейкие рисунки</p>
+<p>Atlatl rock с древнеиндейскими рисункам.</p>
 
 <div class="image-solo">
 	<img class="img-responsive center-block" src="{{ $images['062']['src'] }}">
@@ -138,7 +140,6 @@
 <div class="image-solo">
 	<img class="img-responsive center-block" src="{{ $images['066']['src'] }}">			
 </div>
-<p>...</p>
 
 <div class="row">		
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['071']['src'] }}"></div>
@@ -154,13 +155,25 @@
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['076']['src'] }}"></div>			
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['077']['src'] }}"></div>		
 	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['078']['src'] }}"></div>
-	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['079']['src'] }}"></div>				
-	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['080']['src'] }}"></div>
 </div>
 
+<p>На выезде из парка стоит Слоню Elephan Rock.</p>
+<div class="row">	   
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['079']['src'] }}"></div>				
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['080']['src'] }}"></div>
+</div>
+
+<p>Я проезжаю парк насквозь с запада на восток, выезжаю на 167 дорогу и направляюсь в сторону Большого Каньона.</p>
 <div class="image-solo">	
 	<img class="img-responsive center-block" src="{{ $images['081']['src'] }}">
 </div>
 
+<h3>Рекомендации</h3>
+<p> Стоит посмотреть, наметить предварительно план, познакомится с картой.</p> 
+<p> Электронный фото-гид от двух немецких фотографов:</p>   
+ 
+<div>
+    <a href="http://www.synnatschke.com/e-guides/store.php"><img id="tmp" src="/media/vof.jpg"></a>
+</div>
 
 @stop

@@ -7731,6 +7731,12 @@ button.close {
   width: 100%;
 }
 
+.location #tmp {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
 .location .viewpoint {
   border: 1px solid black;
   border-collapse: collapse;
