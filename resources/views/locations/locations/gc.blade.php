@@ -8,7 +8,7 @@
 
 <p>(пропустить и перейти к <a href="#report">отчету</a>)</p>
 
-<img class="img-responsive" style="margin-left: 10px; float: right; max-height: 250px; " src="{{ $images['001']['src'] }}">
+<img class="img-responsive center-block" style="margin-left: 10px; float: right; max-height: 250px; " src="{{ $images['001']['src'] }}">
 
 <p> Расположенный в Аризоне Большой или Великий Каньон (<strong>Grand Canyon</strong>) – гигантское ущелье, промытое за миллионы 
 	лет в скальных породах рекой Колорадо. Он является одной из самых знаменитых и популярных у туристов достопримечательностей 
@@ -127,17 +127,17 @@
 	– время идет,  я нашел автобусную остановку  и отправился в сторону <strong>Hermit Rest</strong>. Каньон был уже совсем 
 	рядом, но я старался не смотреть в его сторону. На <strong>Mohave Point</strong> (дальше автобус ехать отказался) я 
 	неспеша достал фотоаппарат, штатив и направился в сторону каньона … </p>
-	
-<img class="img-responsive" src="{{ $images['002']['src'] }}"/>
 
-
-
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['002']['src'] }}">
+</div>
 
 <p>	На центральной площадке было довольно много народу, но отойдя немного в сторону я устроился усевшись на выступе на самом 
 	краю пропасти (барьеров и ограждений нет) с потрясающим видом.</p>  
-	
-<img class="img-responsive" src="{{ $images['003']['src'] }}"/>
 
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['003']['src'] }}">
+</div>
 
 <p>	Так состоялось мое знакомство с Великим Каньоном.</p>
 
@@ -168,24 +168,33 @@
 	Point</strong>) и рядом с ее началом (<strong>Yaki Point</strong>) смотровые площадки считаются одними из лучших точек 
 	для наблюдения за восходом и фотографирования каньона утром. Восход примерно в 5:30, но сегодня его не видно, пасмурно, 
 	солнце начало проглядывать сквозь облака ближе часам к семи.</p>
-	
-<img class="img-responsive" src="{{ $images['004']['src'] }}"/>
-<img class="img-responsive" src="{{ $images['005']['src'] }}"/>
 
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['004']['src'] }}">
+</div>
 
-<p>	Тропа находится в отличном состоянии и представляет собой фактически лестницу с не очень крутыми ступеньками 
-	протяженностью 10 километров.</p>
+<div class="image-solo">
+	<img class="img-responsive center-block" src="{{ $images['005']['src'] }}">
+</div>
 
+<p>	Тропа находится в отличном состоянии и представляет собой фактически лестницу с не очень крутыми ступеньками</p>
+    
+<div class="image-solo">
+	<img class="img-responsive center-block vertical" src="{{ $images['006']['src'] }}">
+</div>
+
+<p>	...	протяженностью 10 километров.</p>
 <div class="row">
-	<div class="col-sm-4 col-sm-offset-1"><img class="img-responsive" src="{{ $images['007']['src'] }}"></div>
-	<div class="col-sm-2"><img class="img-responsive" src="{{ $images['006']['src'] }}"></div>
-	<div class="col-sm-4"><img class="img-responsive" src="{{ $images['008']['src'] }}"></div>	
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['007']['src'] }}"></div>
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['008']['src'] }}"></div>	
 </div>
 
 <p>	Звуки в ущелье разносятся далеко и я периодически слышу топот копыт и позвякивание колокольчиков, чуть позже увидел внизу 
 	вереницу мулов.</p> 
-	
-<img class="img-responsive" src="{{ $images['009']['src'] }}"/>	
+ 
+<div class="image-solo">
+	<img class="img-responsive center-block vertical" src="{{ $images['009']['src'] }}">
+</div> 
 
 <p>	Думал, что скоро их догоню, но оказалось это не так просто. </p>
 
@@ -214,18 +223,21 @@
 
 <p>Все промежуточные остановки отмечены столбиками. </p>
 
-<img class="img-responsive" src="{{ $images['010']['src'] }}"/>
+<div class="image-solo">
+	<img class="img-responsive center-block vertical" src="{{ $images['010']['src'] }}">
+</div> 
 
 <p>	Каньон оказался многослойным, по мере спуска вниз пейзаж вокруг существенно меняется постепенно открывая новые уровни.</p>
 
 <div class="row">
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['011']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['012']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['013']['src'] }}"></div>	
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['011']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['012']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['013']['src'] }}"></div>	
 </div>
 
-
-<img class="img-responsive" src="{{ $images['014']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['014']['src'] }}"/>
+</div> 
 
 <p>	Добравшись до <strong>Tip Off</strong> пришлось задуматься над вариантами дальнейшего маршрута.</p>
 
@@ -240,7 +252,7 @@
 	Garden</strong> – одной из станций  примерно в середине <strong>Bright Angel Trail</strong> без спуска на дно каньона.</p>
 
 <p>	Схема трэйлов из официального буклета парка.</p>
-<img class="img-responsive" src="{{ $images['000']['src'] }}"/>
+<img class="img-responsive center-block" src="{{ $images['000']['src'] }}"/>
 
 <p>	Прочитав в буклете и на сайте предупреждение “не надо ходить к реке”</p>
 
@@ -262,28 +274,36 @@
 	
 <p>	В скором времени открылись виды на реку, которая все ближе.</p>
 
-<img class="img-responsive" src="{{ $images['015']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['015']['src'] }}"/>
+</div> 
 
-<img class="img-responsive" src="{{ $images['016']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['016']['src'] }}"/>
+</div> 
 
-<img class="img-responsive" src="{{ $images['017']['src'] }}"/>
-
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['017']['src'] }}"/>
+</div> 
 
 <p>	Через реку можно перейти по навесному мосту.</p>
 
 <div class="row">
-	<div class="col-sm-2 col-sm-offset-1"><img class="img-responsive" src="{{ $images['018']['src'] }}"></div>
-	<div class="col-sm-4"><img class="img-responsive" src="{{ $images['019']['src'] }}"></div>
-	<div class="col-sm-4"><img class="img-responsive" src="{{ $images['020']['src'] }}"></div>	
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['019']['src'] }}"></div>
+	<div class="image-item col-sm-6"><img class="img-responsive center-block" src="{{ $images['020']['src'] }}"></div>	
 </div>
 
-<p>	Почти в самом низу мне встретилась группа ковбоев на мулах, выглядят колоритно</p>
+<p>	Почти в самом низу мне встретилась группа ковбоев на мулах, выглядят колоритно.</p>
 
-<img class="img-responsive" src="{{ $images['021']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['021']['src'] }}"/>
+</div> 
 
 <p>	И вот, наконец, я внизу. Спуск занял примерно два с половиной часа.</p> 
 
-<img class="img-responsive" src="{{ $images['022']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['022']['src'] }}"/>
+</div> 
 
 <p>	Выглянуло солнце разогнав остатки облаков и осветив весь каньон, стало достаточно жарко. Пляж реки Колорадо оказался 
 	отличным местом, чтобы умыться и отдохнуть. Купаться не рекомендуют.</p>
@@ -296,25 +316,35 @@
 <p>	Когда смотришь на каньон снизу, виден только нижний уровень (“слой”)  скал, выглядят они как самые обычные горы, такого 
 	грандиозного впечатления, как сверху каньон не производит.</p>
 
-<img class="img-responsive" src="{{ $images['023']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['023']['src'] }}"/>
+</div> 
 
 <p>	Индейцы жили здесь, есть следы древних поселений.</p>
 
-<img class="img-responsive" src="{{ $images['024']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['024']['src'] }}"/>
+</div> 
 
 <p>	Немного вверх по реке есть еще один мост. От него начинается тропа <strong>Bright Angel Trail</strong>.</p>
 
-<img class="img-responsive" src="{{ $images['025']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['025']['src'] }}"/>
+</div> 
 
 <p>	Перекресток, тропа <strong>North Kaibab Trail</strong> ведет к Северному Риму каньона.</p>
 
-<img class="img-responsive" src="{{ $images['026']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block vertical" src="{{ $images['026']['src'] }}"/>
+</div> 
 
 <p>	Отдохнув и погуляв немного (примерно час) внизу неспешно отправляюсь в обратный путь по <strong>Bright Angel 
 	Trail</strong>. Тропа идет вдоль ручья, присутствует растительность, в любой момент можно ополоснуться прохладной водой 
 	и отдохнуть в тени.</p>
-
-<img class="img-responsive" src="{{ $images['027']['src'] }}"/>
+    
+<div class="image-solo">
+    <img class="img-responsive center-block vertical" src="{{ $images['027']['src'] }}"/>
+</div> 
 
 <p>	По тропе прямо на меня выскакивает пара оленей, пугаются и прячутся в растущих в ручье кустах. 
 	Близко к себе не подпускают.</p>
@@ -331,15 +361,17 @@
 	
 <p>	После <strong>Indian Garden</strong> растительность сходит на нет, виды на каньон становятся похожими на вид с верхних 
 	смотровых площадок.</p>
-
-<img class="img-responsive" src="{{ $images['028']['src'] }}"/>
+    
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['028']['src'] }}"/>
+</div> 
 
 <br>
 
 <div class="row">
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['029']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['030']['src'] }}"></div>
-	<div class="col-sm-6 col-md-4"><img class="img-responsive" src="{{ $images['031']['src'] }}"></div>	
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['029']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['030']['src'] }}"></div>
+	<div class="image-item col-sm-4"><img class="img-responsive center-block" src="{{ $images['031']['src'] }}"></div>	
 </div>
 
 <p>	Люди встречаются все чаще и постепенно их поток становится постоянным. Жарко, идти вверх гораздо труднее, по-немногу 
@@ -358,17 +390,21 @@
 
 <p>	На верхних остановках я, наконец, встретил легендарных белок. Они довольно настойчиво вымогают еду, некоторые заняты 
 	откровенным грабежом</p>
-
+    
+<div class="image-solo">
+    <img class="img-responsive center-block tmp" src="{{ $images['032']['src'] }}"/>
+</div>
+ 
 <div class="row">
-	<div class="col-sm-8 col-md-4"><img class="img-responsive" src="{{ $images['032']['src'] }}"></div>
-	<div class="col-sm-4 col-md-2"><img class="img-responsive" src="{{ $images['033']['src'] }}"></div>
-	<div class="col-sm-8 col-md-4"><img class="img-responsive" src="{{ $images['034']['src'] }}"></div>	
-	<div class="col-sm-4 col-md-2"><img class="img-responsive" src="{{ $images['035']['src'] }}"></div>		
+	<div class="image-item col-sm-6"><img class="img-responsive center-block tmp" src="{{ $images['033']['src'] }}"></div>
+	<div class="image-item col-sm-6"><img class="img-responsive center-block tmp" src="{{ $images['035']['src'] }}"></div>		
 </div>
 
 <p>	Некоторые просто любуются окружающим пейзажами.</p>
 
-<img class="img-responsive" src="{{ $images['036']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['036']['src'] }}"/>
+</div> 
 
 <p>	Наконец я наверху – <strong>Bright Angel Trailhead</strong>.Подъем занял у меня более 5 часов, на часах около двух. 
 Последние сотни метров дались с трудом.</p>
@@ -382,23 +418,32 @@
 <p>	По пути встречается крупный олень с шикарными рогами. Все проезжающие мимо бросают машины прямо на дороге, бегут смотреть 
 	и фотографировать красавца. Он совершенно не боится, позволяет подойти к себе совсем близко.</p>
 
-<img class="img-responsive" src="{{ $images['037']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block vertical" src="{{ $images['037']['src'] }}"/>
+</div> 
 
 <p>	Дальняя восточная смотровая площадка – <strong>Desert View Point</strong>.</p>
 
-<img class="img-responsive" src="{{ $images['039']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['039']['src'] }}"/>
+</div> 
 
 <br>
 
-<img class="img-responsive" src="{{ $images['040']['src'] }}"/>
-
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['040']['src'] }}"/>
+</div> 
 <p>	Башня с видом на каньон – <strong>Desert View Tower</strong>.</p>
 
-<img class="img-responsive" src="{{ $images['041']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block vertical" src="{{ $images['041']['src'] }}"/>
+</div> 
 
 <p>Вечер. С закатом опять не очень повезло.</p>
 
-<img class="img-responsive" src="{{ $images['042']['src'] }}"/>
+<div class="image-solo">
+    <img class="img-responsive center-block" src="{{ $images['042']['src'] }}"/>
+</div> 
 
 <p>	Прощальный взгляд на Каньон и направляюсь в город Пэйдж (<strong>Page AZ</strong>).</p>
 

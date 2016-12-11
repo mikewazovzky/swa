@@ -16,8 +16,13 @@
 		padding: 5px;
 	}	
 	.vertical {
-		height: 95vh;
+		height: 90vh;
 	}	
+    
+    // Temporary Solution! Для маленьких картинок, загрузить качественные картинки и убрать!!!
+    .tmp {
+        width: 100%;
+    }
 	
 	//  Таблицы со списком Viwpoints и расстояний до них 
 	.viewpoint { 

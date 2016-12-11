@@ -7724,7 +7724,11 @@ button.close {
 }
 
 .location .vertical {
-  height: 95vh;
+  height: 90vh;
+}
+
+.location .tmp {
+  width: 100%;
 }
 
 .location .viewpoint {
