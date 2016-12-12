@@ -7710,6 +7710,10 @@ button.close {
   text-align: justify;
 }
 
+.location h1 {
+  margin-top: 0;
+}
+
 .location img {
   border: 2px solid black;
 }
@@ -7729,12 +7733,6 @@ button.close {
 
 .location .tmp {
   width: 100%;
-}
-
-.location #tmp {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
 }
 
 .location .viewpoint {
