@@ -2,13 +2,13 @@
 
 @section('content')	
 
-	<div class="container location">
+	<div class="container">
 
 		<h1>Create a New Location</h1>
 		
-		{!! Form::open(['url' => 'locations']) !!}
+		{!! Form::open(['url' => 'locations', 'class' => 'form-horizontal']) !!}
 			
-			@include('locations.form', ['submitButtonText' => 'Create New Location'])
+			@include('locations.form1', ['submitButtonText' => 'Create New Location'])
 
 		{!! Form::close() !!}
 		

@@ -1,10 +1,5 @@
 "use strict";
 
-// Simulate click event on File Input Form (#fileSelect) 
-function simulateClick() {
-  $("#fileSelect").click(); 
-}
-
 // Render Image Selected by User
 function handleFileSelect(evt) {
 	var fileList = evt.target.files; // FileList object
@@ -24,13 +19,35 @@ function handleFileSelect(evt) {
 	reader.onload = (function(theFile) {
 		return function(e) {
 			// Render thumbnail.
-			$("#userImg").attr("src", e.target.result);
+			$("#selectedImage").attr("src", e.target.result);
 			$("#info").text(file.name);
 		};
 	})(file);
 	// Read in the image file as a data URL.
 	reader.readAsDataURL(file);
 }	
+
+// 
+function handlePageSelect(evt) {
+	var fileList = evt.target.files; // FileList object
+	
+	// if nothing was selected
+	if(fileList.length == 0) {
+		return;
+	}
+	var file = fileList[0];
+
+	var reader = new FileReader();
+	// Closure to capture the file information.
+	reader.onload = (function(theFile) {
+		return function(e) {
+			$("#pageLabel").text(file.name);
+			$("#userPage").html(e.target.result);
+		};
+	})(file);
+	// Read in the image file as a data URL.
+	reader.readAsText(file);		
+}
 
 // hanle User Form Submit 
 function handleUserFormSubmit(event) {
@@ -65,26 +82,29 @@ function prepairEventHandlers() {
 	});		
 	
 	// click the Image to simulate Select File click on File Input form
-	$("#userImg").click(function() {
-		simulateClick();
+	$("#selectedImage").click(function() {
+		$("#fileSelect").click(); 
 	});	
 	
 	// handle User Form Submit 
 	$("#formUser").submit(function(event) {
 		handleUserFormSubmit(event);
+	});		
+	
+	// ----------------- Location Form [additional] handlers ----------------------
+
+	// Hide Select File(s) Button on #pageSelect File Input Form
+	$("#pageSelect").css("display", "none");
+	
+	// Simulate Select File click on File Input form when #pageButton is clicked
+	$("#pageButton").click(function() {
+		$("#pageSelect").click(); 
 	});	
 	
-/* 	// click checkbox to show/hide Update Password
-	$("checkbox").onclick = function() {
-		if (document.getElementById("checkbox").checked) {
-			document.getElementById("pass").style.display = "block";
-		} else {
-			document.getElementById("pass").style.display = "none";
-		}		
-	};	
-		
-	// hide Password(s) section
-	$("#pass").css("display", "none"); */
+	// Display Selected file(page) name 
+	$("#pageSelect").change(function(evt) {
+		handlePageSelect(evt);
+	});	
 	
 }
 
