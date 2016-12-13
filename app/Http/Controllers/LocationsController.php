@@ -17,7 +17,7 @@ class LocationsController extends Controller
      */
     public function index()
     {
-        $locations = Location::all();
+		$locations = Location::all();
 		
 		return view('locations.index', ['locations' => $locations]);
     }
@@ -40,9 +40,16 @@ class LocationsController extends Controller
      */
     public function store(Request $request)
     {
-		$location = new Location($request->all());
+		// generate file name for page and image		
+		$name = $this->generateFileName($request['title']); 
 		
-		//return $location;
+		// upload page and image files
+		$pageName  = $this->uploadPage($request->file('page'), $name);		
+		$imageName = $this->uploadImage($request->file('image'), $name);
+		
+		$location = new Location($request->all());
+		$location->image = $imageName;
+		$location->page = $name;
 		
 		Auth::user()->locations()->save($location);
 				
@@ -59,7 +66,7 @@ class LocationsController extends Controller
     {
 		$collection = new ImageCollection();
 		$images = $collection->get($location->page);
-		return view('locations.locations.' . $location->page, compact('images'));	
+		return view('locations.locations.' . $location->page, compact('images'));
     }
 
     /**
@@ -68,9 +75,9 @@ class LocationsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Location $location)
     {
-        //
+		return view('locations.edit', compact('location'));
     }
 
     /**
@@ -80,9 +87,9 @@ class LocationsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Location $location)
     {
-        //
+        return $location;
     }
 
     /**
@@ -91,8 +98,57 @@ class LocationsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Location $location)
     {
-        //
+        $location->delete();
+		
+		return redirect('locations');
     }
+	
+	public function uploadPage($file, $name)
+	{
+		$pageName = $name . '.blade.php';
+		$path = '/resources/views/locations/locations/';
+		$this->fileUpload($file, $pageName, $path);
+		return $pageName;
+	}		
+	
+	public function uploadImage($file, $name)
+	{
+		$imageName = $name . '.' . $file->getClientOriginalExtension();
+		$path = '/public/media/';
+		$this->fileUpload($file, $imageName, $path);
+		return $imageName;
+	}	
+	
+	public function fileUpload($file, $name, $path)
+	{
+		$filePath = base_path() . $path;
+		$fileName = $filePath . $name;
+		
+		if (file_exists($fileName)) {
+			unlink($fileName);
+		}
+	
+		return $file->move($filePath, $name);
+	}	
+	
+	public function generateFileName($base) 
+	{
+		$maxLength = 10;
+		$chars = str_split(bcrypt($base));
+		$str = '';
+		
+		foreach($chars as $ch) {
+			if (ctype_alnum ($ch)) {
+				$str .= $ch;				
+			}
+			
+			if (strlen($str) >= $maxLength) {
+				break;
+			}
+		}		
+		return $str;		
+	}
+	
 }

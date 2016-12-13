@@ -9,11 +9,31 @@
 
 		@foreach($locations as $location)
 			
-			{{-- <a href="{{ url('/users', $user->id) }}">{{ $user->name }}</a> --}}
+			<h3>
+				<a href="{{ url('/locations', $location->id) }}">{{ $location->title }}</a>
 			
-			
-			<h3><a href="{{ url('/locations', $location->id) }}">{{ $location->title }}</a></h3>	
+				@if (!Auth::guest() && Auth::user()->isAdmin())	
+					
+					{!! Form::model($location, ['class' => 'form-inline', 'method' => 'DELETE', 'route' => ['locations.destroy', $location->id]]) !!}
+
+						{!! Form::submit('delete', ['class' => 'btn btn-link pull-right']) !!}
+
+					{!! Form::close() !!}	
+					
+					{!! Form::model($location, ['class' => 'form-inline', 'method' => 'GET', 'route' => ['locations.edit', $location->id]]) !!}
+
+						{!! Form::submit('edit', ['class' => 'btn btn-link pull-right']) !!}
+
+					{!! Form::close() !!}					
+				
+				@endif				
+				
+			</h3>
+					
 			<p>{{ $location->description }}</p>
+			
+			
+			
 		@endforeach	
 	
 	</div>

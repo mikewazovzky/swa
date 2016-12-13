@@ -14,7 +14,7 @@
 				{!! Form::input('date', 'published_at', date('Y-m-d'), ['class' => 'form-control']) !!}
 			</div>				
 		</div>	
-		{!! Form::file('photo', ['class' => 'form-control', 'id' => 'fileSelect']) !!}
+		{!! Form::file('image', ['class' => 'form-control', 'id' => 'fileSelect']) !!}
 		<div class="form-group">		
 			{!! Form::label('page', 'Page:', ['class' => 'control-label col-sm-3']) !!}
 			<div class="col-sm-9">		
@@ -25,12 +25,12 @@
 		<div class="form-group">		
 			{!! Form::label('label', 'Selected:', ['class' => 'control-label col-sm-3']) !!}
 			<div class="col-sm-9">	
-				{!! Form::label('label', 'none', ['class' => 'form-control', 'id' => 'pageLabel']) !!}
+				{!! Form::label('label', $page, ['class' => 'form-control', 'id' => 'pageLabel']) !!}
 			</div>					
 		</div>
 	</div>	
 	<div class="col-sm-4">
-		<img id="selectedImage" src="/media/canyon.jpg" class="center-block" style="max-height:200px;">
+		<img id="selectedImage" src="/media/{{ $image }}" class="center-block" style="max-height:200px;">
 		<p id="info" style="text-align: center"></p>
 	</div>	
 </div>
@@ -51,5 +51,5 @@
 	</div>
 </div>
 
-<div id="userPage" style="border: 1px solid grey">
+<div id="userPage" class="container">
 </div>

@@ -2,13 +2,17 @@
 
 @section('content')	
 
-	<div class="container location">
+	<div class="container">
+
+		<h1>Edit Location</h1>
 		
-		<h1> Update an Article</h1>
-		
-		{!! Form::model($article, ['method' => 'PATCH', 'action' => ['NewsController@update', $article->id]]) !!}
+		{!! Form::model($location, ['method' => 'PATCH', 'class' => 'form-horizontal', 'files'=>true, 'action' => ['LocationsController@update', $location->id ]]) !!}
 			
-			@include('news.form', ['submitButtonText' => 'Update Article'])
+			@include('locations.form1', [
+				'submitButtonText' => 'Update Location', 
+				'image' => ($location->image ? : 'canyon.jpg'), 
+				'page' => ($location->page ? $location->page . '.blade.php': 'none')
+			])
 
 		{!! Form::close() !!}
 		

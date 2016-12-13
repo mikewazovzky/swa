@@ -61,6 +61,7 @@ class UsersController extends Controller
 		}
 		
 		$input['password'] = bcrypt($input['password']);
+		
 		$user = new User($input);
 		
 		$user->save();

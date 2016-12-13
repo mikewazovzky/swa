@@ -6,7 +6,7 @@
 
 		<h1>Create a New Location</h1>
 		
-		{!! Form::open(['url' => 'locations', 'class' => 'form-horizontal']) !!}
+		{!! Form::open(['url' => 'locations', 'class' => 'form-horizontal', 'files'=>true]) !!}
 			
 			@include('locations.form1', ['submitButtonText' => 'Create New Location'])
 

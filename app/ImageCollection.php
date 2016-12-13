@@ -14,7 +14,11 @@ class ImageCollection
 
 	public function get($location)
 	{
-		return $this->data[$location];
+		if (array_key_exists($location, $this->data)) {
+			return $this->data[$location];
+		}
+		
+		return [];		
 	}	
 	
 }
