@@ -8,7 +8,7 @@
 		
 		{!! Form::model($location, ['method' => 'PATCH', 'class' => 'form-horizontal', 'files'=>true, 'action' => ['LocationsController@update', $location->id ]]) !!}
 			
-			@include('locations.form1', [
+			@include('locations.form', [
 				'submitButtonText' => 'Update Location', 
 				'image' => ($location->image ? : 'canyon.jpg'), 
 				'page' => ($location->page ? $location->page . '.blade.php': 'none')

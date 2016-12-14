@@ -41,7 +41,7 @@
 					
 					<div class="form-group">
 						<div class="col-sm-9">
-							{!! Form::file('avatar', ['class' => 'form-control', 'id' => 'fileSelect']) !!}
+							{!! Form::file('avatar', ['class' => 'form-control', 'id' => 'userFile']) !!}
 						</div>	
 					</div>		
 					
@@ -54,8 +54,8 @@
 				</div>
 				
 				<div class="col-xs-12 col-sm-4 userPhoto">
-					<img id="selectedImage" src="/media/avatar/{{ $imageSrc }}">
-					<p id="info"></p>
+					<img id="userImage" src="/media/avatar/{{ $imageSrc }}">
+					<p id="userInfo"></p>
 				</div>	
 				
 			</div>	
