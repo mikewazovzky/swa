@@ -41,15 +41,21 @@ class LocationsController extends Controller
     public function store(Request $request)
     {
 		// generate file name for page and image		
-		$name = $this->generateFileName($request['title']); 
+		$name = generateFileName($request['title'], 10); 
+		
+		$pageFile = $request->file('page');
+		$imageFile = $request->file('image');
+		
+		$pageName = $name . '.blade.php';
+		$imageName = $name . '.' . $imageFile->getClientOriginalExtension();
 		
 		// upload page and image files
-		$pageName  = $this->uploadPage($request->file('page'), $name);		
-		$imageName = $this->uploadImage($request->file('image'), $name);
+		$this->uploadPage($pageFile, $pageName);		
+		$this->uploadImage($imageFile, $imageName);
 		
 		$location = new Location($request->all());
 		$location->image = $imageName;
-		$location->page = $name;
+		$location->page = $name;  //  единообразие ?!!
 		
 		Auth::user()->locations()->save($location);
 				
@@ -89,9 +95,27 @@ class LocationsController extends Controller
      */
     public function update(Request $request, Location $location)
     {
-        helper();
+		$input = $request->all();
 		
-		return $location;
+		if(isset($request['page'])) {
+			$pageFile = $request->file('page');
+			$this->uploadPage($pageFile, $location->page . '.blade.php');
+			unset($input['page']);
+		}
+		
+		// костыль
+		
+		
+		
+		if(isset($request['image'])) {
+			$imageFile = $request->file('image');
+			$this->uploadImage($imageFile, $location->image);
+			unset($input['image']);
+		}
+		
+		$location->update($input); // ???может ли измениться page and image???
+
+		return redirect('locations'); 		
     }
 
     /**
@@ -107,50 +131,17 @@ class LocationsController extends Controller
 		return redirect('locations');
     }
 	
-	public function uploadPage($file, $name)
+	public function uploadPage($file, $pageName)
 	{
-		$pageName = $name . '.blade.php';
 		$path = '/resources/views/locations/locations/';
-		$this->fileUpload($file, $pageName, $path);
+		fileUpload($file, $path, $pageName);
 		return $pageName;
 	}		
 	
-	public function uploadImage($file, $name)
+	public function uploadImage($file, $imageName)
 	{
-		$imageName = $name . '.' . $file->getClientOriginalExtension();
 		$path = '/public/media/';
-		$this->fileUpload($file, $imageName, $path);
+		fileUpload($file, $path, $imageName);
 		return $imageName;
-	}	
-	
-	public function fileUpload($file, $name, $path)
-	{
-		$filePath = base_path() . $path;
-		$fileName = $filePath . $name;
-		
-		if (file_exists($fileName)) {
-			unlink($fileName);
-		}
-	
-		return $file->move($filePath, $name);
-	}	
-	
-	public function generateFileName($base) 
-	{
-		$maxLength = 10;
-		$chars = str_split(bcrypt($base));
-		$str = '';
-		
-		foreach($chars as $ch) {
-			if (ctype_alnum ($ch)) {
-				$str .= $ch;				
-			}
-			
-			if (strlen($str) >= $maxLength) {
-				break;
-			}
-		}		
-		return $str;		
-	}
-	
+	}			
 }
