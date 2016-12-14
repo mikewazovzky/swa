@@ -89,7 +89,9 @@ class LocationsController extends Controller
      */
     public function update(Request $request, Location $location)
     {
-        return $location;
+        helper();
+		
+		return $location;
     }
 
     /**
