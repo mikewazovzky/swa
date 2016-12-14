@@ -18,8 +18,8 @@ class CreateLocationsTable extends Migration
 			$table->integer('user_id')->unsigned();
 			$table->string('title');
 			$table->text('description');
-			$table->string('page');
-			$table->string('image');			
+			$table->string('page')->nullable();
+			$table->string('image')->nullable();			
             $table->timestamps();
 			$table->timestamp('published_at')->default(DB::raw('CURRENT_TIMESTAMP'));
 			

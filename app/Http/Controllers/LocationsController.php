@@ -10,7 +10,15 @@ use Illuminate\Support\Facades\Auth;
 
 class LocationsController extends Controller
 {
-    /**
+    
+	public function __construct()
+	{
+		$this->middleware('admin', ['except' => ['index', 'show']]);
+	}
+	
+	
+	
+	/**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -40,22 +48,26 @@ class LocationsController extends Controller
      */
     public function store(Request $request)
     {
+		$location = new Location($request->all());
+		
 		// generate file name for page and image		
 		$name = generateFileName($request['title'], 10); 
 		
-		$pageFile = $request->file('page');
-		$imageFile = $request->file('image');
+		if(isset($request['page'])) {
+			// upload Page File	
+			$pageFile = $request->file('page');
+			$pageName = $name . '.blade.php';
+			$this->uploadPage($pageFile, $pageName);
+			$location->page = $name;  //  единообразие ?!!
+		} 
 		
-		$pageName = $name . '.blade.php';
-		$imageName = $name . '.' . $imageFile->getClientOriginalExtension();
-		
-		// upload page and image files
-		$this->uploadPage($pageFile, $pageName);		
-		$this->uploadImage($imageFile, $imageName);
-		
-		$location = new Location($request->all());
-		$location->image = $imageName;
-		$location->page = $name;  //  единообразие ?!!
+		if(isset($request['image'])) {
+			// upload image File	
+			$imageFile = $request->file('image');		
+			$imageName = $name . '.' . $imageFile->getClientOriginalExtension();				
+			$this->uploadImage($imageFile, $imageName);
+			$location->image = $imageName;			
+		}	
 		
 		Auth::user()->locations()->save($location);
 				
@@ -97,23 +109,21 @@ class LocationsController extends Controller
     {
 		$input = $request->all();
 		
-		if(isset($request['page'])) {
+		if(!empty($request['page'])) {
 			$pageFile = $request->file('page');
 			$this->uploadPage($pageFile, $location->page . '.blade.php');
 			unset($input['page']);
 		}
 		
-		// костыль
+		//dd($request['image']);
 		
-		
-		
-		if(isset($request['image'])) {
+		if(!empty($request['image'])) {
 			$imageFile = $request->file('image');
 			$this->uploadImage($imageFile, $location->image);
 			unset($input['image']);
 		}
 		
-		$location->update($input); // ???может ли измениться page and image???
+		$location->update($input); 
 
 		return redirect('locations'); 		
     }
@@ -125,8 +135,20 @@ class LocationsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Location $location)
-    {
-        $location->delete();
+    {        
+		if(isset($location->page)) {
+			// delete location file
+			$filePage = base_path() . '/resources/views/locations/locations/' . $location->page . '.blade.php';
+			unlink($filePage);
+		}
+		
+		if(isset($location->image)) {
+			// delete image file 
+			$fileImage = base_path() . '/public/media/' . $location->image;
+			unlink($fileImage);
+		}
+		
+		$location->delete();
 		
 		return redirect('locations');
     }
