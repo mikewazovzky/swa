@@ -8,7 +8,11 @@
 		
 		{!! Form::open(['url' => 'locations', 'class' => 'form-horizontal', 'files'=>true]) !!}
 			
-			@include('locations.form1', ['submitButtonText' => 'Create New Location'])
+			@include('locations.form1', [
+				'submitButtonText' => 'Create New Location', 
+				'image' => 'canyon.jpg', 
+				'page' => 'none'
+			])
 
 		{!! Form::close() !!}
 		
