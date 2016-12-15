@@ -4,7 +4,7 @@
 
 	<div class="container">
 
-		<h1>Опубликованные отчеты<a class="pull-right" href="locations/create">Create new</a></h1>
+		<h1>Опубликованные отчеты<a class="btn btn-info pull-right" href="locations/create">Create new</a></h1>
 		<hr/>
 
 		@foreach($locations as $location)
