@@ -50,24 +50,20 @@ class LocationsController extends Controller
     {
 		$location = new Location($request->all());
 		
-		// generate file name for page and image		
 		$name = generateFileName($request['title'], 10); 
+	
+		if($request['page']) {    
+			if($location->loadPageFile($request['page'], $name)) {
+				$location->page = $name;
+			}
+		}
 		
-		if(isset($request['page'])) {
-			// upload Page File	
-			$pageFile = $request->file('page');
-			$pageName = $name . '.blade.php';
-			$this->uploadPage($pageFile, $pageName);
-			$location->page = $name;  //  единообразие ?!!
-		} 
-		
-		if(isset($request['image'])) {
-			// upload image File	
-			$imageFile = $request->file('image');		
-			$imageName = $name . '.' . $imageFile->getClientOriginalExtension();				
-			$this->uploadImage($imageFile, $imageName);
-			$location->image = $imageName;			
-		}	
+		if($request['image']) { 
+			$imageName = $name . '.' . $request['image']->getClientOriginalExtension(); 	
+			if($location->loadImageFile($request['image'], $imageName)) {
+				$location->image = $imageName;
+			}
+		}
 		
 		Auth::user()->locations()->save($location);
 				
@@ -84,7 +80,8 @@ class LocationsController extends Controller
     {
 		$collection = new ImageCollection();
 		$images = $collection->get($location->page);
-		return view('locations.locations.' . $location->page, compact('images'));
+	
+		return view('locations.locations.' . ($location->page ? : 'default'), compact('images'));
     }
 
     /**
@@ -107,22 +104,26 @@ class LocationsController extends Controller
      */
     public function update(Request $request, Location $location)
     {
+		
 		$input = $request->all();
 		
-		if(!empty($request['page'])) {
-			$pageFile = $request->file('page');
-			$this->uploadPage($pageFile, $location->page . '.blade.php');
-			unset($input['page']);
+		$name = generateFileName($request['title'], 10); 
+		
+		if($request['page']) {                        							// если страница изменена
+			$pageName = $location->page ? : $name;    							// если имени не было, генерируем новое
+			if($location->loadPageFile($request['page'], $pageName)) {			// если удалось загрузить файл
+				$input['page'] = $pageName;                                       // обновляем имя страницы
+			}
 		}
 		
-		//dd($request['image']);
-		
-		if(!empty($request['image'])) {
-			$imageFile = $request->file('image');
-			$this->uploadImage($imageFile, $location->image);
-			unset($input['image']);
+		if($request['image']) { 
+			$imageName = $location->image ? : $name . '.' . $request['image']->getClientOriginalExtension(); 			
+			if($location->loadImageFile($request['image'], $imageName)) {				
+				$input['image'] = $imageName;
+				//dd($request['image']);
+			}
 		}
-		
+
 		$location->update($input); 
 
 		return redirect('locations'); 		
@@ -136,14 +137,14 @@ class LocationsController extends Controller
      */
     public function destroy(Location $location)
     {        
-		if(isset($location->page)) {
-			// delete location file
+		// delete location page file
+		if($location->page) {			
 			$filePage = base_path() . '/resources/views/locations/locations/' . $location->page . '.blade.php';
 			unlink($filePage);
 		}
 		
-		if(isset($location->image)) {
-			// delete image file 
+		// delete location image file
+		if($location->image) {
 			$fileImage = base_path() . '/public/media/' . $location->image;
 			unlink($fileImage);
 		}

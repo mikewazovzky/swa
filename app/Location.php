@@ -4,6 +4,7 @@ namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
 class Location extends Model
 {
@@ -42,4 +43,37 @@ class Location extends Model
 		}
 		return $color;
 	}
+	/**
+	 * Create/update location files // changes/resets $this->page and $this->image
+	 */
+	public function loadPageFile($pageFile, $pageName)
+	{
+		// upload Page File
+		if($pageFile) {   
+			return $this->uploadPage($pageFile, $pageName . '.blade.php');
+		} 
+		return false;
+	}	
+	
+	public function loadImageFile($imageFile, $imageName)
+	{
+		// upload Image File
+		if($imageFile) {
+			return $this->uploadImage($imageFile, $imageName);						
+		}
+		return false;
+	}	
+	public function uploadPage($file, $pageName)
+	{
+		$path = '/resources/views/locations/locations/';
+		return fileUpload($file, $path, $pageName);
+	}		
+	
+	public function uploadImage($file, $imageName)
+	{
+		$path = '/public/media/';
+		return fileUpload($file, $path, $imageName);
+	}
+	
+	
 }
