@@ -63,11 +63,19 @@ class LocationsController extends Controller
      */
     public function show(Location $location)
     {
-		$collection = new ImageCollection();
-		$images = $collection->get($location->page);
-	
-		return view('locations.locations.' . ($location->page ? : 'default'), compact('images'));
-    }
+		if ($location->id < 9) {
+			// обработка страничек администратора .blade.php		
+			$collection = new ImageCollection();
+			$images = $collection->get($location->page);
+		
+			return view('locations.locations.' . ($location->page ? : 'default'), compact('images'));			
+		}	else {
+		
+			// обработка страничек пользователей .html	
+			$str = file_get_contents(base_path() . '/resources/views/locations/locations/' . $location->page . '.html');
+			return view('locations.locations.default', compact('str', 'location'));
+		}
+	}
 
     /**
      * Show the form for editing the specified resource.
@@ -106,7 +114,7 @@ class LocationsController extends Controller
     {        
 		// delete location page file
 		if($location->page) {			
-			$filePage = base_path() . '/resources/views/locations/locations/' . $location->page . '.blade.php';
+			$filePage = base_path() . '/resources/views/locations/locations/' . $location->page . '.html';
 			unlink($filePage);
 		}
 		

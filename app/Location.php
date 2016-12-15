@@ -66,27 +66,6 @@ class Location extends Model
 	}	
 	
 	/**
-	 * Load location files: page and image
-	 */
-	public function loadFiles($request)
-	{	
-		$name = generateFileName($request['title'], 10); 
-	
-		if($request['page']) {    														// если пользователем выбрана страница
-			if($this->loadPageFile($request['page'], $name)) {							// если удалось загрузить ее файл на сервер
-				$this->page = $name;													// записать ссылку на файл (имя) в loaction->page 
-			}
-		}
-		
-		if($request['image']) { 														// если пользователем выбрано изображение
-			$imageName = $name . '.' . $request['image']->getClientOriginalExtension(); // если удалось загрузить его файл на сервер
-			if($this->loadImageFile($request['image'], $imageName)) {					// записать ссылку на файл (имя) в loaction->image
-				$this->image = $imageName;
-			}
-		}	
-	}	
-	
-	/**
 	 * Create/update location files // changes/resets $this->page and $this->image
 	 */
 	public function loadPageFile($pageFile, $pageName)
@@ -94,7 +73,7 @@ class Location extends Model
 		$pagePath = '/resources/views/locations/locations/';
 		
 		if($pageFile) {   
-			return fileUpload($pageFile, $pagePath, $pageName . '.blade.php');
+			return fileUpload($pageFile, $pagePath, $pageName . '.html');
 		} 
 		return false;
 	}	
