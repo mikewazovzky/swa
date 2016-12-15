@@ -17,7 +17,7 @@ elixir(mix => {
     mix
 		.sass('app.scss')
 		.sass('main.scss')
-		.webpack('app.js');
+		.scripts(['service.js', 'user.js', 'location.js', 'script.js'], 'public/js/app.js');
 });
 
 elixir(function(mix) {
