@@ -48,19 +48,22 @@ class LocationsController extends Controller
      */
     public function store(Request $request)
     {
-		$location = new Location($request->all());
+		$input = $request->all();
 		
-		$name = generateFileName($request['title'], 10); 
+		$location = new Location($input);
+		
+		$name = generateFileName($input['title'], 10); 
+		$pageName = $name;
+		$imageName = $name . '.jpg';;
 	
-		if($request['page']) {    
-			if($location->loadPageFile($request['page'], $name)) {
-				$location->page = $name;
+		if(isset($input['page'])) {    									// если пользователем выбрана страница
+			if($location->loadPageFile($input['page'], $pageName)) {	// если удалось загрузить ее на файл 
+				$location->page = $name;								// записать ссылку на файл (имя) в loaction - page 
 			}
 		}
 		
-		if($request['image']) { 
-			$imageName = $name . '.' . $request['image']->getClientOriginalExtension(); 	
-			if($location->loadImageFile($request['image'], $imageName)) {
+		if(isset($input['image'])) { 
+			if($location->loadImageFile($input['image'], $imageName)) {
 				$location->image = $imageName;
 			}
 		}
@@ -107,20 +110,21 @@ class LocationsController extends Controller
 		
 		$input = $request->all();
 		
-		$name = generateFileName($request['title'], 10); 
+		//dd(isset($input['page']));
 		
-		if($request['page']) {                        							// если страница изменена
-			$pageName = $location->page ? : $name;    							// если имени не было, генерируем новое
-			if($location->loadPageFile($request['page'], $pageName)) {			// если удалось загрузить файл
-				$input['page'] = $pageName;                                       // обновляем имя страницы
+		$name = generateFileName($input['title'], 10); 
+		$pageName = $location->page ? : $name;	
+		$imageName = $location->image ? : $name . '.jpg';
+		
+		if(isset($input['page'])) {   			    							
+			if($location->loadPageFile($input['page'], $pageName)) {			
+				$input['page'] = $pageName;                                       
 			}
 		}
 		
-		if($request['image']) { 
-			$imageName = $location->image ? : $name . '.' . $request['image']->getClientOriginalExtension(); 			
-			if($location->loadImageFile($request['image'], $imageName)) {				
+		if(isset($input['image'])) { 	
+			if($location->loadImageFile($input['image'], $imageName)) {				
 				$input['image'] = $imageName;
-				//dd($request['image']);
 			}
 		}
 
