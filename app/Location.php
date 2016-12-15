@@ -44,6 +44,26 @@ class Location extends Model
 		return $color;
 	}
 	
+	public function fillData($input)
+	{
+		$name = generateFileName($input['title'], 10); 
+		$pageName = $this->page ? : $name;	
+		$imageName = $this->image ? : $name . '.jpg';
+		
+		$this->fill($input); 		
+		
+		if(isset($input['page'])) {   
+			if($this->loadPageFile($input['page'], $pageName)) {			
+				$this->page = $pageName;                                       
+			}
+		}
+		
+		if(isset($input['image'])) { 	
+			if($this->loadImageFile($input['image'], $imageName)) {				
+				$this->image = $imageName;
+			}
+		}	
+	}	
 	
 	/**
 	 * Load location files: page and image

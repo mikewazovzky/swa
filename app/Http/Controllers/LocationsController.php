@@ -14,9 +14,7 @@ class LocationsController extends Controller
 	public function __construct()
 	{
 		$this->middleware('admin', ['except' => ['index', 'show']]);
-	}
-	
-	
+	}	
 	
 	/**
      * Display a listing of the resource.
@@ -48,25 +46,9 @@ class LocationsController extends Controller
      */
     public function store(Request $request)
     {
-		$input = $request->all();
+		$location = new Location();
 		
-		$location = new Location($input);
-		
-		$name = generateFileName($input['title'], 10); 
-		$pageName = $name;
-		$imageName = $name . '.jpg';;
-	
-		if(isset($input['page'])) {    									// если пользователем выбрана страница
-			if($location->loadPageFile($input['page'], $pageName)) {	// если удалось загрузить ее на файл 
-				$location->page = $name;								// записать ссылку на файл (имя) в loaction - page 
-			}
-		}
-		
-		if(isset($input['image'])) { 
-			if($location->loadImageFile($input['image'], $imageName)) {
-				$location->image = $imageName;
-			}
-		}
+		$location->fillData($request->all()); 
 		
 		Auth::user()->locations()->save($location);
 				
@@ -107,28 +89,9 @@ class LocationsController extends Controller
      */
     public function update(Request $request, Location $location)
     {
+		$location->fillData($request->all()); 		
 		
-		$input = $request->all();
-		
-		//dd(isset($input['page']));
-		
-		$name = generateFileName($input['title'], 10); 
-		$pageName = $location->page ? : $name;	
-		$imageName = $location->image ? : $name . '.jpg';
-		
-		if(isset($input['page'])) {   			    							
-			if($location->loadPageFile($input['page'], $pageName)) {			
-				$input['page'] = $pageName;                                       
-			}
-		}
-		
-		if(isset($input['image'])) { 	
-			if($location->loadImageFile($input['image'], $imageName)) {				
-				$input['image'] = $imageName;
-			}
-		}
-
-		$location->update($input); 
+		$location->save(); 
 
 		return redirect('locations'); 		
     }
