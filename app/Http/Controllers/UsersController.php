@@ -7,6 +7,9 @@ use App\User;
 
 class UsersController extends Controller
 {
+	/**
+     * Constructor, add authorization middleware to controller
+     */  
 	public function __construct()
 	{
 		$this->middleware('admin', ['except' => ['edit', 'update']]);
@@ -27,7 +30,7 @@ class UsersController extends Controller
 	/**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \User $user
      * @return \Illuminate\Http\Response
      */
     public function show(User $user)
@@ -53,16 +56,9 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->all();
+		$user = new User();
 		
-		//upload User Image
-		if(isset($input['avatar'])) {
-			$input['avatar'] = $this->uploadUserPhoto($request->file('avatar'), $input['email']);
-		}
-		
-		$input['password'] = bcrypt($input['password']);
-		
-		$user = new User($input);
+		$user->fillData($request->all()); 
 		
 		$user->save();
 				
@@ -72,7 +68,7 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\User $user
      * @return \Illuminate\Http\Response
      */
     public function edit(User $user)
@@ -84,28 +80,22 @@ class UsersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\User $user
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, User $user)
 	{
-		$input = $request->all();
+		$user->fillData($request->all()); 		
 		
-		//upload User Image
-		if(isset($input['avatar'])) {
-			$input['avatar'] = $this->uploadUserPhoto($request->file('avatar'), $input['email']);
-		}
-		
-		$input['password'] = bcrypt($input['password']);
-		$user->update($input);
-		
+		$user->save(); 
+
 		return redirect('users');
 	}
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\User $user
      * @return \Illuminate\Http\Response
      */
     public function destroy(User $user)
@@ -114,29 +104,4 @@ class UsersController extends Controller
 		
 		return redirect('users');
     }
-	
-	/**
-     * Upload User Image
-     *
-     * @param Object $file - Laravel object with uploaded file data
-	 * @param string $fileName - name for uploaded file
-     * @return uploaded file name with extention if success, null if errors
-     */		
-	private function uploadUserPhoto($file, $nameBase) 
-	{
-		$nameLength = 10;
-		$imageName = substr(bcrypt($nameBase), 0, $nameLength) . '.' . $file->getClientOriginalExtension();
-		$imagePath = base_path() . '/public/media/avatar/';
-		//$imageName = $userId . '.' . $file->getClientOriginalExtension();
-		$fileName = $imagePath . $imageName;		
-	
-		if (file_exists($fileName)) {
-			unlink($fileName);
-		}
-		if ($file->move($imagePath, $imageName)) {
-			return $imageName;
-		} else {
-			return null;
-		}		
-	}
 }

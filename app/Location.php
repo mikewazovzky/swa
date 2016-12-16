@@ -8,7 +8,25 @@ use Illuminate\Http\Request;
 
 class Location extends Model
 {
-    // allow mass assignment
+    /**
+     * The path to store user pages.
+     *
+     * @const string
+     */	
+	const PATH_PAGES  = '/resources/views/locations/locations/';
+	
+    /**
+     * The path to store user page cover images.
+     *
+     * @const string
+     */		
+	const PATH_IMAGES = '/public/media/';
+	
+	/**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
 	protected $fillable = [
 		'title',
 		'description',
@@ -17,8 +35,18 @@ class Location extends Model
 		'published_at',
 	];
 	
+    /**
+     * The attributes that are treated as datetime Carbon\Carbon objects.
+     *
+     * @var array
+     */	
 	protected $dates = ['published_at'];
 	
+    /**
+     * Converts attribute to Carbon\Carbon object.
+     *
+     * @param $date
+     */			
 	public function setPublishedAtAttribute($date) 
 	{
 		$this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date);		
@@ -26,12 +54,19 @@ class Location extends Model
 	
 	/**
 	 * Returns user for the Article
+	 *
+	 * @return Illuminate\Database\Eloquent\Relations\BelongsTo (??)
 	 */
 	public function user()
 	{
 		return $this->belongsTo('App\User');
 	}
 	
+	/**
+	 * Defines color for  the Location plate on a main page
+	 *
+	 * @return string 
+	 */	
 	public static function color() {	
 		static $colors = ['#ff6f00', '#ff9500', '#ffc108', '#27a15e', '#51de38', '#c3d932', '#7a79c6', '#7d7bff', '#6d6aff'];
 		static $index = 0;	
@@ -44,6 +79,12 @@ class Location extends Model
 		return $color;
 	}
 	
+	/**
+	 * Fills object properties with input data
+	 * 
+	 * @param array $input
+	 * @return string 
+	 */		
 	public function fillData($input)
 	{
 		$name = generateFileName($input['title'], 10); 
@@ -52,76 +93,53 @@ class Location extends Model
 		
 		$this->fill($input); 		
 		
+		// upload page file
 		if(isset($input['page'])) {   
-			if($this->loadPageFile($input['page'], $pageName)) {			
+			if(fileUpload($input['page'], self::PATH_PAGES, $pageName . '.html')) { // ($input['page'], $pageName)) {			
 				$this->page = $pageName;                                       
 			}
 		}
 		
+		// upload omage file
 		if(isset($input['image'])) { 	
-			if($this->loadImageFile($input['image'], $imageName)) {				
+			if(fileUpload($input['image'], self::PATH_IMAGES, $imageName)) { //loadImageFile($input['image'], $imageName)) {				
 				$this->image = $imageName;
 			}
 		}	
 	}	
 	
 	/**
-     * Read location [html] page as a string
+     * Read location [html/text] page as a string
      *
      * @return string
      */
 	public function getContents()
 	{
-		$path = '/resources/views/locations/locations/';
-		
 		if (!$this->page) {
 			return '';
 		} 		
-		return file_get_contents(base_path() . $path . $this->page . '.html');
+		return file_get_contents(base_path() . self::PATH_PAGES . $this->page . '.html');
 	}
 	
 	/**
-     * Override Model::destroy method, delete page and image files
+     * Override Model::delete method, delete page and image files, call parent::delete
      *
      * @return string
      */
 	public function delete() 
 	{
+		// delete location page file
 		if($this->page) {			
-			$filePage = base_path() . '/resources/views/locations/locations/' . $this->page . '.html';
+			$filePage = base_path() . self::PATH_PAGES . $this->page . '.html';
 			unlink($filePage);
 		}
 		
 		// delete location image file
 		if($this->image) {
-			$fileImage = base_path() . '/public/media/' . $this->image;
+			$fileImage = base_path() . self::PATH_IMAGES . $this->image;
 			unlink($fileImage);
 		}
 		
 		return parent::delete();		
-	}	
-			
-	
-	/**
-	 * Create/update location files // changes/resets $this->page and $this->image
-	 */
-	public function loadPageFile($pageFile, $pageName)
-	{
-		$pagePath = '/resources/views/locations/locations/';
-		
-		if($pageFile) {   
-			return fileUpload($pageFile, $pagePath, $pageName . '.html');
-		} 
-		return false;
-	}	
-	
-	public function loadImageFile($imageFile, $imageName)
-	{
-		$imagePath = '/public/media/';
-		
-		if($imageFile) {
-			return fileUpload($imageFile, $imagePath, $imageName);						
-		}
-		return false;
-	}	
+	}					
 }

@@ -10,34 +10,38 @@
  **/
 
 function generateFileName($nameBase, $nameLength = 20) 
-	{
-		$chars = str_split(bcrypt($nameBase));
-		$str = '';
+{
+	$chars = str_split(bcrypt($nameBase));
+	$str = '';
+	
+	foreach($chars as $ch) {
+		if (ctype_alnum ($ch)) {
+			$str .= $ch;				
+		}
 		
-		foreach($chars as $ch) {
-			if (ctype_alnum ($ch)) {
-				$str .= $ch;				
-			}
-			
-			if (strlen($str) >= $nameLength) {
-				break;
-			}
-		}		
-		return $str;		
-	}
+		if (strlen($str) >= $nameLength) {
+			break;
+		}
+	}		
+	return $str;		
+}
 	
 	
 /**
  * Upload user file to a server 
  *
- * @param Laravel File Object $file - file to be uploaded
- * @param string $path - new file location  
- * @param string $name - new file name 
+ * @param \Illuminate\Http\UploadedFile - file to be uploaded
+ * @param string $path - uploaded file location  
+ * @param string $name - uploaded file name 
  *
- * @return bool $status, true if success
+ * @return bool - true (if success) or false (failure)
  **/	
-function fileUpload($file, $path, $name)
+function fileUpload(\Illuminate\Http\UploadedFile $file, $path, $name)
 {
+	if(!$file) {
+		return false; 
+	}
+	
 	$filePath = base_path() . $path;
 	$fileName = $filePath . $name;
 	
