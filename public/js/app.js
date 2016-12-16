@@ -48,8 +48,8 @@ var User = (function() {
 	function handleUserFormSubmit(event) {
 		
 		//  check if passwords match
-		var pass = $("#formUser input[name=password]").val();
-		var pass2 = $("#formUser input[name=password2]").val();
+		var pass = $("#userForm input[name='password']").val();
+		var pass2 = $("#userForm input[name='password2']").val();
 		var error = "";
 		
 		if(pass != pass2) {
@@ -62,8 +62,8 @@ var User = (function() {
 			alert(error);
 			event.preventDefault(); // stop form submission
 			// reset passwords
-			$("#formUser input[name=password]").val("");
-			$("#formUser input[name=password2]").val("");		
+			$("#userForm input[name='password']").val("");
+			$("#userForm input[name='password2']").val("");		
 		}
 		return true;	
 	}
