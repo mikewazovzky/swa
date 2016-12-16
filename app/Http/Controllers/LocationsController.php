@@ -117,18 +117,6 @@ class LocationsController extends Controller
      */
     public function destroy(Location $location)
     {        
-		// delete location page file
-		if($location->page) {			
-			$filePage = base_path() . '/resources/views/locations/locations/' . $location->page . '.html';
-			unlink($filePage);
-		}
-		
-		// delete location image file
-		if($location->image) {
-			$fileImage = base_path() . '/public/media/' . $location->image;
-			unlink($fileImage);
-		}
-		
 		$location->delete();
 		
 		return redirect('locations');

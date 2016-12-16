@@ -80,6 +80,26 @@ class Location extends Model
 		return file_get_contents(base_path() . $path . $this->page . '.html');
 	}
 	
+	/**
+     * Override Model::destroy method, delete page and image files
+     *
+     * @return string
+     */
+	public function delete() 
+	{
+		if($this->page) {			
+			$filePage = base_path() . '/resources/views/locations/locations/' . $this->page . '.html';
+			unlink($filePage);
+		}
+		
+		// delete location image file
+		if($this->image) {
+			$fileImage = base_path() . '/public/media/' . $this->image;
+			unlink($fileImage);
+		}
+		
+		parent::delete();		
+	}	
 			
 	
 	/**
