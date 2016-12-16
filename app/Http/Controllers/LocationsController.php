@@ -10,14 +10,16 @@ use Illuminate\Support\Facades\Auth;
 
 class LocationsController extends Controller
 {
-    
+	/**
+     * Constructor, add authorization middleware to controller
+     */    
 	public function __construct()
 	{
 		$this->middleware('admin', ['except' => ['index', 'show']]);
 	}	
 	
 	/**
-     * Display a listing of the resource.
+     * Display a listing of the locations.
      *
      * @return \Illuminate\Http\Response
      */
@@ -29,7 +31,7 @@ class LocationsController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new location.
      *
      * @return \Illuminate\Http\Response
      */
@@ -39,7 +41,7 @@ class LocationsController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created location in database.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -56,31 +58,34 @@ class LocationsController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified location.
      *
-     * @param  int  $id
+     * @param  \App\Location  $location
      * @return \Illuminate\Http\Response
      */
     public function show(Location $location)
     {
+		// Temporary! обработка страничек администратора, формат: .blade.php, images: array	via ImageCollection
 		if ($location->id < 9) {
-			// обработка страничек администратора .blade.php		
+			
 			$collection = new ImageCollection();
 			$images = $collection->get($location->page);
+			
+			return view('locations.locations.' . ($location->page ? : 'default'), compact('images'));	
 		
-			return view('locations.locations.' . ($location->page ? : 'default'), compact('images'));			
-		}	else {
+		// обработка страничек пользователей, формат: .html, images: embedded  links
+		} else {			
 		
-			// обработка страничек пользователей .html	
-			$str = file_get_contents(base_path() . '/resources/views/locations/locations/' . $location->page . '.html');
-			return view('locations.locations.default', compact('str', 'location'));
+			$contents = $location->getContents();
+			
+			return view('locations.locations.default', compact('location', 'contents'));
 		}
 	}
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified location.
      *
-     * @param  int  $id
+     * @param  \App\Location $location
      * @return \Illuminate\Http\Response
      */
     public function edit(Location $location)
@@ -89,10 +94,10 @@ class LocationsController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified location in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Location $location
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Location $location)
@@ -105,9 +110,9 @@ class LocationsController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified location from storage.
      *
-     * @param  int  $id
+     * @param  \App\Location $location
      * @return \Illuminate\Http\Response
      */
     public function destroy(Location $location)
@@ -127,19 +132,5 @@ class LocationsController extends Controller
 		$location->delete();
 		
 		return redirect('locations');
-    }
-	
-	public function uploadPage($file, $pageName)
-	{
-		$path = '/resources/views/locations/locations/';
-		fileUpload($file, $path, $pageName);
-		return $pageName;
-	}		
-	
-	public function uploadImage($file, $imageName)
-	{
-		$path = '/public/media/';
-		fileUpload($file, $path, $imageName);
-		return $imageName;
-	}			
+    }		
 }

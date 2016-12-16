@@ -66,6 +66,23 @@ class Location extends Model
 	}	
 	
 	/**
+     * Read location [html] page as a string
+     *
+     * @return string
+     */
+	public function getContents()
+	{
+		$path = '/resources/views/locations/locations/';
+		
+		if (!$this->page) {
+			return '';
+		} 		
+		return file_get_contents(base_path() . $path . $this->page . '.html');
+	}
+	
+			
+	
+	/**
 	 * Create/update location files // changes/resets $this->page and $this->image
 	 */
 	public function loadPageFile($pageFile, $pageName)

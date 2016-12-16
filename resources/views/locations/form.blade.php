@@ -61,4 +61,7 @@
 	</div>
 </div>
 
-<div id="locationPageContent" class="container"></div>
+<hr>
+<div id="locationPageContent" class="container">
+	{!! $contents !!}
+</div>

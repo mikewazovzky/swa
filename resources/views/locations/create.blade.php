@@ -11,7 +11,8 @@
 			@include('locations.form', [
 				'submitButtonText' => 'Create New Location', 
 				'image' => 'canyon.jpg', 
-				'page' => 'none'
+				'page' => 'none',
+				'contents' => ''
 			])
 
 		{!! Form::close() !!}

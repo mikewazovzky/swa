@@ -11,7 +11,8 @@
 			@include('locations.form', [
 				'submitButtonText' => 'Update Location', 
 				'image' => ($location->image ? : 'canyon.jpg'), 
-				'page' => ($location->page ? $location->page . '.blade.php': 'none')
+				'page' => ($location->page ? $location->page . '.blade.php': 'none'),
+				'contents' => ($location->page ? $location->getContents() : '')
 			])
 
 		{!! Form::close() !!}
