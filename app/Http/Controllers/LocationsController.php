@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Location;
 use App\ImageCollection;
+use App\Http\Requests\LocationRequest;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class LocationsController extends Controller
@@ -46,7 +46,7 @@ class LocationsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LocationRequest $request)
     {
 		$location = new Location();
 		
@@ -66,17 +66,15 @@ class LocationsController extends Controller
     public function show(Location $location)
     {
 		// Temporary! обработка страничек администратора, формат: .blade.php, images: array	via ImageCollection
-		if ($location->id < 9) {
-			
+		if ($location->id < 9) {			
 			$collection = new ImageCollection();
-			$images = $collection->get($location->page);
+			$images = $collection->get($location->page);			
 			
-			return view('locations.locations.' . ($location->page ? : 'default'), compact('images'));	
+			return view('locations.locations.' . $location->page, compact('images'));	
 		
 		// обработка страничек пользователей, формат: .html, images: embedded  links
-		} else {			
-		
-			$contents = $location->getContents();
+		} else {					
+			$contents = $location->getContents();  // Security! Need to process content!?
 			
 			return view('locations.locations.default', compact('location', 'contents'));
 		}
@@ -100,7 +98,7 @@ class LocationsController extends Controller
      * @param  \App\Location $location
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Location $location)
+    public function update(LocationRequest $request, Location $location)
     {
 		$location->fillData($request->all()); 		
 		

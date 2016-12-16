@@ -98,7 +98,7 @@ class Location extends Model
 			unlink($fileImage);
 		}
 		
-		parent::delete();		
+		return parent::delete();		
 	}	
 			
 	

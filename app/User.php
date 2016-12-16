@@ -41,4 +41,20 @@ class User extends Authenticatable
 	{
 		return ($this->id == 1);
 	}
+	
+	/**
+     * Override Model::delete method, delete image file
+     *
+     * @return string
+     */
+	public function delete() 
+	{
+		if($this->avatar) {
+			$fileImage = base_path() . '/public/media/avatar/' . $this->avatar;
+			unlink($fileImage);
+		}		
+		// поменять местами. Удаление файла после успешного удаления объекта из базы
+		return parent::delete();		
+	}	
+	
 }
