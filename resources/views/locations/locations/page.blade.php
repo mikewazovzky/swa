@@ -3,21 +3,18 @@
 
 <img src="/media/page.jpg" align="left" width="300px" style="margin: 0 10px 0 0;"/>
 
-<p>	Благодаря своему удобному расположению Город Пэйдж (Page AZ) является центральной перевалочной 
-	базой для туристов путешествующих по американскому юго-западу.</p>
+<h1>Пэйдж (Page, AZ)</h1>
+<p>	Благодаря своему удобному расположению, город Пэйдж (Page AZ) является центральной перевалочной 
+	базой для туристов путешествующих по американскому юго-западу. По крайней мере я рассматривал его 
+	именно в этом качестве - переночевать по пути из Большого Каньона в Парк Арки, заглянуть ненадолго в 
+	Каньон Антилопы.</p>
 	
-<p>	После знакомства с ним оказалось, что и в окрестностях самог Пэйджа нашлось немало интересного.</p>
+<p>	После знакомства с окрестностями Пэйджа оказалось, что здесь имеется немало интересного. 
+	Рядом с городом расположены знаменитая Подкова (Horseshoebend), два - верхний и нижний - каньона Антилопы
+	(Antelope Canyon), озеро Пауэлл (Lake Powell), Радужный Мост (Rainbow Bridge), скопления Худусов и много 
+	всего интересного в Парке Глен Каньон (Glen Canyon).</p>
 
-<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-	dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-	dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-	non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
 <hr>	
 
 <div style="background-color: #fff; padding: 10px;">
@@ -63,7 +60,7 @@
 		</div>	
 		<hr>
 		<p>	Для любителей промышленного дизайна имеется такое сооружение - Glen Canyon Dam. Прочитал в интернете,
-			что здесь жевет семья огромных грифов. Сегодня их не было.</p>
+			что здесь живет семья огромных грифов. Сегодня их, увы, не было.</p>
 		<div class="row"> <!----- Glen Canyon Dam -------->			
 			<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['001']['src'] }}"></div>
 			<div class="image-item col-sm-6 col-md-4"><img class="img-responsive center-block" src="{{ $images['002']['src'] }}"></div>
@@ -75,7 +72,7 @@
 	<div class="tab-pane" id="horseshoebend">
 		<h1>Подкова</h1>
 		<p>	Еше одно произведение исскуства созданное автором Большого Каньона - рекой Колорадо. 
-			Возле дороги есть указатель (Horseshoebend) и парковка. 
+			Возле дороги есть указатель (Horseshoebend) и парковка.<br> 
 			Тропинка ведущая от парковки к Подкове.</p>
 
 		<div class="image-solo"><img class="img-responsive center-block" src="{{ $images['101']['src'] }}"></div>

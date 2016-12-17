@@ -207,11 +207,11 @@ return [
 		
 		// Horseshoebend 
 		'101' => ['href' => 'http://imgur.com/1i3tk1Q', 'src' => 'http://i.imgur.com/1i3tk1Q.jpg', 'title' => 'source: imgur.com'],
-		'102' => ['href' => 'http://imgur.com/NgMnjQl', 'src' => 'http://i.imgur.com/NgMnjQlh.jpg', 'title' => 'source: imgur.com'],
+		'102' => ['href' => 'http://imgur.com/NgMnjQl', 'src' => 'http://imgur.com/NgMnjQl.jpg', 'title' => 'source: imgur.com'],
 		'103' => ['href' => 'http://imgur.com/azC2dk7', 'src' => 'http://i.imgur.com/azC2dk7l.jpg', 'title' => 'source: imgur.com'],
 		'104' => ['href' => 'http://imgur.com/97cfQHY', 'src' => 'http://i.imgur.com/97cfQHYl.jpg', 'title' => 'source: imgur.com'],
 		'105' => ['href' => 'http://imgur.com/doqUPkT', 'src' => 'http://i.imgur.com/doqUPkTl.jpg', 'title' => 'source: imgur.com'],
-		'106' => ['href' => 'http://imgur.com/AgVucng', 'src' => 'http://i.imgur.com/AgVucngh.jpg', 'title' => 'source: imgur.com'],
+		'106' => ['href' => 'http://imgur.com/AgVucng', 'src' => 'http://imgur.com/AgVucng.jpg', 'title' => 'source: imgur.com'],
 		'107' => ['href' => 'http://imgur.com/U0samgz', 'src' => 'http://i.imgur.com/U0samgzh.jpg', 'title' => 'source: imgur.com'],
 		'108' => ['href' => 'http://imgur.com/AyokASv', 'src' => 'http://i.imgur.com/AyokASvh.jpg', 'title' => 'source: imgur.com'],
 		'109' => ['href' => 'http://imgur.com/zIkbecF', 'src' => 'http://i.imgur.com/zIkbecFl.jpg', 'title' => 'source: imgur.com'],
