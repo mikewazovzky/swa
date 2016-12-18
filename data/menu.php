@@ -1,11 +1,12 @@
 <?php
 
-return ['main'	=> [
-			'link'		=> 'Главная',
-			'href'		=> '/main',
-			'title' 	=> 'ПУТЕВЫЕ ЗАМЕТКИ',
-			'css' 		=> 'main.css'
-		],
+return [
+        // 'main'	=> [
+			// 'link'		=> 'Главная',
+			// 'href'		=> '/main',
+			// 'title' 	=> 'ПУТЕВЫЕ ЗАМЕТКИ',
+			// 'css' 		=> 'main.css'
+		//],
 		'news'	=> [
 			'link'		=> 'Новости',
 			'href'		=> '/news',
