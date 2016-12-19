@@ -13,7 +13,7 @@ class Location extends Model
      *
      * @const string
      */	
-	const PATH_PAGES  = '/resources/views/locations/locations/';
+	const PATH_PAGES  = '/public/userpages/';
 	
     /**
      * The path to store user page cover images.
