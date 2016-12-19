@@ -8,7 +8,11 @@
 		
 		{!! Form::model($user, ['method' => 'PATCH', 'class' => 'form-horizontal', 'id' => 'userForm', 'files'=>true, 'action' => ['UsersController@update', $user->id]]) !!}
 			
-			@include('users.form', ['submitButtonText' => 'Update User', 'imageSrc' => ($user->avatar ? : 'user.png')])
+			@include('users.form', [
+				'submitButtonText' => 'Update User', 
+				'imageSrc' => ($user->avatar ? : 'user.png'),
+				'emailDisabled' => true
+				])
 
 		{!! Form::close() !!}
 		

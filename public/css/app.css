@@ -7696,6 +7696,10 @@ button.close {
   margin-bottom: 3px;
 }
 
+.news .panel-body {
+  padding: 5px;
+}
+
 .news .well {
   font-size: 0.9em;
 }

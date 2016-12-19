@@ -58,9 +58,9 @@ class UsersController extends Controller
     public function store(UserRequest $request)
     {
 		// костыль - убрать в UserRequest!!!
-		$this->validate($request, [
- 			'email' => 'required|email|unique:users,email',
-		]);		
+		// $this->validate($request, [
+ 			// 'email' => 'required|email|unique:users,email',
+		// ]);		
 		
 		$user = new User();
 		

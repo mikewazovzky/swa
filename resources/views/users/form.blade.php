@@ -19,7 +19,7 @@
 					<div class="form-group">
 						{!! Form::label('email', 'Email:', ['class' => 'control-label col-sm-3']) !!}
 						<div class="col-sm-9">
-							{!! Form::email('email', null, ['class' => 'form-control']) !!}
+							{!! Form::email('email', null, ['class' => 'form-control', $emailDisabled ? 'disabled' : '']) !!}
 						</div>	
 					</div>	
 
