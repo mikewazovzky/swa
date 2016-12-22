@@ -32,7 +32,7 @@
     </div>
 
     <!-- Scripts -->
-	<script src="/js/jquery-2.1.4.min.js"></script>
+	<script src="/js/jquery-3.1.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/app.js"></script>
 	@yield('footer')

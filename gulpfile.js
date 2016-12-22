@@ -17,6 +17,7 @@ elixir(mix => {
     mix
 		.sass('app.scss')
 		.sass('main.scss')
+		.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/fonts')
 		.scripts(['service.js', 'user.js', 'location.js', 'script.js'], 'public/js/app.js');
 });
 

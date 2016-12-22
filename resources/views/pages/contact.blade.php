@@ -6,8 +6,8 @@
 	<div class="container contacts">
 		<h3 class="text-center">Контакты</h3>
 		<p><span class="glyphicon glyphicon-map-marker"></span> Россия. Москва. Космодамианская набережная 52/2</p>
-		<p><span class="glyphicon glyphicon-phone"></span> Телефон: (495) 222 22 22</p>
-		<p><span class="glyphicon glyphicon-envelope"></span> Электронная почта: mike.wazovzky@gmail.com</p>
+		<p><span class="glyphicon glyphicon-phone"></span> Телефон: (495) XXX XX XXX</p>
+		<p><span class="glyphicon glyphicon-envelope"></span> Электронная почта: admin@m-labs.xyz</p>
 	</div>
 	
 	<iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgQtiNeBKtUYR2tvvcHt7ZE4&key=AIzaSyCk1tk4ulh8FQpW91l9vCn7c2ze5isgOd0" allowfullscreen></iframe>
