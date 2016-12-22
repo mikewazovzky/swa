@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Http\Requests\UserRequest;
 
 class UsersController extends Controller
 {
@@ -54,8 +55,13 @@ class UsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
+		// костыль - убрать в UserRequest!!!
+		// $this->validate($request, [
+ 			// 'email' => 'required|email|unique:users,email',
+		// ]);		
+		
 		$user = new User();
 		
 		$user->fillData($request->all()); 
@@ -83,7 +89,7 @@ class UsersController extends Controller
      * @param  \App\User $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(UserRequest $request, User $user)
 	{
 		$user->fillData($request->all()); 		
 		
