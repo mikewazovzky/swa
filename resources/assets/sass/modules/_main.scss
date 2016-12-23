@@ -10,6 +10,7 @@ body {
 	background-repeat: no-repeat;	
 	background-position: left top;
 	background-attachment: fixed;
+	position: relative;
 }
 
 // Container main styling
@@ -84,6 +85,14 @@ body {
 .navbar-default {
 	font: bold 14px "Open Sans",sans-serif;
 } 
+
+footer {
+	clear: both;
+}
+
+footer p {
+	color: lightgrey;;
+}
 
 
 

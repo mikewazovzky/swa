@@ -7695,6 +7695,7 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   background-attachment: fixed;
+  position: relative;
 }
 
 .main {
@@ -7762,6 +7763,14 @@ body {
 /** Navbar **/
 .navbar-default {
   font: bold 14px "Open Sans",sans-serif;
+}
+
+footer {
+  clear: both;
+}
+
+footer p {
+  color: lightgrey;
 }
 
 /*# sourceMappingURL=main.css.map */
