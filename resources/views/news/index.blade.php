@@ -41,7 +41,7 @@
 			</div>	
 			
 			<div class="well">
-				<p>	&copy <a href="http://monsterlab.esy.es/">Monster Lab.</a>, 2016,<br>
+				<p>	&copy <a href="http://m-lab.xyz">Monster Lab.</a>, 2016,<br>
 					<a href="#">О нас</a>, 
 					<a href="#">Помощь</a>, 
 					<a href="#">Условия</a>, 
