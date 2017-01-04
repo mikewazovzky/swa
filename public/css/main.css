@@ -7713,7 +7713,7 @@ body {
 }
 
 .main .block {
-  margin: 0 auto 0 auto;
+  margin: 0 auto 4px auto;
   min-height: 460px;
   max-width: 320px;
   opacity: 0.8;
