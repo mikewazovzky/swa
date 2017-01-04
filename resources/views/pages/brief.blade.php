@@ -2,7 +2,7 @@
 
 	<h2>{{ $location->title}}</h2>
 
-	<img src="media/{{ $location->image }}" width="320px"/>
+	<img src="media/{{ $location->image }}"/>
 
 	<p>	{{ $location->description }}</p>
 

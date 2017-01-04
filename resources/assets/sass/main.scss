@@ -1,8 +1,6 @@
 // navbar toggle width???
 // navbar default font???
 
-
-
 // Variables
 $navbar-default-bg: transparent;
 //$navbar-default-border: none;
@@ -10,6 +8,15 @@ $navbar-default-brand-color: #fff;
 $navbar-default-brand-hover-color: #EEC856;
 $navbar-default-link-color: #fff;
 $navbar-default-link-hover-color: #EEC856;
+
+// Variables: Grid parameters
+$grid-gutter-width: 4px;
+
+$screen-lg-min: 1320px;
+
+$container-large-desktop: 1300px; 
+$container-desktop: 970px;
+$container-tablet: 648px;
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";

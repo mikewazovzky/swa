@@ -5,17 +5,15 @@
 
 // background image
 body {
-	min-height: 1800px;	
+
 	background-image: url("../media/skyisle.jpg");
 	background-repeat: no-repeat;	
 	background-position: left top;
 	background-attachment: fixed;
-	position: relative;
 }
 
 // Container main styling
 .main {
-	margin: 0 auto;
 
     // Page title 
     #title {
@@ -23,7 +21,7 @@ body {
         color: #fff;
         line-height: 0.9em;
         text-align: center;
-        margin: 100px 0 0 0;
+        margin: 50px 0 0 0;
     }
 
     // Page subtitle 
@@ -37,17 +35,21 @@ body {
 
     // Block element 
     .block {
-        margin: 0 auto 5px auto;	
-        padding: 0;
-        height: 460px;
-        width: 320px;
+        margin: 0 auto 0 auto;	
+        min-height: 460px;
+		max-width: 320px;
         opacity: 0.8; 
-        float: left;
-        position: relative;
+		position: relative;		
+		
+		img {
+			width: 100%;
+		}
     }
 
     h2 { 	
-        text-align: center; 
+        margin-top: 0px;
+		padding-top: 20px;
+		text-align: center; 
         color: black;
     }
 
@@ -60,25 +62,27 @@ body {
 
     .button {
         text-decoration: none;
-        text-align: center;
         font-family: "Open Sans",sans-serif;
         font-weight: bold;
         color: black;
         padding: 5px 10px;
         border: 3px solid black;
         width: 100px;
-        position: absolute;
+
+		position: absolute;
         bottom: 10px;
-        left: 100px; 	
+		
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
     } 
 
     .button:hover {
         background-color: #000;
         color: white;
-        text-decoration: none;
     }
 }
-// footer { background-color: #303040; }
 
 /** Navbar **/
 
@@ -86,6 +90,7 @@ body {
 	font: bold 14px "Open Sans",sans-serif;
 } 
 
+/** Footer **/
 footer {
 	clear: both;
 }
