@@ -1,0 +1,4 @@
+vendor/
+media/
+#лог сообщений об ошибках
+/errorlog.txt
