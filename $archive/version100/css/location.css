@@ -1,0 +1,15 @@
+﻿ul {list-style-type: square;}
+
+.warning { width: 300px; margin: auto; background-color: red; color: white; padding: 5px 20px;}
+
+.viewpoint th, td {border: 1px solid black; padding: 0 10px 0 10px;}
+.viewpoint {border: 1px solid black; border-collapse: collapse; margin: auto;}
+
+img 	{ border: 5px solid black;}
+.first  { margin-left: 10px;}
+.hlarge { display:block; margin: auto; width: 90%; }
+.vlarge { display:block; margin: auto; width: 40%; }
+.small  { text-align: center; } .small  img { height: 200px;}
+
+p { margin: 5px 10px 5px 10px; }
+h1, h2, h3, h4, h5, h6 { margin-left: 10px; margin-right: 10px; }

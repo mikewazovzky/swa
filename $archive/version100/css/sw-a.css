@@ -1,0 +1,66 @@
+/********************** COMMON styling ******************/
+body {
+    margin: 0;
+	min-width: 600px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+#root {
+	margin: 0 auto;
+    overflow: visible;
+    width: 980px;
+}
+p {	text-align: justify; 
+/*  margin-left: 10px;
+	margin-right: 10px;  */
+	}
+/********************** HEADER styling ******************/
+#header {
+	width: 100%;
+	position: relative;
+	height: 50px; 
+	text-transform: uppercase;
+	color: #fff;
+}
+#slogan {
+	width: 300px;
+	position: absolute;
+	font-size: 16px;
+	padding: 10px;
+}
+#hmenu {
+	position: absolute;
+	right: 0;
+	padding: 10px;
+	margin: 0;
+	text-align: right;
+}
+#hmenu a {
+	font: bold 16px "Open Sans",sans-serif;
+	text-decoration: none;
+	color: #fff;
+	padding: 0 10px;
+}
+#hmenu a:hover {
+	color: #fcc500;
+}
+#hmenu a.active
+{
+	color: #fcc500;
+}
+#hmenu li {
+    display: inline-block;	
+}
+/********************** FOOTER styling ******************/
+#footer { 
+	background: transparent none repeat-x scroll left top;
+	height: 30px; 
+}
+#footer a, #footer p {
+	font-size: 14px;
+	text-align: center;
+	padding: 5px;
+	color: #111111;
+}
+/*********************************************************/

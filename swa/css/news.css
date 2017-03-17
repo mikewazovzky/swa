@@ -1,0 +1,38 @@
+html {
+	background-color: #303040;														
+}
+body {
+/* 	background: transparent url("../media/l_isle.jpg") no-repeat scroll left top; */	
+ 	min-height: 2050px;																
+}
+#root {
+	height: 1280px;																	
+}
+#news_main {
+	position: relative;	
+	background: transparent none repeat scroll left top; 
+	background: #ff6f00; 
+	opacity: 0.9; 
+}
+#news_title {
+	font-size: 2em;
+	color: #fff;
+	line-height: 1.2em;
+	/*text-align: center;*/
+	text-transform: uppercase;
+	margin: 100px 0 20px 0;
+}
+.news_block {
+/* position: relative; */
+	min-width: 960px; 
+	width: 960px; 
+	min-height: 70px; 
+	height: 70px; 
+	opacity: 0.8; 
+	margin: auto;	
+}
+.news_block img 	{ margin: 5px 10px 0px 0;}
+.news_block p    	{ margin: 0; }
+.news_block hr 	{ margin: 0; }
+/*************** Change Footer Text Color for main.php ****************************/
+#footer a, #footer p { color: #ffffff; }
